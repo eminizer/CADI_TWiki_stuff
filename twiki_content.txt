@@ -1,0 +1,64 @@
+<style type="text/css" media="all">
+div.comment { border-left: 1px solid silver; background-color:#F4F4F4; margin:0 1em 0 1em; padding: 1em; }
+div.response { border-left: 1px solid silver; margin: 0 3em 0 3em; padding: 1em;}
+div.sidenote { border-left: 1px solid silver; background-color:#FFFFCC; margin: 0 3em 0 3em; padding: 1em;}
+</style>
+
+
+---+!! Review of TOP-15-018
+
+---++ Status
+
+   * Discussion beginning with first detailed analysis note (v5) upload: 3 Apr 2018
+   * Offline meeting with TOP PAG and Top Properties conveners to discuss publication plans: 10 Apr 2018
+
+---++ Paper Draft
+
+---++ Documentation
+
+   * [[http://cms.cern.ch:80/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_123_v5.pdf][AN 2017-123 (V5)]]
+
+---++ Changes Upcoming in Next Iteration
+
+   * Lepton pT filter on nTuples relaxed: new samples will include events with lepton pT>25 GeV (old cut at 45 GeV), greatly increasing population of resolved region
+   * Top pT reweighting available as a shape correction for top pair samples
+   * Resolved muon+jets channels now have their own trigger (HLT_IsoMu24 OR HLT_IsoTkMu24) to accommodate events with lower lepton pTs
+   * Electrons now required to pass tight ID requirements (with isolation bypassed for boosted events) to conform with accepted measurement of HLT_Ele27_WPTight_Gsf trigger scalefactors (this also means my private measurement of this trigger efficiency is no longer needed)
+   * MET cuts defining the type-2 regions' sidebands for the QCD background estimate have been changed to MET>30(50) GeV for mu(e) type-2 events (from MET>50(100) GeV). I made this change because the QCD estimate is only performed in the W+Jets control region for type-2 events where there are sufficient statistics without eating up too much of the selection region.
+   * Fixed a bug in pileup reweighting: uncertainty is now recommended 4.6%
+   * Muon selection now requires |eta|<2.4 
+
+
+---++ Outstanding Issues
+
+   1. Normalization of MC to data, especially in boosted channels: missing corrections?
+   1. Trigger choice for boosted electron channels: HLT_Ele27_WPTight_Gsf has an isolation requirement in it!
+   1. Any missing systematics
+
+---++ Comments
+
+---+++ Mirena Paneva (10 Apr 2018 on AN v5)
+%TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
+   * Muon selection: muons |eta| should be < 2.4 as there are no muon detectors beyond 2.4
+      * <span style="color: blue;">%OK% Done, this change will be reflected in the next iteration. </span>
+   * For the electrons your trigger intrinsically has isolation requirement. It is generally best to apply offline criteria that are tighter than the online ones, so I have some concerns about this case. Isn't there an alternative electron trigger with higher pt cut but no iso requirement? It would be good to contact the electron and trigger TOP PAG contacts.
+      * <span style="color: blue;"> I have emailed Caleb Fangmeier (electron contact), Sergio Cruz, and Carmen Pardos (top trigger contacts) about making a better choice for the electron trigger, at least in the boosted channels where I'm explicitly bypassing isolation requirements. This is an open issue! </span>
+   * you also need to get your privately derived electron scale factors approved.
+      * <span style="color: blue;">%OK% This wasn't the case before, but scalefactors have now been measured for all of the triggers I'm using at the moment, so my preliminary private measurement is no longer needed. </span>
+   * What corrections are applied in the control plots shown in Sec. 5.8 and 6.4? Generally good agreement for type-3 mu+jets events, but there are significant discrepancies in the other categories.
+      * <span style="color: blue;"> Control plots shown include all corrections listed under "systematics". The discrepancies observed are an open issue I'll revisit at the next iteration with new samples. </span>
+   * Please note that the binning of the scale factors you use should match you selection cuts, i.e. if you require lepton pt > 55 GeV, the corresponding SFs bin should be e.g. [55-60], not e.g. [50-60]. 
+      * <span style="color: blue;"> I'm in the process of double-checking this to see which of my criteria I should adjust </span>
+
+%ENDTWISTY%
+
+---+++ Alexander Grohsjean (5 Apr 2018 on AN v5)
+%TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
+   * what's causing the normalization issue in type-1 events?
+      * <span style="color: blue;"> Possibly missing a correction, or top pT reweighting? This is an open issue! </span>
+   * what's the timeline to add missing systematics (additional modeling uncertainties, etc.)?
+      * <span style="color: blue;">%OK% If there are any specific systematics I'm missing that are very impactful I can implement them ASAP, but I believe I've accounted for the most dominating effects up to this point. </span>
+%ENDTWISTY%
+
+%RESPONSIBLE% Main.NicholasChristianEminizer %BR%
+-- Main.NicholasChristianEminizer - 2016-06-09
