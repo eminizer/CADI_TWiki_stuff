@@ -11,54 +11,86 @@ div.sidenote { border-left: 1px solid silver; background-color:#FFFFCC; margin: 
 
    * Discussion beginning with first detailed analysis note (v5) upload: 3 Apr 2018
    * Offline meeting with TOP PAG and Top Properties conveners to discuss publication plans: 10 Apr 2018
+   * Revised analysis note (v6) uploaded: 19 Jun 2018
 
 ---++ Paper Draft
 
 ---++ Documentation
 
    * [[http://cms.cern.ch:80/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_123_v5.pdf][AN 2017-123 (V5)]]
+   * [[http://cms.cern.ch:80/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_123_v6.pdf][AN 2017-123 (V6)]]
+
+---++ Changes from v5 to v6
+%TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
+   * Lepton pT filter on nTuples relaxed: new samples will include events with lepton pT>25 GeV (old cut at 45 GeV), greatly increasing population of resolved region
+   * Top pT reweighting available as a shape correction for top pair samples
+   * Resolved muon+jets channels now have their own trigger (HLT_IsoMu24 OR HLT_IsoTkMu24) to accommodate events with lower lepton pTs; scalefactors used are POG-provided
+   * Electrons now required to pass tight ID requirements (with isolation bypassed for boosted events) to conform with POG-accepted measurement of HLT_Ele27_WPTight_Gsf trigger scalefactors (this also means my private measurement of this trigger efficiency is no longer needed)
+   * Trigger in boosted electron+jets channels changed to HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165 OR HLT_Ele115_CaloIdVT_GsfTrkIdT after B2G Z' to boosted ttbar analysis; efficiency scalefactors from this analysis also implemented (thank you Anastasia Karavdina!)
+   * Fixed a bug in pileup reweighting: uncertainty is now recommended 4.6%
+   * Muon selection now requires |eta|<2.4 
+   * Boosted event lepton selection now requires pT>50 Gev (from 55 GeV) to conform with scalefactor histogram bin edges. Resolved event lepton selection requires pT>30 GeV.
+   * Control plot limits/binning now reflect selection criteria
+   * MC cross sections updated to conform to values from XSDB
+   * Bugfix in determining MC truth ttbar decay tree provenance
+
+%ENDTWISTY%
 
 ---++ Changes Upcoming in Next Iteration
 
-   * Lepton pT filter on nTuples relaxed: new samples will include events with lepton pT>25 GeV (old cut at 45 GeV), greatly increasing population of resolved region
-   * Top pT reweighting available as a shape correction for top pair samples
-   * Resolved muon+jets channels now have their own trigger (HLT_IsoMu24 OR HLT_IsoTkMu24) to accommodate events with lower lepton pTs
-   * Electrons now required to pass tight ID requirements (with isolation bypassed for boosted events) to conform with accepted measurement of HLT_Ele27_WPTight_Gsf trigger scalefactors (this also means my private measurement of this trigger efficiency is no longer needed)
-   * MET cuts defining the type-2 regions' sidebands for the QCD background estimate have been changed to MET>30(50) GeV for mu(e) type-2 events (from MET>50(100) GeV). I made this change because the QCD estimate is only performed in the W+Jets control region for type-2 events where there are sufficient statistics without eating up too much of the selection region.
-   * Fixed a bug in pileup reweighting: uncertainty is now recommended 4.6%
-   * Muon selection now requires |eta|<2.4 
-
+   * language edit to clarify PV assignment
+   * language edit to explicitly denote JER scalefactors from Spring16_25nsV10
+   * language edit to explicitly list the MET collection used as slimmedMETsMuEGClean
+   * language edit to list b-tagging WP as loose, not medium
+   * Unblinding?
 
 ---++ Outstanding Issues
 
-   1. Normalization of MC to data, especially in boosted channels: missing corrections?
-   1. Trigger choice for boosted electron channels: HLT_Ele27_WPTight_Gsf has an isolation requirement in it!
+   1. top pair angular distribution modeling (apparent in prefit template comparison plots)
+   1. with the above, finalize strategy for fitting to data (including review from Pietro on usage of Higgs combine tool and from statistics committee)
+   1. JER scalefactors and uncertainties must be updated to Summer16_25nsV1
+   1. possible ambiguity in choice of primary vertex; I need to learn more about this in the B2GAnaFW nTuples
    1. Any missing systematics
 
 ---++ Comments
+
+---+++ Andrey Popov from JME object review (27 Jun 2018 on AN v6)
+%TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
+   * L180: Vertices are ranked based on associated ‘physics objects’, not just tracks [[https://indico.cern.ch/event/369417/contributions/1788757/][x]]
+      * <span style="color: blue;">%OK% Language on line 180 changed from "...as the vertex with the highest sum of tracks' $p_{T}^{2}$..." to "...as the vertex with the highest sum of clustered physics object $p_{T}^{2}$...". </span>
+   * L227: Which version of JER factors do you use?
+      * <span style="color: blue;"> We're using the Spring16_25nsV10 scalefactors; I added this explicitly to line 228. These will need to be updated to Summer16_25nsV1 and this is an outstanding issue to be addressed in the next version. </span>
+   * L279: In case of data, do you start your computation of ptmiss from the collection slimmedMETsMuEGClean? [[https://twiki.cern.ch/twiki/bin/view/CMS/TopJME#MET][x]]
+      * <span style="color: blue;"> %OK% Yes, I'm using a code built on top of the B2G group's B2GAnaFW which begins with this MET in MiniAODv2. Line 282 now reads "...transverse energies beginning from the ``\texttt{slimmedMETsMuEGClean}" collection." </span>
+   * L316: In addition to asking that there is at least one ‘good’ vertex (which is what this filter does), do you require that it's the first one?
+      * <span style="color: blue;"> I am not sure. I'm picking up this filter's flag (along with the rest) directly from MiniAODv2 in the same B2GAnaFW nTuples. I'm contacting other people using this framework to learn more and make sure I'm handling this appropriately. </span>
+   * JME POG does not perform a dedicated calibration of AK8 jets. I guess that, given that you perform a kinematic fit while allowing jet momenta to vary in magnitude, you are probably not very sensitive to a potential miscalibration of these jets. Still, have you investigated this in any way or checked with other analyses that had? Alternatively, if JEC uncertainties in the boosted topologies have a small impact on your measurement compared to other systematic uncertainties, you should be safe. If you have impact plots that show the ranking of systematic uncertainties, I'd be curious to see them. Otherwise, I think the scale of AK8 jets needs to be validated or you should check with JERC conveners if the uncertainties for AK8 jets are considered okay.
+      * <span style="color: blue;"> %OK% JERC conveners validated that AK8 jet uncertainties are alright. [[https://hypernews.cern.ch/HyperNews/CMS/get/jes/754.html][x]] </span>
+
+%ENDTWISTY%
 
 ---+++ Mirena Paneva (10 Apr 2018 on AN v5)
 %TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
    * Muon selection: muons |eta| should be < 2.4 as there are no muon detectors beyond 2.4
       * <span style="color: blue;">%OK% Done, this change will be reflected in the next iteration. </span>
    * For the electrons your trigger intrinsically has isolation requirement. It is generally best to apply offline criteria that are tighter than the online ones, so I have some concerns about this case. Isn't there an alternative electron trigger with higher pt cut but no iso requirement? It would be good to contact the electron and trigger TOP PAG contacts.
-      * <span style="color: blue;"> I have emailed Caleb Fangmeier (electron contact), Sergio Cruz, and Carmen Pardos (top trigger contacts) about making a better choice for the electron trigger, at least in the boosted channels where I'm explicitly bypassing isolation requirements. This is an open issue! </span>
+      * <span style="color: blue;">%OK% Changed the electron trigger in the boosted channels to HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165 OR HLT_Ele115_CaloIdVT_GsfTrkIdT after B2G Z' to boosted ttbar analysis. Anastasia Karavdina has scalefactors for this trigger configuration's efficiency measurement that I can use. </span>
    * you also need to get your privately derived electron scale factors approved.
-      * <span style="color: blue;">%OK% This wasn't the case before, but scalefactors have now been measured for all of the triggers I'm using at the moment, so my preliminary private measurement is no longer needed. </span>
+      * <span style="color: blue;">%OK% This wasn't the case before, but scalefactors have now been measured for all of the triggers I'm using, so my preliminary private measurement is no longer needed. </span>
    * What corrections are applied in the control plots shown in Sec. 5.8 and 6.4? Generally good agreement for type-3 mu+jets events, but there are significant discrepancies in the other categories.
-      * <span style="color: blue;"> Control plots shown include all corrections listed under "systematics". The discrepancies observed are an open issue I'll revisit at the next iteration with new samples. </span>
+      * <span style="color: blue;"> Control plots shown include all corrections listed under "systematics". Bugfixes and changes brought agreement much closer. Note that control plots don't include estimates of QCD background, and that top pT reweighting has a significant effect on the normalization of top MC, especially in boosted channels. </span>
    * Please note that the binning of the scale factors you use should match you selection cuts, i.e. if you require lepton pt > 55 GeV, the corresponding SFs bin should be e.g. [55-60], not e.g. [50-60]. 
-      * <span style="color: blue;"> I'm in the process of double-checking this to see which of my criteria I should adjust </span>
+      * <span style="color: blue;">%OK% I double-checked the scalefactor measurements I'm using, and adjusted the boosted lepton pT cut to 50 GeV (from 55 GeV) since the bin edges are reliably at 50 GeV. The resolved channels' lepton pT cut at 30 GeV also reflects bin edges with no problem. I have a simple measurement of the b-tagging efficiency in MC for AK4 jets and I edited the histogram limits in that file to reflect the AK4 jet selection criteria. </span>
 
 %ENDTWISTY%
 
 ---+++ Alexander Grohsjean (5 Apr 2018 on AN v5)
 %TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
    * what's causing the normalization issue in type-1 events?
-      * <span style="color: blue;"> Possibly missing a correction, or top pT reweighting? This is an open issue! </span>
+      * <span style="color: blue;"> As mentioned above this is now greatly improved in v6; control plots do not show estimates of QCD background, and top pT reweighting as well as various bugfixes have a large effect on MC normalization. </span>
    * what's the timeline to add missing systematics (additional modeling uncertainties, etc.)?
       * <span style="color: blue;">%OK% If there are any specific systematics I'm missing that are very impactful I can implement them ASAP, but I believe I've accounted for the most dominating effects up to this point. </span>
 %ENDTWISTY%
 
 %RESPONSIBLE% Main.NicholasChristianEminizer %BR%
--- Main.NicholasChristianEminizer - 2016-06-09
+-- Main.NicholasChristianEminizer - 2018-07-05
