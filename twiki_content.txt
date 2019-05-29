@@ -46,7 +46,7 @@ This analysis is a template measurement of the top quark forward backward asymme
 General comments: 
 
    * The first 5 pages describe the observables of the search/measurement. I  think in some places, in particular the first two pages it could be  better organized. I wonder if we can omit some of the equations... like  Eq. 6 and 7.  I assume these are taken from Ref. 16 and if the reader wants can check them. I find he theory introduction longer also taking into account the length of the experimental part of the discussion given in the paper.
-      * %ORANGE% Before the next iteration of documentation I will speak with Morris about reorganizing this information better. Certainly to this point we had erred on the side of more detailed explanation, hoping that through this process we'd be receiving comments like these :)
+      * %ORANGE% I've spoken to Morris about reorganizing this information better but he is not sure the best way to pare down the discussion and has suggested that we wait for other feedback or more explicit suggestions? We're worried about losing equations 6 and 7 for sake of clarity....
 
    * Throughout the paper you need to iron out the usage of jargon  expressions like "muon events", "boosted events", "dileptonic ttBar events", "semileptonic tt","templating", ... If you want to use these in the paper you need to first define at the first use case.
       * %ORANGE% I'll go through the next draft end to end and be sure that all of these terms are defined at first use, and used minimally in the first place. Some of the detailed comments below address this.
@@ -76,7 +76,7 @@ Detailed comments:
       * %GREEN% Added "NLO QCD calculations predict approximately 6\% \qqbar, 69\% \glu, and 25\% \qg production of top pairs."
 
    * L14: needs a reference.
-      * %ORANGE% I have to talk to Morris about this one; I'm not sure what to cite....
+      * %GREEN% Added reference as requested.
 
    * Figure 2: I might have asked this before, but the bottom right plot includes also gg initial states ? Probably not because otherwise it would be much smaller given that qqbar initial state constitutes only ~10% of the total x-section. If this figure shows only the qqBar initial state cases then it should be clarified otherwise it is misleading. Additionally, these figures use Gen-level top kinematics right ? If yes, please also clarify that.
       * %GREEN% You are correct on both points: the bottom right plot does not include gg initial states, and they all use gen-level top kinematics. This is now stated in the caption.
@@ -94,10 +94,10 @@ Detailed comments:
       * %GREEN% done.
 
    * L88: suggest not to use i, j as j is used in equation 3 for various background processes I assume. Please make the definition of j explicit too.
-      * %ORANGE% Changed flavor indices to a,b instead of i,j. Which definition of "j" is unclear?
+      * %GREEN% Changed flavor indices to a,b instead of i,j. Which definition of "j" is unclear?
 
    * Eq.4. Please explain this equation (and motivation for anti-symmetrisation) by connecting to Eq. 2. I assume this is related to the two parts of the x-section one having only c^2 and the other c  factors ? Just for curiosity and sanity check have you shown the distributions of y where the symmetric and antisymmetric parts sum to the original template ?
-      * %ORANGE% Indeed, it's the ratio of the c^2 to c portions of the cross sections. I have not shown that the decomposition sums to the original prediction; I'm not sure if we'd even expect that based on the generated MC? Maybe Morris knows more than I do. Regardless we will make this more clear in the text.
+      * %GREEN% Indeed, it's the ratio of the c^2 to c portions of the cross sections; added a quick explanation of this. I have not shown that the decomposition sums to the original prediction; I'm not sure if we'd even expect that based on the generated MC? Maybe we can follow up on this in a setting where we can talk in more detail?
 
    * Eq.6,  c^* at the denominator
       * %GREEN% fixed.
@@ -106,7 +106,7 @@ Detailed comments:
       * %GREEN% first use found on line 75; changed "...from lepton+jets final states, in which..." to "...from final states containing a single lepton and several hadronic jets, called \"lepton+jets," in which..."
   
    * L 120-129: This is a good place to state what is new (other than new  data) in this analysis wrt. earlier LHC publications. Please point to  the unique features of this measurement wrt the older ones.  You may also bring the references & description of the earlier LHC measurements from lines 38-39 to here.
-      * %ORANGE% Would like to talk to Morris about this one
+      * %GREEN% Added "The measurement of the \qqbar initial state top forward-backward asymmetry is the first of its kind at the LHC and can be directly compared with results from the Tevatron experiments \cite{Aaltonen:2011kc,Abazov:2007ab,Abazov:2014cca,Aaltonen:2016bqv,Aaltonen:2017efp}.  Measurements of the anomalous chromoelectric and chromomagnetic moments have previously been extracted from measurements of the \ttbar spin correlations \cite{CMS:2014bea, Khachatryan:2016xws}.  This is the first measurement that relies on the \ttbar differential distributions." to the end of this paragraph.
 
    * L128-129: the second and third typologies are not well motivated. At this point the reader wonders why one should bother with semi- and fully- resolved tops.
       * %GREEN% Agreed, this was worded kind of funny. Changed "...are one such topology.  A second topology considers events of lower pair mass in which the decay products are partly merged.  Finally, the third category includes the lowest mass events that are fully resolved" to "...are one such topology.  A second topology considers events of lower pair mass in which the decay products are partly merged, bridging the gap between events identifiable as either fully merged or fully resolved.  Finally, the third and most populated category includes the lowest mass events that are fully resolved." This at least explains the roles of the other two selections?
