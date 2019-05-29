@@ -29,15 +29,21 @@ This analysis is a template measurement of the top quark forward backward asymme
    * First Preapproval talk 11 Dec 2018 ([[https://indico.cern.ch/event/780160/contributions/3247440/attachments/1768162/2874496/TOP-15-018_preapproval_Dec_11_2018.pdf][slides]])
    * Permission to unblind: 14 Jan 2019 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/16.html][HN message]])
    * Update on preapproval homework, with preliminary unblinded results: 23 Jan 2019 ([[https://indico.cern.ch/event/791321/contributions/3291427/attachments/1783868/2903384/top_properties_1_23_2019_preapproval_homework_and_unblinded_results.pdf][slides]])
+   * Update on addressing issues after unblinding: 20 Feb 2019 ([[https://indico.cern.ch/event/799877/contributions/3325183/attachments/1799255/2934165/top_properties_2_20_2019_fitting_changes.pdf][slides]])
+   * Two updates on changes to fitting, systematic template smoothing, and goodness of fit: first was in Top Properties on 3 Apr 2019 ([[https://indico.cern.ch/event/811037/contributions/3381718/attachments/1823171/2982894/top_properties_4_3_2019_more_fitting_changes.pdf][slides]]) and second (more detailed) was in Higgs Combine on 17 Apr 2019 ([[https://indico.cern.ch/event/788727/contributions/3401374/attachments/1831680/2999825/higgs_combine_4_17_2019_fitting_details.pdf][slides]]).
+   * Datacards greenlight received: 2 May 2019 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/19.html][HN message from Pietro]])
+   * Update in Top Properties on greenlit results: 8 May 2019 ([[https://indico.cern.ch/event/817712/contributions/3413564/attachments/1840997/3018375/top_properties_5_8_2019_greenlit_unblinded_results.pdf][slides]])
 
 ---+++ Imminent Plans
 
-   * Re-preapproval with unblinded results ASAP (maybe on the Moriond 2019 timeline sometime the week of 4 Feb 2019? Need to discuss with Morris about if this is possible.)
+   * Re-preapproval with unblinded results ASAP
 
 ---++ Comments and issues from/after first preapproval
 
----+++ Didar Dobur 10 Dec on paper draft v1 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/11.html][thread on review HN]])
+---+++ Didar Dobur 10 Dec 2018 on paper draft v1 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/11.html][thread on review HN]])
 %TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
+
+General comments: 
 
    * The first 5 pages describe the observables of the search/measurement. I  think in some places, in particular the first two pages it could be  better organized. I wonder if we can omit some of the equations... like  Eq. 6 and 7.  I assume these are taken from Ref. 16 and if the reader wants can check them. I find he theory introduction longer also taking into account the length of the experimental part of the discussion given in the paper.
       * %ORANGE% Before the next iteration of documentation I will speak with Morris about reorganizing this information better. Certainly to this point we had erred on the side of more detailed explanation, hoping that through this process we'd be receiving comments like these :)
@@ -49,7 +55,7 @@ This analysis is a template measurement of the top quark forward backward asymme
       * %GREEN% There are more details about all of this in the AN, but I tried to incorporate some key numbers in the paper draft as well. Added details on average trigger efficiency to end of "Detector" section: "The average selection efficiencies of the triggers applied to data are approximately 95\% (97\%) in the boosted (resolved) $\mu$+jets channels and approximately 98\% (74\%) in the boosted (resolved) electron+jets channels." Also added details about trigger SF measurements to section on systematics: "The average values of the scalefactors applied are about 0.94 (0.96) for boosted (resolved) $\mu$+jets events and about 0.98 for boosted and resolved electron+jets events. The $\mu$+jets scalefactors were measured by the Muon Physics Object Group \cite{muon_eff_twiki}. The boosted electron+jets scalefactors were measured by the Top Physics Analysis Group \cite{electron_trigger_eff_twiki} and the resolved electron+jets scalefactors were measured by analysts in the Beyond the Second Generation subgroup \cite{andrey_electron_trigger_sfs}."
 
    * A general comment for section 8: It would be interesting to give some quantitative range for each uncertainty source. Either the input uncertainties or the range of the systematic effect in the templates... You may also consider adding a new column in table 1. You can see how it is done in other analyses such as TOP-18-009 syst. table in the paper draft.
-      * %ORANGE% Yes, others have asked for this as well. I'll add another column to the table in the next draft of the documentation.
+      * %GREEN% I added another column to the table in Section 6 of v2 of the paper and Section 9 of v9 of the analysis note to illustrate this. The column lists for each systematic the mean of the absolute values of the percent content changes observed in each affected process's template bins, quantifying the scale of each uncertainty effect.
 
    * Also to my taste the length of how the templates are constructed for each background source is not detailed enough. For QCD templates you derive several transfer factors. But you do not discuss their size and dependence on the template shapes. I suggest to extend on this with a  few sentences. 
       * %GREEN% The isolation and MET cuts used to define the QCD estimate sidebands are not correlated with the template observables nor with each other. To quantify the transfer factors I added at the end of the sentence describing them in  the "Background Estimation" section: "The transfer factors are applied to each of the events in the shape sidebands to renormalize the templates to the expected numbers of events in the full signal regions; their values are approximately 0.004 (0.46), 0.003 (0.35), and 0.37 (1.44) in the type-1, type-2, and type-3 signal region $\mu$(electron)+jets channels respectively."
@@ -62,7 +68,6 @@ This analysis is a template measurement of the top quark forward backward asymme
 
 
 Detailed comments:
-===============================
 
    * L8 "top production" --> does not sound good. you can rearrange the sentence to avoid using it. And example... ".. particle physics, at the LHC top quarks are dominantly produced in pairs via the strong interaction as described by Quantum..."
       * %GREEN% Changed sentence to "In the Standard Model of particle physics, top quarks are dominantly produced in pairs at the LHC via the strong interaction as described by Quantum Chromodynamics (QCD)."
@@ -80,7 +85,7 @@ Detailed comments:
       * %GREEN% done.
 
    * Figure 2: Please also improve the quality of the bottom-right figure.
-      * %ORANGE% Need to regenerate this plot; will be included in nexgt iteration.
+      * %GREEN% New CMS style version of this plot availabe in paper v2/note v9.
 
    * Figure 2: M--> m, also in the text. I also suggest to change it to m(ttBar)  or m_{ttBar}
       * %ORANGE% This will be a lot of small changes; I'll need to go through this line by line while redrafting.
@@ -131,7 +136,7 @@ Detailed comments:
       * %GREEN% Bumped this cut up to 80 GeV to synchronize with trigger efficiency measurement for AN v9/paper v2
 
    * L253: Suggest to include a sentence  for to what "isolation" refers and why it is needed. Start with defining/justifying it for resolved  scenario then say it is modified for boosted scenario.
-      * %ORANGE% Added the sentence "To ensure that leptons observed in an event correspond to particles in the final decay state rather than products of hadronization, leptons are required to be isolated from nearby hadronic activity in the event." I don't want to switch around the order in which I talk about the algorithms, though, because resolved events are required to pass the 2D cut as well.
+      * %GREEN% Added the sentence "To ensure that leptons observed in an event correspond to particles in the final decay state rather than products of hadronization, leptons are required to be isolated from nearby hadronic activity in the event." I don't want to switch around the order in which I talk about the algorithms, though, because resolved events are required to pass the 2D cut as well.
 
    * L258: remove "and" in "photon and..."
       * %GREEN% Done
@@ -152,10 +157,10 @@ Detailed comments:
       * %GREEN% Done, this will be reflected in the next drafts (it affects a lot of plots)
 
    * L291: I think the reader wonders at this point about the underestimated normalization of the Type-I and Type-II events. I think we need to write a few sentence here giving reference to top_pT modelling issue.
-      * %ORANGE% These plots will look different with the new top pT reweighting scheme; the normalization prediction is much better.
+      * %GREEN% These plots look different with the new top pT reweighting scheme; the normalization prediction is much better in the new plots in paper v2/note v9.
 
    * L304-320: I am not sure if the details of the Kinematic fit is  necessary, in particular the formulas showing chi2 minimization etc... Can you not give a reference and just explain in words the procedure in somewhat shorter way ? Most important here in my opinion is the performance, efficiency/purity that is given in lines  326-328.
-      * %ORANGE% I'll ask Morris about how to pare this down; I know there's a lot we can lose.
+      * %GREEN% I pared this down a lot for paper v2. I got rid of the equations and a lot of the unnecessary detail, added some references to CMS work with kinematic fitting, and focused on the performance of the method.
 
    * L344: "well-estimated contributions" --> not clear to what this refers ? a data control region validation ? good MC statistics ?
       * %GREEN% I removed "and well-estimated". My original point was simply that they don't suffer from the MC statistics issues that the QCD background does, nor the cross section uncertainty coupled with rather dominating contribution of the W+Jets process. "Small" handles that fine I think.
@@ -164,13 +169,13 @@ Detailed comments:
       * %GREEN% yep, done!
 
    * L343: "The top and Z/g+jets..."  --> "The sing-letop and..." ?
-      * %ORANGE% I originally said "top" rather than "single top" because I was referring to dileptonic/hadronic ttbar and single top at once. Should I be more clear about this?
+      * %ORANGE% I originally said "top" rather than "single top" because I was referring to dileptonic/hadronic ttbar and single top at once. Should I be more clear about this? I actually rather like my language here; it says "backgrounds" after listing top, Z/gamma+Jets, etc. Should I switch to "the hadronic and dileptonic ttbar, single top, and Z/gamma+jets backgrounds..."?
 
    * L347: "less precisely estimated from MC" --> due to statistics or other reasons? Please clarify in the paper.
       * %GREEN% Changed to "because its production cross section is less precisely known from theory"
 
    * L352: Why not to include the M_t,lep^reco in the paper ? I think this would be a nice plot to show... I assume Figure 6 shows it only for signal ttBar events.  So M_t,lep^reco would be a complementary figure showing the background composition distributed over this observable. I think such a plot in all three categories normalized to total luminosity would be very interesting.
-      * %ORANGE% indeed, figure 6 only show it for the MC matched signal ttbar events used in tuning the kinematic fit. Maybe instead of that tuning plot I could include the leptonic and hadronic top masses for the three topologies? Or I could just replace the plots of the btagging multiplicity in figs. 3-5 and show M_t,lep^reco instead. Will update this with my choice soon.
+      * %GREEN% Replaced the plots of the btagging multiplicity in figs. 3-5 with M_t,lep^reco instead in v2 of the paper.
    
    * L356: "The QCD multijet background contribution is not well estimated in MC due to its large production cross section but low selection  efficiency,"  --> I suggest to call it low stat in MC. Because otherwise the large x-section&low selection efficiency seems to be the physics reason which is not the case.
       * %GREEN% Changed "...due to its large production cross section but low selection efficiency" to "...due to low statistics"
@@ -180,10 +185,10 @@ Detailed comments:
 ---+++ Raised during the talk
 %TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
    * Discuss motivation for modified Lorentzian used in kinematic fit in greater detail in AN
-      * %ORANGE% will update in next version
+      * %GREEN% Added more clarifying language and a reference to the paper we used to find this. It's a relativistc Breit-Wigner form representing two-body t -> Wb decays where the W resonance is correlated to the top threshold.
 
    * Discuss separation of MC events by production mechanism using MC truth info in greater detail in AN
-      * %ORANGE% will update in next version. We choose at the initial partons the two "hard particles" in MC truth whose daughters are the top quark pair; gg events are those for which both partons have ID 21, qqbar events are those for which both parton IDs are less than 6 and sum to zero, and qg events are those with exactly one parton whose ID is 21.
+      * %GREEN% Added the following subsection (called "Production Mechanism Separation") at the start of "Event Selection" in the AN: "As described in Section~\ref{sec:introduction} above, $t\bar{t}$ signal MC samples are separated not only by the nature of their decay but also by the mechanism of their production. We separate MC events into $q\bar{q}$ and $gg/qg$ categories based on MC truth information about the initial partons in the decay. We choose as the initial partons the two ``hard particles" in MC truth whose daughters are the top quark pair. Events are categorized as $gg$ when both partons have ID 21 (corresponding to gluons); $q\bar{q}$ events are those for which both parton IDs are less than 6 (corresponding to non-top quarks) and sum to zero (indicating opposite charge but matching flavor), and $qg$ events are those with exactly one parton whose ID is 21."
 
    * Perform a cross-check of data-driven QCD background estimation using QCD MC
       * %GREEN% This is done, please see [[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/15.html][this thread on the HN]] for more details and plots.
@@ -192,7 +197,7 @@ Detailed comments:
       * %GREEN% Impact plots will be available in next version of documentation, but looking at them right now the Rqqbar nuisance gets pulled about 0.5 sigma (which means 0.5%) from its nominal value, with no constraint on its postfit uncertainty, and the impact of this nuisance on PoIs is negligible (<0.0005 for AFB).
 
    * Mising parton shower (ISR/FSR/hdamp), underlying event (tune), and color reconnection systematics
-      * %GREEN% I've added these and will be estimating their uncertainty contributions using an a-posteriori method. Additional details are available in [[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/12.html][this HN thread]].
+      * %GREEN% I've added these.
 
    * Results for NNLO top pT spectra could be used to derive a theory-based top pT reweighting scheme
       * %GREEN% I've done this (and it looks great!). Additional details in [[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/13.html][this HN thread]].
@@ -214,6 +219,7 @@ Detailed comments:
       * Fig 9 is very nice - I don't often see this in so much detail however, I am confused perhaps about 1 thing. Are you using here directly the measured value of the parameter as the "test-statistic" ? Often the neyman construction involves using the likelihood outcomes to order the results (actually this is more the Feldman-cousins way). Maybe I am misreading those plots.
          * %GREEN% I gave a presentation in a StatComm meeting about this ([[https://indico.cern.ch/event/762830/contributions/3170892/attachments/1730085/2795956/statcomm_10_8_2018_neyman_and_gof.pdf][link]]) that has more details than I can include here.
    * From statistics questionnaire: after unblinding I will need to return with something about Goodness of Fit.
+      * %GREEN% I've run Goodness of Fit tests using the KS algorithm per-channel. Version 9 of the AN explains and lists those results with plots and in a table of p-values. I presented these results before my datacard greenlight at a Higgs Combine meeting on April 17th ([[https://indico.cern.ch/event/788727/contributions/3401374/attachments/1831680/2999825/higgs_combine_4_17_2019_fitting_details.pdf][slides]])
 
 %ENDTWISTY%
 
@@ -221,7 +227,7 @@ Detailed comments:
 %TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
    * Many of my nuisance parameter uncertainties constrain post-fit. In particular:
       * JES/JER
-         * %GREEN% I tried splitting these into several contributions to no avail. I also double-checked my templates and fitting methods, and tried smoothing templates to decrease the effect, again with no observed changes. This ended up being the focus of a BIG discussion in HComb, but in the end we decided to estimate these systematic impacts conservatively, using an a-posteriori method rather than relying on template morphing. My initial presentation on all of this to HComb can be found [[https://indico.cern.ch/event/762838/contributions/3179852/attachments/1735769/2807459/hcomb_10_17_2018_nuisance_constraints.pdf][here]], and my presentation discussing the results of splitting the contributions among multiple sources, as well as our final a-posteriori treatment, is [[https://indico.cern.ch/event/762840/contributions/3208961/attachments/1752395/2839895/hcomb_11_14_2018_a_posteriori_JEC_systematics.pdf][here]. I'll be using a similar a-posteriori treatment to estimate impacts from parton showering, underlying event, and color reconnection uncertainties since these are also accounted for using independent event samples, which results in overconstraining of the associated nuisance parameters in template morphing.
+         * %GREEN% I tried splitting these into several contributions to no avail. I also double-checked my templates and fitting methods, and tried smoothing templates to decrease the effect, again with no observed changes. This ended up being the focus of a BIG discussion in HComb, but in the end we decided to estimate these systematic impacts conservatively, using an a-posteriori method rather than relying on template morphing. My initial presentation on all of this to HComb can be found [[https://indico.cern.ch/event/762838/contributions/3179852/attachments/1735769/2807459/hcomb_10_17_2018_nuisance_constraints.pdf][here]], and my presentation discussing the results of splitting the contributions among multiple sources, as well as our final a-posteriori treatment, is [[https://indico.cern.ch/event/762840/contributions/3208961/attachments/1752395/2839895/hcomb_11_14_2018_a_posteriori_JEC_systematics.pdf][here]]. I'll be using a similar a-posteriori treatment to estimate impacts from parton showering, underlying event, and color reconnection uncertainties since these are also accounted for using independent event samples, which results in overconstraining of the associated nuisance parameters in template morphing.
       * Ren/Fact scale
          * %GREEN% These uncertainties are large prefit; constraints are often observed by analysts.
       * Pileup
@@ -236,6 +242,7 @@ Detailed comments:
          * %GREEN% This was measured conservatively, but the constraint still seems a bit tight even considering that. It's not too concerning, however, due to the very small impact it makes on the PoIs.
       * top pT reweighting uncertainty
          * %GREEN% We expect this to constrain as its true value should certainly be determined by fits to data. In AN v9 I will show results from theory-driven top pT reweighting, and that the constraint on that nuisance is less severe than what we observed for the older version of top pT reweighting.
+      * UPDATE 5/29/2019: Much of how this looks is different now because I've changed to smoothing some systematic templates before fitting. See the slides for my April 2019 update talks listed above for more details.
 
 %ENDTWISTY%
 
@@ -310,7 +317,7 @@ Detailed comments:
    * L316: In addition to asking that there is at least one ‘good’ vertex (which is what this filter does), do you require that it's the first one?
       * %GREEN% I added this requirement for AN v7
    * JME POG does not perform a dedicated calibration of AK8 jets. I guess that, given that you perform a kinematic fit while allowing jet momenta to vary in magnitude, you are probably not very sensitive to a potential miscalibration of these jets. Still, have you investigated this in any way or checked with other analyses that had? Alternatively, if JEC uncertainties in the boosted topologies have a small impact on your measurement compared to other systematic uncertainties, you should be safe. If you have impact plots that show the ranking of systematic uncertainties, I'd be curious to see them. Otherwise, I think the scale of AK8 jets needs to be validated or you should check with JERC conveners if the uncertainties for AK8 jets are considered okay.
-      * %GREEN% JERC conveners validated that AK8 jet uncertainties are alright. [[https://hypernews.cern.ch/HyperNews/CMS/get/jes/754.html][x]]
+      * %GREEN% JERC conveners validated that AK8 jet uncertainties are alright. [[https://hypernews.cern.ch/HyperNews/CMS/get/jes/754.html][HN thread about this]]
 
 %ENDTWISTY%
 
@@ -339,5 +346,5 @@ Detailed comments:
       * %GREEN% If there are any specific systematics I'm missing that are very impactful I can implement them ASAP, but I believe I've accounted for the most dominating effects up to this point.
 %ENDTWISTY%
 
-%RESPONSIBLE% Main.NicholasChristianEminizer %BR%
--- Main.NicholasChristianEminizer - 2018-07-05
+%RESPONSIBLE% Main.MargaretEminizer %BR%
+-- Main.MargaretEminizer - 2019-05-29
