@@ -15,8 +15,8 @@ This analysis is a template measurement of the top quark forward backward asymme
 
 ---+++ Current Documentation
 
-   * Analysis Note Draft: [[http://cms.cern.ch:80/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_123_v8.pdf][AN 2017-123 (v8)]]
-   * Paper Draft: [[http://cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v1.pdf][TOP-15-018 (v1)]]
+   * Analysis Note Draft: [[http://cms.cern.ch:80/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_123_v9.pdf][AN 2017-123 (V9)]]
+   * Paper Draft: [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v2.pdf][TOP-15-018 (V2)]]
 
 ---+++ Status History
 
@@ -33,6 +33,7 @@ This analysis is a template measurement of the top quark forward backward asymme
    * Two updates on changes to fitting, systematic template smoothing, and goodness of fit: first was in Top Properties on 3 Apr 2019 ([[https://indico.cern.ch/event/811037/contributions/3381718/attachments/1823171/2982894/top_properties_4_3_2019_more_fitting_changes.pdf][slides]]) and second (more detailed) was in Higgs Combine on 17 Apr 2019 ([[https://indico.cern.ch/event/788727/contributions/3401374/attachments/1831680/2999825/higgs_combine_4_17_2019_fitting_details.pdf][slides]]).
    * Datacards greenlight received: 2 May 2019 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/19.html][HN message from Pietro]])
    * Update in Top Properties on greenlit results: 8 May 2019 ([[https://indico.cern.ch/event/817712/contributions/3413564/attachments/1840997/3018375/top_properties_5_8_2019_greenlit_unblinded_results.pdf][slides]])
+   * Revised analysis note [[http://cms.cern.ch:80/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_123_v9.pdf][AN 2017-123 (V9)]] and paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v2.pdf][TOP-15-018 (V2)]] uploaded: 31 May 2019
 
 ---+++ Imminent Plans
 
@@ -49,7 +50,7 @@ General comments:
       * %ORANGE% I've spoken to Morris about reorganizing this information better but he is not sure the best way to pare down the discussion and has suggested that we wait for other feedback or more explicit suggestions? We're worried about losing equations 6 and 7 for sake of clarity....
 
    * Throughout the paper you need to iron out the usage of jargon  expressions like "muon events", "boosted events", "dileptonic ttBar events", "semileptonic tt","templating", ... If you want to use these in the paper you need to first define at the first use case.
-      * %ORANGE% I'll go through the next draft end to end and be sure that all of these terms are defined at first use, and used minimally in the first place. Some of the detailed comments below address this.
+      * %GREEN% I've gone line-by-line through the paper and removed a lot of unnecessary jargon. Anything that I do use is defined at first use now.
 
    * Please add discussion on the trigger selection efficiency in each category and on how it is measured. In lines that follow 385, you state the kinematic dependent SFs are applied... But I think for such an analysis it is important to state how large are those SFs and how they change across the observables that are fitted, and overall what are the trigger efficiencies we have.
       * %GREEN% There are more details about all of this in the AN, but I tried to incorporate some key numbers in the paper draft as well. Added details on average trigger efficiency to end of "Detector" section: "The average selection efficiencies of the triggers applied to data are approximately 95\% (97\%) in the boosted (resolved) $\mu$+jets channels and approximately 98\% (74\%) in the boosted (resolved) electron+jets channels." Also added details about trigger SF measurements to section on systematics: "The average values of the scalefactors applied are about 0.94 (0.96) for boosted (resolved) $\mu$+jets events and about 0.98 for boosted and resolved electron+jets events. The $\mu$+jets scalefactors were measured by the Muon Physics Object Group \cite{muon_eff_twiki}. The boosted electron+jets scalefactors were measured by the Top Physics Analysis Group \cite{electron_trigger_eff_twiki} and the resolved electron+jets scalefactors were measured by analysts in the Beyond the Second Generation subgroup \cite{andrey_electron_trigger_sfs}."
@@ -64,7 +65,7 @@ General comments:
       * %GREEN% In our current treatment there is only one scalefactor, correlated across both charges. I wanted the associated nuisance parameter to basically correct/constrain the overal W+Jets cross section measurement, so I didn't make it charge-dependent (this is also the case for Rbck scaling the other ttbar, single top, and DY+Jets background processes).
 
    * The results section needs to focus on more the description of the  results  rather than the technical details of the fit. So technical  details are necessary but as it is the section needs further elaboration  on the results putting them into the context of bigger picture, commenting on improvements in this analysis, telling about perspectives  of improving if possible in the future etc...
-      * %ORANGE% I will go over this with Morris before the next draft of the documentation is published. This has been sparse so far because our analysis has still been blinded and we haven't been sure about how to couch the result.
+      * %GREEN% This whole section has been overhauled now.
 
 
 Detailed comments:
@@ -88,7 +89,7 @@ Detailed comments:
       * %GREEN% New CMS style version of this plot availabe in paper v2/note v9.
 
    * Figure 2: M--> m, also in the text. I also suggest to change it to m(ttBar)  or m_{ttBar}
-      * %ORANGE% This will be a lot of small changes; I'll need to go through this line by line while redrafting.
+      * %GREEN% Changed "M" to "m_{ttbar}" everywhere in the paper
 
    * L64-65 "..beyond the Standard Model processes" --> "Beyond the SM processes"
       * %GREEN% done.
@@ -169,7 +170,7 @@ Detailed comments:
       * %GREEN% yep, done!
 
    * L343: "The top and Z/g+jets..."  --> "The sing-letop and..." ?
-      * %ORANGE% I originally said "top" rather than "single top" because I was referring to dileptonic/hadronic ttbar and single top at once. Should I be more clear about this? I actually rather like my language here; it says "backgrounds" after listing top, Z/gamma+Jets, etc. Should I switch to "the hadronic and dileptonic ttbar, single top, and Z/gamma+jets backgrounds..."?
+      * %GREEN% Clarified my language around this.
 
    * L347: "less precisely estimated from MC" --> due to statistics or other reasons? Please clarify in the paper.
       * %GREEN% Changed to "because its production cross section is less precisely known from theory"
@@ -347,4 +348,4 @@ Detailed comments:
 %ENDTWISTY%
 
 %RESPONSIBLE% Main.MargaretEminizer %BR%
--- Main.MargaretEminizer - 2019-05-29
+-- Main.MargaretEminizer - 2019-05-31
