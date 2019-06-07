@@ -34,10 +34,11 @@ This analysis is a template measurement of the top quark forward backward asymme
    * Datacards greenlight received: 2 May 2019 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/19.html][HN message from Pietro]])
    * Update in Top Properties on greenlit results: 8 May 2019 ([[https://indico.cern.ch/event/817712/contributions/3413564/attachments/1840997/3018375/top_properties_5_8_2019_greenlit_unblinded_results.pdf][slides]])
    * Revised analysis note [[http://cms.cern.ch:80/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_123_v9.pdf][AN 2017-123 (V9)]] and paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v2.pdf][TOP-15-018 (V2)]] uploaded: 31 May 2019
+   * Analysis pre-approved: 6 Jun 2019 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/21.html][HN thread]])
 
 ---+++ Imminent Plans
 
-   * Re-preapproval with unblinded results ASAP
+   * ARC discussion and approval 
 
 ---++ Comments and issues from/after first preapproval
 
@@ -348,4 +349,4 @@ Detailed comments:
 %ENDTWISTY%
 
 %RESPONSIBLE% Main.MargaretEminizer %BR%
--- Main.MargaretEminizer - 2019-05-31
+-- Main.MargaretEminizer - 2019-06-07
