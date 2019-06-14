@@ -38,9 +38,23 @@ This analysis is a template measurement of the top quark forward backward asymme
 
 ---+++ Imminent Plans
 
-   * ARC discussion and approval 
+   * ARC discussion (June 27th?) and approval 
 
 ---++ Comments and issues from/after first preapproval
+
+---+++ Andrea Giammanco 13 Jun 2019 on paper draft v2 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/22.html][thread on review HN]])
+%TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
+
+   * What do you mean by "linearized"? I suppose that AFB(1) refers to some 1st-degree truncation in some sort of polynomial expansion, but in what is the expansion performed?
+      * %ORANGE% Morris can answer this question in greater detail than myself, but in the analysis note the model is explained as "a linear forward-backward asymmetry (such as could be caused by several kinds of new physics that interfere with or augment the tree-level process)" (lines 56-58 in the AN) and the two papers cited are linked at [[https://journals.aps.org/prd/pdf/10.1103/PhysRevD.81.114004][1]] and [[https://journals.aps.org/prd/pdf/10.1103/PhysRevD.83.114027][2]]. Several models are presented in these papers that could extend the standard model top pair cross section, and their effects are considered in several different ways including effective field theories or effective couplings. Across the board, however, the extensions end up as some functions of the same cos(theta) we present in our paper (sometimes more clearly than others). I do not know how the exact extension we use to parameterize the asymmetric portion of the cross section (eq. 2 in the paper draft, eq. 8 in the AN) was decided on because I'm not sure of the exact correspondence of some numerical factors, but it bears a likeness to the terms in the extended cross section formulae that are dependent on cos(theta) to first order only. I think this is the best answer I can give you at the moment, but hopefully when Morris gets back from vacation he can help me understand better and we can get back to you again.
+
+   * I think that POWHEG v1, not v2, was used for the tW sample (and only for it; v2 for all the rest), for reasons that I used to know. But I may be wrong, so please check.
+      * %GREEN% You're correct about this; it totally slipped my mind. I'll make a note of this and change it in the next draft of the paper and the analysis note. Thank you for your detailed eye and I apologize for my error.
+
+   * Figure 7: I understand that when you say "MC uncertainties" you mean the systematic uncertainties that affect the shape of the MC distributions, right? (I am asking because in the usual jargon we use that term for the statistical uncertainty due to the finite size of the MC sample.) When you say "are fully correlated statistical+systematic", what do you mean? Fully correlated between what?
+      * %ORANGE% By "MC uncertainties" I am referring to the hashed grey error bars on the stacked MC template histograms in the plots; they are the total combined, post-fit, statistical+systematic uncertainties determined by fits through the combine tool, which is what I was trying to get at by saying "statistical+systematic", and by "fully correlated" I meant that the results are shown with a full treatment of the correlations of the systematic nuisance parameters across the appropriate channels as described in Section 6 of the paper (Section 9 of the AN) as well as with one another. I was trying to say "The hashed grey error bars show the total post-fit template uncertainties in each bin due to statistical as well as systematic uncertainties," but I don't like my language here either. Is there a better way to get the point across that the error bars are post-fit, not pre-fit, and that they show the total uncertainty, not just the statistical uncertainty (like what's shown in the control plots in figs. 3-5 in the paper draft)?
+
+%ENDTWISTY%
 
 ---+++ Didar Dobur 10 Dec 2018 on paper draft v1 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/11.html][thread on review HN]])
 %TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
@@ -349,4 +363,4 @@ Detailed comments:
 %ENDTWISTY%
 
 %RESPONSIBLE% Main.MargaretEminizer %BR%
--- Main.MargaretEminizer - 2019-06-07
+-- Main.MargaretEminizer - 2019-06-14
