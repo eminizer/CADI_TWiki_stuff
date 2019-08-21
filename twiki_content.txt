@@ -16,7 +16,7 @@ This analysis is a template measurement of the top quark forward backward asymme
 ---+++ Current Documentation
 
    * Analysis Note Draft: [[http://cms.cern.ch:80/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_123_v9.pdf][AN 2017-123 (V9)]]
-   * Paper Draft: [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v3.pdf][TOP-15-018 (V3)]]
+   * Paper Draft: [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v6.pdf][TOP-15-018 (V6)]]
 
 ---+++ Status History
 
@@ -37,11 +37,15 @@ This analysis is a template measurement of the top quark forward backward asymme
    * Analysis pre-approved: 6 Jun 2019 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/21.html][HN thread]])
    * Revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v3.pdf][TOP-15-018 (V3)]] uploaded: 25 Jun 2019
    * First ARC discussion: 27 Jun 2019
+   * Revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v4.pdf][TOP-15-018 (V4)]] uploaded: 8 Jul 2019
+   * Second ARC discussion: 19 Jul 2019 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/27/1/1/1.html][HN thread with minutes]])
+   * Revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v5.pdf][TOP-15-018 (V5)]] uploaded: 24 Jul 2019
+   * Third ARC discussion: 15 Aug 2019 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/32/1.html][HN thread with minutes]])
+   * Revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v6.pdf][TOP-15-018 (V6)]] uploaded: 21 Aug 2019
 
 ---+++ Imminent Plans
 
-   * Second ARC discussion (mid/end-July?)
-   * Approval (mid-August?)
+   * Schedule approval talk (in time for Sep 3rd TOP 2019 deadline?)
 
 ---++ Comments and issues from/after first preapproval
 
@@ -366,4 +370,4 @@ Detailed comments:
 %ENDTWISTY%
 
 %RESPONSIBLE% Main.MargaretEminizer %BR%
--- Main.MargaretEminizer - 2019-07-01
+-- Main.MargaretEminizer - 2019-08-21
