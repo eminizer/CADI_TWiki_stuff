@@ -15,7 +15,7 @@ This analysis is a template measurement of the top quark forward backward asymme
 
 ---+++ Current Documentation
 
-   * Analysis Note Draft: [[http://cms.cern.ch:80/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_123_v9.pdf][AN 2017-123 (V9)]]
+   * Analysis Note Draft: [[http://cms.cern.ch:80/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_123_v10.pdf][AN 2017-123 (V10)]]
    * Paper Draft: [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v7.pdf][TOP-15-018 (V7)]]
 
 ---+++ Status History
@@ -43,6 +43,7 @@ This analysis is a template measurement of the top quark forward backward asymme
    * Third ARC discussion: 15 Aug 2019 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/32/1.html][HN thread with minutes]])
    * Revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v6.pdf][TOP-15-018 (V6)]] uploaded: 21 Aug 2019
    * Revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v7.pdf][TOP-15-018 (V7)]] uploaded: 23 Aug 2019
+   * Revised Analysis Note [[http://cms.cern.ch:80/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_123_v10.pdf][AN 2017-123 (V10)]] uploaded: 23 Aug 2019
 
 ---+++ Imminent Plans
 
