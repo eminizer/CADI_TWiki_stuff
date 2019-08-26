@@ -15,7 +15,7 @@ This analysis is a template measurement of the top quark forward backward asymme
 
 ---+++ Current Documentation
 
-   * Analysis Note Draft: [[http://cms.cern.ch:80/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_123_v10.pdf][AN 2017-123 (V10)]]
+   * Analysis Note Draft: [[http://cms.cern.ch:80/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_123_v11.pdf][AN 2017-123 (V11)]]
    * Paper Draft: [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v7.pdf][TOP-15-018 (V7)]]
 
 ---+++ Status History
@@ -44,6 +44,8 @@ This analysis is a template measurement of the top quark forward backward asymme
    * Revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v6.pdf][TOP-15-018 (V6)]] uploaded: 21 Aug 2019
    * Revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v7.pdf][TOP-15-018 (V7)]] uploaded: 23 Aug 2019
    * Revised Analysis Note [[http://cms.cern.ch:80/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_123_v10.pdf][AN 2017-123 (V10)]] uploaded: 23 Aug 2019
+   * Revised Analysis Note [[http://cms.cern.ch:80/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_123_v11.pdf][AN 2017-123 (V11)]] uploaded: 26 Aug 2019 (just updated style of prefit comparison plots in Figs. 62-66).
+   * ARC greenlight received: 26 Aug 2019 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/37.html][HN message from Thorsten]])
 
 ---+++ Imminent Plans
 
@@ -372,4 +374,4 @@ Detailed comments:
 %ENDTWISTY%
 
 %RESPONSIBLE% Main.MargaretEminizer %BR%
--- Main.MargaretEminizer - 2019-08-23
+-- Main.MargaretEminizer - 2019-08-26
