@@ -16,7 +16,7 @@ This analysis is a template measurement of the top quark forward backward asymme
 ---+++ Current Documentation
 
    * Analysis Note Draft: [[http://cms.cern.ch:80/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_123_v11.pdf][AN 2017-123 (V11)]]
-   * Paper Draft: [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v7.pdf][TOP-15-018 (V7)]]
+   * Paper Draft: [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v8.pdf][TOP-15-018 (V8)]]
 
 ---+++ Status History
 
@@ -26,7 +26,7 @@ This analysis is a template measurement of the top quark forward backward asymme
    * Paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v0.pdf][TOP-15-018 (V0)]] published: 1 Sep 2018
    * Analysis note [[http://cms.cern.ch:80/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_123_v8.pdf][v8]] and paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v1.pdf][v1]] frozen for first preapproval: 4 Dec 2018
    * ARC formed/accepted: 8 Dec 2018 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/10.html][HN message]])
-   * First Preapproval talk 11 Dec 2018 ([[https://indico.cern.ch/event/780160/contributions/3247440/attachments/1768162/2874496/TOP-15-018_preapproval_Dec_11_2018.pdf][slides]])
+   * Preapproval talk 11 Dec 2018 ([[https://indico.cern.ch/event/780160/contributions/3247440/attachments/1768162/2874496/TOP-15-018_preapproval_Dec_11_2018.pdf][slides]])
    * Permission to unblind: 14 Jan 2019 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/16.html][HN message]])
    * Update on preapproval homework, with preliminary unblinded results: 23 Jan 2019 ([[https://indico.cern.ch/event/791321/contributions/3291427/attachments/1783868/2903384/top_properties_1_23_2019_preapproval_homework_and_unblinded_results.pdf][slides]])
    * Update on addressing issues after unblinding: 20 Feb 2019 ([[https://indico.cern.ch/event/799877/contributions/3325183/attachments/1799255/2934165/top_properties_2_20_2019_fitting_changes.pdf][slides]])
@@ -46,10 +46,13 @@ This analysis is a template measurement of the top quark forward backward asymme
    * Revised Analysis Note [[http://cms.cern.ch:80/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_123_v10.pdf][AN 2017-123 (V10)]] uploaded: 23 Aug 2019
    * Revised Analysis Note [[http://cms.cern.ch:80/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_123_v11.pdf][AN 2017-123 (V11)]] uploaded: 26 Aug 2019 (just updated style of prefit comparison plots in Figs. 62-66).
    * ARC greenlight received: 26 Aug 2019 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/37.html][HN message from Thorsten]])
+   * Approval talk 3 Sep 2019 ([[https://indico.cern.ch/event/845276/contributions/3549902/attachments/1901092/3139289/TOP-15-018_approval_Sep_3_2019.pdf][slides]])
+   * Revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v7.pdf][TOP-15-018 (V8)]] uploaded: 11 Sep 2019
+   * First PAS draft [[http://cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-pas-v0.pdf][TOP-15-018-PAS (V0)]] uploaded: 11 Sep 2019
 
 ---+++ Imminent Plans
 
-   * Schedule approval talk (in time for Sep 3rd TOP 2019 deadline?)
+   * Get paper draft into CWR in time for TOP 2019 conference (Sep 22)
 
 ---++ Comments and issues from/after first preapproval
 
@@ -374,4 +377,4 @@ Detailed comments:
 %ENDTWISTY%
 
 %RESPONSIBLE% Main.MargaretEminizer %BR%
--- Main.MargaretEminizer - 2019-08-26
+-- Main.MargaretEminizer - 2019-09-11
