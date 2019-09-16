@@ -16,7 +16,7 @@ This analysis is a template measurement of the top quark forward backward asymme
 ---+++ Current Documentation
 
    * Analysis Note Draft: [[http://cms.cern.ch:80/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_123_v11.pdf][AN 2017-123 (V11)]]
-   * Paper Draft: [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v8.pdf][TOP-15-018 (V8)]]
+   * Paper Draft: [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v9.pdf][TOP-15-018 (V9)]]
 
 ---+++ Status History
 
@@ -47,8 +47,9 @@ This analysis is a template measurement of the top quark forward backward asymme
    * Revised Analysis Note [[http://cms.cern.ch:80/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_123_v11.pdf][AN 2017-123 (V11)]] uploaded: 26 Aug 2019 (just updated style of prefit comparison plots in Figs. 62-66).
    * ARC greenlight received: 26 Aug 2019 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/37.html][HN message from Thorsten]])
    * Approval talk 3 Sep 2019 ([[https://indico.cern.ch/event/845276/contributions/3549902/attachments/1901092/3139289/TOP-15-018_approval_Sep_3_2019.pdf][slides]])
-   * Revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v7.pdf][TOP-15-018 (V8)]] uploaded: 11 Sep 2019
+   * Revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v8.pdf][TOP-15-018 (V8)]] uploaded: 11 Sep 2019
    * First PAS draft [[http://cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-pas-v0.pdf][TOP-15-018-PAS (V0)]] uploaded: 11 Sep 2019
+   * Second PAS draft [[http://cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-pas-v1.pdf][TOP-15-018-PAS (V1)]] and revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v9.pdf][TOP-15-018 (V9)]] uploaded: 16 Sep 2019
 
 ---+++ Imminent Plans
 
@@ -377,4 +378,4 @@ Detailed comments:
 %ENDTWISTY%
 
 %RESPONSIBLE% Main.MargaretEminizer %BR%
--- Main.MargaretEminizer - 2019-09-11
+-- Main.MargaretEminizer - 2019-09-16
