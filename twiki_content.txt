@@ -50,10 +50,11 @@ This analysis is a template measurement of the top quark forward backward asymme
    * Revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v8.pdf][TOP-15-018 (V8)]] uploaded: 11 Sep 2019
    * First PAS draft [[http://cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-pas-v0.pdf][TOP-15-018-PAS (V0)]] uploaded: 11 Sep 2019
    * Second PAS draft [[http://cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-pas-v1.pdf][TOP-15-018-PAS (V1)]] and revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v9.pdf][TOP-15-018 (V9)]] uploaded: 16 Sep 2019
+   * Third PAS draft [[http://cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-pas-v2.pdf][TOP-15-018-PAS (V2)]] uploaded: 18 Sep 2019
 
 ---+++ Imminent Plans
 
-   * Get paper draft into CWR in time for TOP 2019 conference (Sep 22)
+   * Publicize PAS and move paper draft through CWR
 
 ---++ Comments and issues from/after first preapproval
 
@@ -378,4 +379,4 @@ Detailed comments:
 %ENDTWISTY%
 
 %RESPONSIBLE% Main.MargaretEminizer %BR%
--- Main.MargaretEminizer - 2019-09-16
+-- Main.MargaretEminizer - 2019-09-18
