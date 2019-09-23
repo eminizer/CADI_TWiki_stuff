@@ -16,7 +16,7 @@ This analysis is a template measurement of the top quark forward backward asymme
 ---+++ Current Documentation
 
    * Analysis Note Draft: [[http://cms.cern.ch:80/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_123_v11.pdf][AN 2017-123 (V11)]]
-   * Paper Draft: [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v10.pdf][TOP-15-018 (V10)]]
+   * Paper Draft: [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v11.pdf][TOP-15-018 (V11)]]
 
 ---+++ Status History
 
@@ -52,10 +52,12 @@ This analysis is a template measurement of the top quark forward backward asymme
    * Second PAS draft [[http://cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-pas-v1.pdf][TOP-15-018-PAS (V1)]] and revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v9.pdf][TOP-15-018 (V9)]] uploaded: 16 Sep 2019
    * Third PAS draft [[http://cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-pas-v2.pdf][TOP-15-018-PAS (V2)]] uploaded: 18 Sep 2019
    * Revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v10.pdf][TOP-15-018 (V10)]] uploaded: 20 Sep 2019
+   * PAS made public: 23 Sep 2019
+   * Revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v11.pdf][TOP-15-018 (V11)]] uploaded: 23 Sep 2019
 
 ---+++ Imminent Plans
 
-   * Publicize PAS and move paper draft through CWR
+   * Move paper draft through CWR
 
 ---++ Comments and issues from/after first preapproval
 
@@ -380,4 +382,4 @@ Detailed comments:
 %ENDTWISTY%
 
 %RESPONSIBLE% Main.MargaretEminizer %BR%
--- Main.MargaretEminizer - 2019-09-20
+-- Main.MargaretEminizer - 2019-09-23
