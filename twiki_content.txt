@@ -131,149 +131,155 @@ more detailed responses in bullets under comments if necessary
 %TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
 
 Abstract:
-   * %RED% LL2-4: are measured using LHC proton-proton collision data at s√=13 TeV, collected with the CMS detector in 2016 and corresponding to an integrated luminosity of 35.9 fb−1. Candidate;
-   * %RED% L5: (low-energy) and ``boosted" (high-energy);
-   * %RED% L8: fits to the observed data;
+   * %GREEN% LL2-4: are measured using LHC proton-proton collision data at s√=13 TeV, collected with the CMS detector in 2016 and corresponding to an integrated luminosity of 35.9 fb−1. Candidate;
+   * %GREEN% L5: (low-energy) and ``boosted" (high-energy);
+   * %GREEN% L8: fits to the observed data;
 Introduction:
-   * %RED% L3: The top quark Yukawa coupling;
-   * %RED% LL7-8: In the standard model (SM) of particle physics, top quarks ... at the CERN LHC via;
-   * %RED% L9: add a comma before "as described";
-   * %RED% LL9-10: for the leading order (LO) [compound modifiers of the type gerund-noun do not generally need to be hyphenated, as their is no ambiguity];
-   * %RED% L11: the next-to-leading order (NLO);
-   * %RED% L12: The NLO QCD [can't start a sentence with an acronym];
-   * %RED% L15: (tt¯g) vertex or;
-   * %RED% L17: add a comma before "where";
-   * %RED% L18: initial-state parton direction;
-   * %RED% LL19,20: initial-state quark;
-   * %RED% L21: initial-state antiquark;
-   * %RED% L24: of the tt¯g vertex.
-   * %RED% Eq. (1): finish with a comma;
-   * %RED% LL26,27: replace square brackets with parentheses;
-   * %RED% L27: The NLO effects;
-   * %RED% L28: subprocesses;
-   * %RED% L30: at the Ferrmila Tevatrron;
-   * %RED% L31: at a CM energy of 1.96 TeV;
-   * %RED% LL31-32: dominates the tt¯ production. Initial;
-   * %RED% L33: the NLO QCD expectation. However, more recent;
-   * %RED% L38: All the ... ``model independent". This work;
-   * %RED% LL41-42: is an LO description;
-   * %RED% L47: add a comma before "which";
-   * %RED% L48: the LO exchange;
-   * %RED% L51: of the AFB values;
-   * %RED% L53: of a tt¯ system  at hadron colliders;
-   * %RED% L59: add a comma before "and";
-   * %RED% L60: the LHC.
-   * %RED% L63:(muon or electron) [the entire paper talks about muons before electrons; please follow the same order here];
-   * %RED% L64: initial-state top quark;
-   * %RED% L67: have been previously extracted;
-   * %RED% L76: provides a brief summary.
+   * %GREEN% L3: The top quark Yukawa coupling;
+   * %GREEN% LL7-8: In the standard model (SM) of particle physics, top quarks ... at the CERN LHC via;
+   * %GREEN% L9: add a comma before "as described";
+   * %GREEN% LL9-10: for the leading order (LO) [compound modifiers of the type gerund-noun do not generally need to be hyphenated, as their is no ambiguity];
+   * %GREEN% L11: the next-to-leading order (NLO);
+   * %GREEN% L12: The NLO QCD [can't start a sentence with an acronym];
+   * %GREEN% L15: (tt¯g) vertex or;
+   * %GREEN% L17: add a comma before "where";
+   * %GREEN% L18: initial-state parton direction;
+   * %GREEN% LL19,20: initial-state quark;
+   * %GREEN% L21: initial-state antiquark;
+   * %GREEN% L24: of the tt¯g vertex.
+   * %GREEN% Eq. (1): finish with a comma;
+   * %GREEN% LL26,27: replace square brackets with parentheses;
+   * %GREEN% L27: The NLO effects;
+   * %GREEN% L28: subprocesses;
+   * %GREEN% L30: at the Ferrmila Tevatrron;
+   * %PURPLE% L31: at a CM energy of 1.96 TeV;
+      * another reviewer suggested not to use the "CM" acronym because "center-of-mass" is only used a few times, and "CM" looks a lot like "CMS"
+   * %GREEN% LL31-32: dominates the tt¯ production. Initial;
+   * %GREEN% L33: the NLO QCD expectation. However, more recent;
+   * %GREEN% L38: All the ... ``model independent". This work;
+   * %GREEN% LL41-42: is an LO description;
+   * %GREEN% L47: add a comma before "which";
+   * %GREEN% L48: the LO exchange;
+   * %GREEN% L51: of the AFB values;
+   * %PURPLE% L53: of a tt¯ system  at hadron colliders;
+      * I'm not sure the specific ask here?
+   * %GREEN% L59: add a comma before "and";
+   * %GREEN% L60: the LHC.
+   * %GREEN% L63:(muon or electron) [the entire paper talks about muons before electrons; please follow the same order here];
+   * %GREEN% L64: initial-state top quark;
+   * %GREEN% L67: have been previously extracted;
+   * %GREEN% L76: provides a brief summary.
 Analysis Strategy:
-   * %RED% L85: add a comma before the second "and";
-   * %RED% L86: add a comma before "where";
-   * %RED% L88: add a comma before "and";
-   * %RED% L98: parton distribution functions (PDFs) of;
-   * %RED% L99: the quark PDFs, the;
-   * %RED% L100: qq¯-initiated events.
-   * %RED% LL101-102: in the Collins--Soper frame [26]. The result of;
-   * %RED% Fig. 2 caption, L2: The dilution factor D, when taking;
-   * %RED% L112: At LO, the presence of the d and μ terms modify both the qq¯- and gg-initiated parts;
-   * %RED% L120: nonzero [CMS Style];
-   * %RED% L124: partially merged;
-   * %RED% L132: 12 total channels defined by the decay topology, and;
-   * %RED% L133: The generator-level information;
+   * %GREEN% L85: add a comma before the second "and";
+   * %GREEN% L86: add a comma before "where";
+   * %GREEN% L88: add a comma before "and";
+   * %GREEN% L98: parton distribution functions (PDFs) of;
+   * %GREEN% L99: the quark PDFs, the;
+   * %GREEN% L100: qq¯-initiated events.
+   * %GREEN% LL101-102: in the Collins--Soper frame [26]. The result of;
+   * %GREEN% Fig. 2 caption, L2: The dilution factor D, when taking;
+   * %GREEN% L112: At LO, the presence of the d and μ terms modify both the qq¯- and gg-initiated parts;
+   * %GREEN% L120: nonzero [CMS Style];
+   * %GREEN% L124: partially merged;
+   * %GREEN% L132: 12 total channels defined by the decay topology, and;
+   * %GREEN% L133: The generator-level information;
 Physics Objects in the CMS Detector:
-   * %RED% LL152-153: delete "applied to data";
-   * %RED% LL153-154: approximately 95 (97)\% in the boosted (resolved) μ+jets channel and approximately 98 (74)\% in the boosted (resolved) e+jets channel.
-   * %RED% L171: vector p⃗ missT in an event is defined;
-   * %RED% L173: reconstructed PF objects. Its;
-   * %RED% L175: of all PF object momenta.
-   * %RED% L178: contribute extra tracks;
-   * %RED% L182: particle-level jets.
-   * %RED% L189: to be well separated;
-   * %RED% L194: ``soft-drop" (SD) algorithm;
-   * %RED% L197: Cambridge--Aachen [use en-dash and not a hyphen];
-   * %RED% LL203-204: top quark pair, as described in Section 5.
+   * %GREEN% LL152-153: delete "applied to data";
+   * %GREEN% LL153-154: approximately 95 (97)\% in the boosted (resolved) μ+jets channel and approximately 98 (74)\% in the boosted (resolved) e+jets channel.
+   * %GREEN% L171: vector p⃗ missT in an event is defined;
+   * %GREEN% L173: reconstructed PF objects. Its;
+   * %GREEN% L175: of all PF object momenta.
+   * %GREEN% L178: contribute extra tracks;
+   * %GREEN% L182: particle-level jets.
+   * %GREEN% L189: to be well separated;
+   * %PURPLE% L194: ``soft-drop" (SD) algorithm;
+      * I looked this one up, "soft drop" shouldn't be hyphenated.
+   * %GREEN% L197: Cambridge--Aachen [use em-dash and not a hyphen];
+   * %GREEN% LL203-204: top quark pair, as described in Section 5.
 Data and Simulation:
-   * %RED% L218: choice of PDF set; add a comma before "with";
-   * %RED% L219: delete ":to describe the proton substructure";
-   * %RED% L220: The \POWHEG and \PYTHIA generators with;
-   * %RED% L221: delete "v2";
-   * %RED% L222: and in the tW channel with \POWHEG v1 [48].
-   * %RED% LL224,226: drop "8" in PYTHIA8;
-   * %RED% L228: The MC samples;
-   * %RED% L234: to all collision and simulated data events.
+   * %GREEN% L218: choice of PDF set; add a comma before "with";
+   * %GREEN% L219: delete ":to describe the proton substructure";
+   * %GREEN% L220: The \POWHEG and \PYTHIA generators with;
+   * %GREEN% L221: delete "v2";
+   * %GREEN% L222: and in the tW channel with \POWHEG v1 [48].
+   * %GREEN% LL224,226: drop "8" in PYTHIA8;
+   * %GREEN% L228: The MC samples;
+   * %GREEN% L234: to all collision and simulated data events.
 Event Selection and Reconstruction:
-   * %RED% L235: Event reconstruction and selection;
-   * %RED% L236: ``single-lepton" tt¯;
-   * %RED% L245: single lepton (muon or electron) [the entire paper talks about muons before electrons; please follow the same order here];
-   * %RED% L247: and type-=3 μ+jets and e+jets. [The entire paper talks about muons before electrons; please follow the same order here.]
-   * %RED% L248: 50 (80) [add space] GeV in the boosted topology, and pT>30 GeV in the resolved topology.
-   * %RED% L254: ``2D selection" ["cut" is jargon];
-   * %RED% L255: OR [normal font] of two independent selections on;
-   * %RED% L259: 0.4 (0.3) [add space];
-   * %RED% L260: than 15 (6)\% of;
-   * %RED% L262: the 2D selection and;
-   * %RED% L263: resolved topology.
-   * %RED% L265: in the boosted topology require pmissT>50 (100) [add space] GeV;
-   * %RED% LL267-268: are used in the estimation of QCD multijet background contribution from data, as described in Section 6.
-   * %RED% L269: required to have pT>30 (200) GeV and to be in the range |η|<2.4.
-   * %RED% L270: The AK8 jets;
-   * %RED% L273: after SD application;
-   * %RED% L274: N-subjettiness [N is a variable here, so shoudl be typeset in italics];
-   * %RED% L276: considered t tagged; SD mass;
-   * %RED% L280: 150 (250) [add space] GeV; 50 (70) [add space] GeV.
-   * %RED% L306: in 98, 80, and 73\% of; add commas around "respectively";
-   * %RED% L314: estimated from data, as discussed in Section 6.
-   * %RED% Fig. 3-5 captions, L4: statistical uncertainties only. LL4-5: estimated from data, as discussed in Section 6.
+   * %GREEN% L235: Event reconstruction and selection;
+   * %GREEN% L236: ``single-lepton" tt¯;
+   * %GREEN% L245: single lepton (muon or electron) [the entire paper talks about muons before electrons; please follow the same order here];
+   * %GREEN% L247: and type-=3 μ+jets and e+jets. [The entire paper talks about muons before electrons; please follow the same order here.]
+   * %GREEN% L248: 50 (80) [add space] GeV in the boosted topology, and pT>30 GeV in the resolved topology.
+   * %GREEN% L254: ``2D selection" ["cut" is jargon];
+   * %GREEN% L255: OR [normal font] of two independent selections on;
+   * %GREEN% L259: 0.4 (0.3) [add space];
+   * %GREEN% L260: than 15 (6)\% of;
+   * %GREEN% L262: the 2D selection and;
+   * %GREEN% L263: resolved topology.
+   * %GREEN% L265: in the boosted topology require pmissT>50 (100) [add space] GeV;
+   * %GREEN% LL267-268: are used in the estimation of QCD multijet background contribution from data, as described in Section 6.
+   * %GREEN% L269: required to have pT>30 (200) GeV and to be in the range |η|<2.4.
+   * %GREEN% L270: The AK8 jets;
+   * %GREEN% L273: after SD application;
+   * %GREEN% L274: N-subjettiness [N is a variable here, so shoudl be typeset in italics];
+   * %GREEN% L276: considered t tagged; SD mass;
+   * %GREEN% L280: 150 (250) [add space] GeV; 50 (70) [add space] GeV.
+   * %GREEN% L306: in 98, 80, and 73\% of; add commas around "respectively";
+   * %GREEN% L314: estimated from data, as discussed in Section 6.
+   * %GREEN% Fig. 3-5 captions, L4: statistical uncertainties only. LL4-5: estimated from data, as discussed in Section 6.
 Template Building and Background Estimation:
-   * %RED% L315: Template construction and background estimation;
-   * %RED% L320: remove "[26]" - already given earlier, when you first introduced the CS frame.
-   * %RED% L353: separated by the lepton charge;
-   * %RED% L374: controle regions enriched in W+jets events.
-   * %RED% L377: quark mass: mrecot,lep≥210 GeV of −2lnL≥−15.
-   * %RED% L379: of the kinematic fit;
-   * %RED% LL379-380: that are further away from the true top quark mass;
-   * %RED% LL381-382: described by simulation due to the lack;
-   * %RED% L396: add a comma before "respectively".
+   * %GREEN% L315: Template construction and background estimation;
+   * %GREEN% L320: remove "[26]" - already given earlier, when you first introduced the CS frame.
+   * %GREEN% L353: separated by the lepton charge;
+   * %GREEN% L374: controle regions enriched in W+jets events.
+   * %GREEN% L377: quark mass: mrecot,lep≥210 GeV of −2lnL≥−15.
+   * %GREEN% L379: of the kinematic fit;
+   * %GREEN% LL379-380: that are further away from the true top quark mass;
+   * %GREEN% LL381-382: described by simulation due to the lack;
+   * %GREEN% L396: add a comma before "respectively".
 Systematic Uncertainties and Measurement:
-   * %RED% L399: Systematic uncertainties in the measurement;
-   * %RED% L402: add a comma before "as described";
-   * %RED% LL406-407: pileup, as well as on the jet pT, η, and area, and on a smearing [if you know jet pT and η, you also know jet energy, so listing energy here is redundant];
-   * %RED% L407: (JER), dependent on jet |η|.
-   * %RED% L413: lepton identification/isolation efficiencies;
-   * %RED% L428: correct for the differences;
-   * %RED% LL439-440: ±1 standard deviation (σ) observed;
-   * %RED% L450: and the underlying event;
-   * %RED% L451: in initial-state radiation (ISR) and final-state radiation (FSR), and matrix;
-   * %RED% L458: modeling [US spelling];
-   * %RED% LL463,464,466-467: branching fraction;
-   * %RED% L468: Integrated luminosity uncertainty;
-   * %RED% LL475,476: delete "data-based" [jargon];
-   * %RED% L479: Finite MC sample event count;
-   * %RED% Table 1 body, first column: Muon ident. eff.; Electron ident. eff.; CUETP8M2T4 in normal font; b branching fraction; top quark pT reweighting; Integrated luminosity; RW+jets.
-   * %RED% L486: for the shape uncertainties; between the nominal;
-   * %RED% L494: 1000 pseudo-data sets ["toy" is bad jargon!];
-   * %RED% L485: The median and ±1σ confidence interval curves;
-   * %RED% L496: in the pseudo-experiments, whose post-fit median;
+   * %BLUE% L399: Systematic uncertainties in the measurement;
+      * This section is about how the measurement itself is done, as well as the systematic uncertainties. I think the current heading indicates that, but I'll change it if someone else also thinks "in the measurement" is better
+   * %GREEN% L402: add a comma before "as described";
+   * %GREEN% LL406-407: pileup, as well as on the jet pT, η, and area, and on a smearing [if you know jet pT and η, you also know jet energy, so listing energy here is redundant];
+   * %GREEN% L407: (JER), dependent on jet |η|.
+   * %GREEN% L413: lepton identification/isolation efficiencies;
+   * %GREEN% L428: correct for the differences;
+   * %GREEN% LL439-440: ±1 standard deviation (σ) observed;
+      * I added a definition of standard deviation as sigma in a previous entry that didn't used to have it, so this one should be good.
+   * %GREEN% L450: and the underlying event;
+   * %GREEN% L451: in initial-state radiation (ISR) and final-state radiation (FSR), and matrix;
+   * %GREEN% L458: modeling [US spelling];
+   * %GREEN% LL463,464,466-467: branching fraction;
+   * %GREEN% L468: Integrated luminosity uncertainty;
+   * %GREEN% LL475,476: delete "data-based" [jargon];
+   * %GREEN% L479: Finite MC sample event count;
+   * %GREEN% Table 1 body, first column: Muon ident. eff.; Electron ident. eff.; CUETP8M2T4 in normal font; b branching fraction; top quark pT reweighting; Integrated luminosity; RW+jets.
+   * %GREEN% L486: for the shape uncertainties; between the nominal;
+   * %GREEN% L494: 1000 pseudo-data sets ["toy" is bad jargon!];
+   * %GREEN% L485: The median and ±1σ confidence interval curves;
+   * %GREEN% L496: in the pseudo-experiments, whose post-fit median;
 Results:
-   * %RED% LL509-510: and collision data [what's "real data" - as opposed to "imaginary"?];
-   * %RED% L511: fits to collision data;
-   * %RED% L512: of 1000 pseudo-data sets;
-   * %RED% LL521-522: from NLO [3-5] and NNLO [6] QCD.
-   * %RED% Fig. 6 caption, L1: add a comma before "and"; L2: 1000 pseudo-experiments generated; L5: from the pseudo-experiment groups.
-   * %RED% Fig. 7 caption, LL1-2: parameter extraction. The upper; L3: e+jets; L4: μ+jets; e+jets [remove extra spaces]; over the lepton charge;
-   * %RED% Table 2 body, first column: μ+jets, e+jets [remove spaces];
+   * %GREEN% LL509-510: and collision data [what's "real data" - as opposed to "imaginary"?];
+   * %GREEN% L511: fits to collision data;
+   * %GREEN% L512: of 1000 pseudo-data sets;
+   * %GREEN% LL521-522: from NLO [3-5] and NNLO [6] QCD.
+   * %GREEN% Fig. 6 caption, L1: add a comma before "and"; L2: 1000 pseudo-experiments generated; L5: from the pseudo-experiment groups.
+   * %GREEN% Fig. 7 caption, LL1-2: parameter extraction. The upper; L3: e+jets; L4: μ+jets; e+jets [remove extra spaces]; over the lepton charge;
+   * %GREEN% Table 2 body, first column: μ+jets, e+jets [remove spaces];
 Summary:
-   * %RED% L528: add a comma before "and";
-   * %RED% LL529-531: have been measured using LHC proton-proton ... of 13 TeV, corresponding to an integrated luminosity of 35.9 fb−1.
-   * %RED% L532: (low-energy); (high-energy);
+   * %GREEN% L528: add a comma before "and";
+   * %GREEN% LL529-531: have been measured using LHC proton-proton ... of 13 TeV, corresponding to an integrated luminosity of 35.9 fb−1.
+   * %GREEN% L532: (low-energy); (high-energy);
 References:
-   * %RED% Ref. [46]: typeset the Erratum as a doi reference.
-   * %RED% Ref. [55]: are you sure you used rather old FEWZ 2.0, and not 3.0? In the latter case, please update the reference.
+   * %GREEN% Ref. [46]: typeset the Erratum as a doi reference.
+   * %PURPLE% Ref. [55]: are you sure you used rather old FEWZ 2.0, and not 3.0? In the latter case, please update the reference.
+      * Yeah, this is the same citation as that used in other papers that used the samples I did.
 Appendix:
-   * %RED% L799: A. Appendix: reweighting factors;
-   * %RED% Eqs. (17,18): finish each equation with a comma;
-   * %RED% Eq. (19): finish the equation with a period;
+   * %GREEN% L799: A. Appendix: reweighting factors;
+   * %GREEN% Eqs. (17,18): finish each equation with a comma;
+   * %GREEN% Eq. (19): finish the equation with a period;
 
 %ENDTWISTY%
 
@@ -322,22 +328,64 @@ l508-519 GOF-tests. From the CMS Statistics Committee we have some overview of s
 ---++++ General comments (PDF file is attached at CDS link with these things pointed out)
 %TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
 
-   * %RED% It contains sentences that at times ignore the "Oxford" comma rule of CMS.
-   * %RED% Sentences that begin with acronyms.
-   * %RED% Sentences that are far too long and too convoluted to provide clear meaning. In particular, most of Section 7 is abysmal. The descriptions of systematic uncertainties in L400-478 and in the table correspond to some of the worst I have seen at CMS. It is unfortunate that your LE could not help improve this important section.
-      * Just for the record, this is an unimaginably rude thing to say about someone's earnest work. I would never speak this way to any colleague of mine, regardless of the quality of the product of their efforts.
-   * %RED% Authors use many poorly chosen words (one example is using the word "clean" instead of "cleanse") and prepositions.
-   * %RED% Improper hyphenation (e.g., using "t-tagged" rather than "t tagged").
-   * %RED% Overuse of "considered", when that word is redundant.
-   * %RED% General misuse of the terms "leptonic" and "hadronic," where "lepton" and "hadron" (or jets) are meant.
-   * %RED% The confusing use of a parallel sentence structure with some items appearing in parentheses.
-   * %RED% Confusion of hadrons with jets and with quarks (the top quark decays to "Wb" or to   "q \qbar b" and not hadronically, as these quarks evolve into jets).
-   * %RED% Confusing the background from multijet events with the expected background from MC QCD-generated multijet events. It is best to use “QCD multijets” only when meaning the MC events.
-   * %RED% You use too many unneeded quotation marks that I have also tried to correct. 
-   * %RED% The labels in figures must be consistent even in font with those used for the same objects in the text.
-   * %RED% Please note that "varying" is not the same as "changing". You rarely vary parameters, except in fitting. Unless you use a floating change, most of your variations should be called "changes by one standard deviation."
-   * %RED% Please avoid words such as "toy", as they demean our work (despite that some of our theorists like them). 
-   * %RED% "Data" always refers to the events we find in the detector, and not to the modeling. Avoid the meaningless word “real.”
+   * %GREEN% It contains sentences that at times ignore the "Oxford" comma rule of CMS.
+   * %GREEN% Sentences that begin with acronyms.
+   * %GREEN% Sentences that are far too long and too convoluted to provide clear meaning. In particular, most of Section 7 is abysmal. The descriptions of systematic uncertainties in L400-478 and in the table correspond to some of the worst I have seen at CMS. It is unfortunate that your LE could not help improve this important section.
+      * I've handled a ton of this stuff thanks to the attached PDF. Just for the record, though, I want to say that this is an unimaginably rude thing to say about someone's earnest work. I would never speak this way to any colleague of mine, regardless of the quality of the product of their efforts.
+   * %GREEN% Authors use many poorly chosen words (one example is using the word "clean" instead of "cleanse") and prepositions.
+   * %GREEN% Improper hyphenation (e.g., using "t-tagged" rather than "t tagged").
+   * %GREEN% Overuse of "considered", when that word is redundant.
+   * %GREEN% General misuse of the terms "leptonic" and "hadronic," where "lepton" and "hadron" (or jets) are meant.
+   * %GREEN% The confusing use of a parallel sentence structure with some items appearing in parentheses.
+   * %GREEN% Confusion of hadrons with jets and with quarks (the top quark decays to "Wb" or to   "q \qbar b" and not hadronically, as these quarks evolve into jets).
+   * %GREEN% Confusing the background from multijet events with the expected background from MC QCD-generated multijet events. It is best to use “QCD multijets” only when meaning the MC events.
+   * %GREEN% You use too many unneeded quotation marks that I have also tried to correct. 
+   * %GREEN% The labels in figures must be consistent even in font with those used for the same objects in the text.
+   * %GREEN% Please note that "varying" is not the same as "changing". You rarely vary parameters, except in fitting. Unless you use a floating change, most of your variations should be called "changes by one standard deviation."
+   * %GREEN% Please avoid words such as "toy", as they demean our work (despite that some of our theorists like them). 
+   * %GREEN% "Data" always refers to the events we find in the detector, and not to the modeling. Avoid the meaningless word “real.”
+
+%ENDTWISTY%
+
+---++++ Other important comments from attached PDF file 
+%TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
+
+   * %BLUE% I don't understand the sentence in L100--103. Please clarify your remarks concerning the C--S frame. And does direction mean c*?  How is that shown in Fig. 2?
+      * Morris? I'm actually not sure of this myself....
+   * %GREEN% L136-137: I assume that this means that you have one dependent value and two that you float in the fit? Please clarify what you mean.
+      * That's right; I added explanation of this to the end of the second-to-last paragraph in the systematics section
+   * %PURPLE% L168-169: This sounds like nonsense! Eliminate it!
+      * This is the recommended, boilerplate, CMS text right from the publication guidelines TWiki.
+   * %GREEN% L301: What do you mean by this endpiece? I would drop it.
+      * I explain this better now
+   * %GREEN% L309: This looks incorrect, as L is < 1?
+      * If you check the form to the likelihood in the analysis note you can see why it would be able to go negative.
+   * %BLUE% Figs. 3-5, legends: "single lep"->"lepton+jets", "ttbar other"->"ttbar other channels", lowercase "+jets" instead of "+Jets", "QCD multijet"->"multijet events"
+   * %BLUE% Figs. 3-5: Please make the corrections shown, and correct the font labels to make them agree with the text. Also increase the size of the subscripted "r", and change the c*r  to cr*
+      * Will come back to this
+   * %BLUE% L322: Again, your phrasing is difficult to follow. Shouldn't you be saying extensions beyond the SM?
+      * Morris, we should talk about this.
+   * %GREEN% L463-467: There too many words here to decipher! Please clarify and simplify all these terms, including "B".  
+   * %PURPLE% Section 7: The above descriptions are among  the worst I have seen at  CMS. It is truly unfortunate that your LE could not help you improve these.
+      * What an incredibly rude thing to say!
+   * %GREEN% L474: what is this scaling?
+      * changed this to "affecting the normalization of"
+   * %PURPLE% Table 1: Note that "shape" is not a scientific term. What you mean is "distribution," which is fine. And perhaps can also change the "S" to "D"
+      * I've seen "shape" used in many CMS papers, and no other reviewers have raised issue with it
+   * %GREEN% Table 1: Please change all the "type" to "Type"; remove the hyphens after the "b" and "t";
+   * %BLUE% Table 1: You should define all \sigma terms, or simplify the table. Do you mean the dependence of the uncertainty? That is, "Uncertainty in"? 
+      * I changed this to "uncertainty in" and I'm not sure what else I can do to make the column more clear. I intended for it to summarize the dependencies that were discussed in the section above the table.
+   * %PURPLE% L493-498 (???): These three lines are annoying! Please remove the theatrics and simplify the language. 
+      * I don't know what this comment is referring to; it was floating in the PDF document.
+   * %GREEN% L508-519: This paragraph is another dilly! The long sentences with their subtleties are hard to decipher
+      * This will be improved when I change how I'm reporting the goodness of fit information
+   * %BLUE% Fig. 6: change all "fit" to "fitted" and "true" to "input"; in legends, "toy median values"->"Median MC values" and "data fit"->"fitted data".
+      * Will handle
+   * %BLUE% Fig. 7: Please increase the size of the print and data points, and fix the other issues. The colors are too dark and hide the data points. Expand the ratio plots by plotting just the central-most values. In legends, "QCD"->"Multijet", "+Jets"->"+jets". x-axis title: "template bin"->"Template bin"
+      * Will handle
+   * %BLUE% Refs. 7-17: I don't understand the ordering of these references. And certainly Regina must recall that this measurement was first performed by Regina's Rochester postdoc at D0. and should be quoted before the far later claims by CDF. I also don't understand the logic of the ordering of ATLAS and CMS. Please take a better look at this.
+      * Morris?
+
 
 %ENDTWISTY%
 
@@ -345,92 +393,101 @@ l508-519 GOF-tests. From the CMS Statistics Committee we have some overview of s
 %TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
 
 Title:
-   * %RED% L1, delete “Template” and change “measurement” to “Measurement”;
-   * %RED% L3, replace “the semileptonic channel” with “lepton+jets t\tbar events”.
+   * %GREEN% L1, delete “Template” and change “measurement” to “Measurement”;
+   * %PURPLE% L3, replace “the semileptonic channel” with “lepton+jets t\tbar events”.
+      * Changed this to simply "in proton-proton collisions" at the suggestion of another reviewer.
 Abstract:
-   * %RED% L1, replace linearized with “linearized”; and insert “the” after “”and”.
-   * %RED% L2, replace “are” with “have been”, and “in” with “using”.
-   * %RED% L3, replace “collision data” with “collisions”; replace “with” by “in”; and delete “in 2016”.
-   * %RED% [I should remark, as I have done in the past, there is no interest in the date you obtained the data, except for issues of priority or specification of proper corrections. I therefore do not see any reason for advertising such information in this manuscript, and especially in the abstract.] 
-   * %RED% L4, insert “of” before “13”; and insert an “a” after “to”.
-   * %RED% L5, replace “plus” with “and”; insert “in” before “final”; remove the quotation marks on “boosted” and replace “boosted” with “highly Lorentz-boosted”. [No quotation marks in line.]
-   * %RED% L6, insert “jet” before “topologies”; and change “of” to “to”.
-   * %RED% L7, replace “to” by “of the”; replace “measured using” with “extracted from”; and insert a hyphen after “binned”. delete “of differential models”; replace “based on” with “using”; and since “tree-level” is theoretical jargon, I would put that in quotation marks.
-   * %RED% L8, replace the “to” with “of differential models to the”; delete “of differential models”; replace “based on” with “using”; and since “tree-level” is theoretical jargon, I would put that in quotation marks.
-   * %RED% L9, replace “are determined” with “found”.
-   * %RED% L11, replace “measured” with “obtained”.
-   * %RED% L12, replace “directly comparable” with “compared”; replace “derived from” with “measured at the”. 
-   * %RED% L13, delete “measurements”.
+   * %PURPLE% L1, replace linearized with “linearized”; and insert “the” after “”and”.
+   * %GREEN% L2, replace “are” with “have been”, and “in” with “using”.
+   * %GREEN% L3, replace “collision data” with “collisions”; replace “with” by “in”; and delete “in 2016”. [I should remark, as I have done in the past, there is no interest in the date you obtained the data, except for issues of priority or specification of proper corrections. I therefore do not see any reason for advertising such information in this manuscript, and especially in the abstract.] 
+   * %GREEN% L4, insert “of” before “13”; and insert an “a” after “to”.
+   * %GREEN% L5, replace “plus” with “and”; insert “in” before “final”; remove the quotation marks on “boosted” and replace “boosted” with “highly Lorentz-boosted”. [No quotation marks in line.]
+   * %GREEN% L6, insert “jet” before “topologies”; and change “of” to “to”.
+   * %GREEN% L7, replace “to” by “of the”; replace “measured using” with “extracted from”; and insert a hyphen after “binned”. 
+   * %GREEN% L8, delete “of differential models”; replace “based on” with “using”; and since “tree-level” is theoretical jargon, I would put that in quotation marks.
+   * %GREEN% L9, replace “are determined” with “found”.
+   * %PURPLE% L11, replace “measured” with “obtained”.
+      * This sentence is gone now
+   * %PURPLE% L12, replace “directly comparable” with “compared”; replace “derived from” with “measured at the”. 
+   * %PURPLE% L13, delete “measurements”.
 Introduction:
-   * %RED% L2, insert “(mt)” before “that.
-   * %RED% L5, insert a hyphen after each “color”.
-   * %RED% L6, replace “permits the” with “provides a way to”; and delete “of”.
-   * %RED% L7, delete “effects”.
-   * %RED% L9, replace “as described by” with “of”; and delete “the”.
-   * %RED% L10, deleted “initiated”.
-   * %RED% L11, replace “. Example” with “, and examples of”; and delete “the” and “initiated”.
-   * %RED% L12, insert “The” after the period. 
-   * %RED% Figure 1 caption, replace “(a) Feynman diagrams for the leading-order (LO) quark-antiquark (qq) and gluon-gluon (gg) initiated subprocesses. (b) Example diagrams for the next-to-leading-order (NLO) quark-gluon (qg) initiated subprocess.” with “(a) Feynman diagrams for LO q\qbar- and gg-initiated t\tbar subprocesses; and (b) example diagrams for the NLO qg-initiated subprocess”
-   * %RED% L14, replace “In this paper, we” with “We”.
-   * %RED% L15, replace “of” with “in”; replace “top-quark-antiquark-gluon” with “top quark-top antiquark-gluon”; and replace the second “by” with “through”.
-   * %RED% L16, replace “These” with “Such”.
-   * %RED% L17, replace “by” with through; replace “effects” with “impacts”; insert a comma before “where”; and insert a hyphen after “final.
-   * %RED% L18, replace “with respect to” with “relative to the direction of”; and delete “direction”.
-   * %RED% L19, delete “frame”.
-   * %RED% L22, replace “. The first search measures” with “, with the former measuring”.
-   * %RED% L23, replace “second search measures” with “latter providing”.
-   * %RED% L26, replace “[“ with “and”; replace “] is the” with “reflect the respective”; insert and “s” after “section”; and delete the second “the”.
-   * %RED% L27, replace “[“ with “and”; delete “]”; replace “with respect” with “s relative”; insert “The” after the period; and delete “in QCD”.
-   * %RED% L28, delete “are expected”; replace “to produce” with “generate”; delete “measured”; and delete the hyphen after ”sub”.
-   * %RED% L30, insert “Fermilab” after the last “the”; and delete “a proton”.
-   * %RED% L31, replace “antiproton” with “the p\pbar”; and replace “operating at center-of-mass energy” with “that operated at a CM energy of”.
-   * %RED% L32, replace “significantly larger than” with “somewhat larger, especially at CDF, than expected at the NLO level.” [Concerning Refs. [7,8], please check my comment in the reference section, as D0, unlike CDF, never made a big deal of this issue.]
-   * %RED% L33, delete “NLO QCD expectation”.
-   * %RED% L35, delete the first “the, and “Collaborations”. [I don’t understand why ATLAS references are given after those from CMS.] 
-   * %RED% L36, replace “isolate” with “separate”; and insert “therefore” after last “and”.
-   * %RED% L37, replace “fraction” with “part”.
-   * %RED% L39, replace “in which” with “that adopts”.
-   * %RED% L40, delete “adopted,”; replace “allowing the use of” with “using”; and replace “isolate” with “separate”.
-   * %RED% L41, replace “and” with “as well as”; delete “adopted”; and replace “is a leading-order” with “provides an LO”.
-   * %RED% L42, delete “is”.
-   * %RED% L43, delete the first “the”.
-   * %RED% L44, insert “, with” after “angle”; and delete the last “and”.
-   * %RED% L45, delete “can be”; and change the comma to a colon.
-   * %RED% Eq. (2), replace the symbol for “approximately similar” with “\approx”.
-   * %RED% L47, replace “which we define to be” with “, which defines”.
-   * %RED% L48, replace “leading order” with “LO”.
-   * %RED% L50, replace “event samples” with “events”; and replace “with” by “in”.
-   * %RED% L51, insert “the” after “of”; delete “event”; and insert “events” before the period.
-   * %RED% L52, replace “effects” with “impact”.
-   * %RED% L54, insert comma before “end”; and replace “the” with “an”.
-   * %RED% Eq. (3), You have too many uses of "\mu". Perhaps just use it for the muon and the chromomagnetic moment. And also define \gamma, b, c, and gs.
-   * %RED% L56, insert a comma before “with”.
-   * %RED% L57, insert a comma before “with”.
-   * %RED% L59, insert “our” after “describes”; insert a comma before “end”; delete “proton-proton” and the parentheses (but leave “pp”); insert an “s” after “collision”; and delete “data”.
-   * %RED% L60, delete “template” and “total”.
-   * %RED% L61, delete “a sample of” and “in 2016”.
-   * %RED% L62, delete “and”.
-   * %RED% L63, delete “hadronic”; replace “called” with “usually referred to as”; insert “events,” after “jets”; and delete the quotation marks.
-   * %RED% L64, replace “The” by “Our”; and delete “q \qbar initial state top quark”.
-   * %RED% L65, insert “of top quarks in initial q\qbar states” before “is”; delete “directly”; and insert “directly” before “with”.
-   * %RED% L66, delete “experiments”.
-   * %RED% L67, delete “the”.
-   * %RED% L69, replace “This” with “Our”.
-   * %RED% L70, insert “briefly” after “3”.
-   * %RED% L71, replace “physics” with “final-state”; replace “describes” with “discusses”; replace “and” with “data and the”; and delete “data sam”.
-   * %RED% L72, replace “ples” with “events”.
-   * %RED% L73, insert “t\tbar events used to extract the”; delete “ observables”; replace “describes” with “discusses”; delete “template”; insert “used to” after “method”; and change “quantifying” to “quantify”.
-   * %RED% L74, insert “the” after “and”.
-   * %RED% L75, replace “describes” with “provides”.
-   * %RED% L76, replace “short” with “brief”.
+   * %GREEN% L2, insert “(mt)” before “that.
+   * %GREEN% L5, insert a hyphen after each “color”.
+   * %GREEN% L6, replace “permits the” with “provides a way to”; and delete “of”.
+   * %GREEN% L7, delete “effects”.
+   * %GREEN% L9, replace “as described by” with “of”; and delete “the”.
+      * I'm keeping "as described by," though
+   * %PURPLE% L10, deleted “initiated”.
+      * I don't see how this sentence is clear without it
+   * %GREEN% L11, replace “. Example” with “, and examples of”; and delete “the” and “initiated”.
+   * %GREEN% L12, insert “The” after the period. 
+   * %GREEN% Figure 1 caption, replace “(a) Feynman diagrams for the leading-order (LO) quark-antiquark (qq) and gluon-gluon (gg) initiated subprocesses. (b) Example diagrams for the next-to-leading-order (NLO) quark-gluon (qg) initiated subprocess.” with “(a) Feynman diagrams for LO q\qbar- and gg-initiated t\tbar subprocesses; and (b) example diagrams for the NLO qg-initiated subprocess”
+   * %GREEN% L14, replace “In this paper, we” with “We”.
+   * %PURPLE% L15, replace “of” with “in”; replace “top-quark-antiquark-gluon” with “top quark-top antiquark-gluon”; and replace the second “by” with “through”.
+      * I agree with the "through" but the rest of this passed the LE and I think it's clearer as is
+   * %GREEN% L16, replace “These” with “Such”.
+   * %GREEN% L17, replace “by” with through; replace “effects” with “impacts”; insert a comma before “where”; and insert a hyphen after “final.
+   * %GREEN% L18, replace “with respect to” with “relative to the direction of”; and delete “direction”.
+   * %GREEN% L19, delete “frame”.
+   * %GREEN% L22, replace “. The first search measures” with “, with the former measuring”.
+   * %GREEN% L23, replace “second search measures” with “latter providing”.
+   * %GREEN% L26, replace “[“ with “and”; replace “] is the” with “reflect the respective”; insert and “s” after “section”; and delete the second “the”.
+   * %GREEN% L27, replace “[“ with “and”; delete “]”; replace “with respect” with “s relative”; insert “The” after the period; and delete “in QCD”.
+   * %GREEN% L28, delete “are expected”; replace “to produce” with “generate”; delete “measured”; and delete the hyphen after ”sub”.
+   * %GREEN% L30, insert “Fermilab” after the last “the”; and delete “a proton”.
+      * I'm keeping "proton-antiproton collider"
+   * %GREEN% L31, replace “antiproton” with “the p\pbar”; and replace “operating at center-of-mass energy” with “that operated at a CM energy of”.
+   * %GREEN% L32, replace “significantly larger than” with “somewhat larger, especially at CDF, than expected at the NLO level.” [Concerning Refs. [7,8], please check my comment in the reference section, as D0, unlike CDF, never made a big deal of this issue.]
+   * %GREEN% L33, delete “NLO QCD expectation”.
+   * %GREEN% L35, delete the first “the, and “Collaborations”. [I don’t understand why ATLAS references are given after those from CMS.] 
+      * I switched the order of CMS/ATLAS -> ATLAS/CMS also
+   * %GREEN% L36, replace “isolate” with “separate”; and insert “therefore” after last “and”.
+   * %GREEN% L37, replace “fraction” with “part”.
+   * %GREEN% L39, replace “in which” with “that adopts”.
+   * %GREEN% L40, delete “adopted,”; replace “allowing the use of” with “using”; and replace “isolate” with “separate”.
+   * %GREEN% L41, replace “and” with “as well as”; delete “adopted”; and replace “is a leading-order” with “provides an LO”.
+   * %GREEN% L42, delete “is”.
+   * %GREEN% L43, delete the first “the”.
+   * %GREEN% L44, insert “, with” after “angle”; and delete the last “and”.
+   * %GREEN% L45, delete “can be”; and change the comma to a colon.
+   * %GREEN% Eq. (2), replace the symbol for “approximately similar” with “\approx”.
+   * %GREEN% L47, replace “which we define to be” with “, which defines”.
+   * %GREEN% L48, replace “leading order” with “LO”.
+   * %GREEN% L50, replace “event samples” with “events”; and replace “with” by “in”.
+   * %GREEN% L51, insert “the” after “of”; delete “event”; and insert “events” before the period.
+   * %GREEN% L52, replace “effects” with “impact”.
+   * %GREEN% L54, insert comma before “end”; and replace “the” with “an”.
+   * %BLUE% Eq. (3), You have too many uses of "\mu". Perhaps just use it for the muon and the chromomagnetic moment. And also define \gamma, b, c, and gs.
+      * Multiple people have left comments about this; I think it might need to be worked out differently.
+   * %GREEN% L56, insert a comma before “with”.
+   * %GREEN% L57, insert a comma before “with”.
+   * %GREEN% L59, insert “our” after “describes”; insert a comma before “and”; delete “proton-proton” and the parentheses (but leave “pp”); insert an “s” after “collision”; and delete “data”.
+   * %GREEN% L60, delete “template” and “total”.
+   * %GREEN% L61, delete “a sample of” and “in 2016”.
+   * %GREEN% L62, delete “and”.
+   * %GREEN% L63, delete “hadronic”; replace “called” with “usually referred to as”; insert “events,” after “jets”; and delete the quotation marks.
+   * %GREEN% L64, replace “The” by “Our”; and delete “q \qbar initial state top quark”.
+   * %GREEN% L65, insert “of top quarks in initial q\qbar states” before “is”; delete “directly”; and insert “directly” before “with”.
+   * %GREEN% L66, delete “experiments”.
+   * %GREEN% L67, delete “the”.
+   * %PURPLE% L69, replace “This” with “Our”.
+      * I use "this" above, and I don't like how "our paper" sounds....
+   * %GREEN% L70, insert “briefly” after “3”.
+   * %GREEN% L71, replace “physics” with “final-state”; replace “describes” with “discusses”; replace “and” with “data and the”; and delete “data sam”.
+   * %GREEN% L72, replace “ples” with “events”.
+   * %GREEN% L73, insert “t\tbar events used to extract the”; delete “ observables”; replace “describes” with “discusses”; delete “template”; insert “used to” after “method”; and change “quantifying” to “quantify”.
+   * %GREEN% L74, insert “the” after “and”.
+   * %GREEN% L75, replace “describes” with “provides”.
+   * %GREEN% L76, replace “short” with “brief”.
 Summary:
-   * %RED% L528, insert “model of” after “level.
-   * %RED% L530, delete “data” and insert an “s” after “collision”; replace “within” by “in”; and delete “in 2016”.
-   * %RED% L531, replace “plus” with “+”.
-   * %RED% L532, delete “their top quark can”.
-   * %RED% L533, delete “didate pairs were”; change “of” to “to”; and insert “the” after “to”.
-   * %RED% L534, change “Parameters” to “The parameters”.
-   * %RED% L535, change “of” to “using”; and insert “lowest order” after “to”. 
+   * %PURPLE% L528, insert “model of” after “level.
+      * I don't think this makes sense to me.
+   * %GREEN% L530, delete “data” and insert an “s” after “collision”; replace “within” by “in”; and delete “in 2016”.
+   * %GREEN% L531, replace “plus” with “+”.
+   * %GREEN% L532, delete “their top quark can”.
+   * %GREEN% L533, delete “didate pairs were”; change “of” to “to”; and insert “the” after “to”.
+   * %GREEN% L534, change “Parameters” to “The parameters”.
+   * %GREEN% L535, change “of” to “using”; and insert “lowest order” after “to”. 
 
 %ENDTWISTY%
 
@@ -442,7 +499,7 @@ Summary:
    * %BLUE% line 49-51: did we make this check ourselves? If so we could say so
       * Morris?
    * %BLUE% line 105: I get confused on the discussion you have on figure 2.  First: is Dilution the right name for this variable in fig 2d?  D=1 means  no dilution, right? Then there is the discussion on the increasing value  with xF. For xF <0.7 the values are close to one and I assume this is  what you mean with the 'increasing values in the qqbar dominated area. But then there is a drop of D for larger xF values. What is the reason for that? It looks beyond just statistics.
-      * I'd be open to changing the name of the variable; I agree it's confusing. The drop is indeed statistical; it wasn't observed in larger MC samples, but regardless there are extremely few events selected in any channel with |xF|>0.7. 
+      * I'd be open to changing the name of the variable; I agree it's confusing. The drop is indeed statistical; it wasn't observed in larger MC samples, but regardless there are hardly any events selected in any channel with |xF|>0.7. 
    * %GREEN% line 170 The ruin-2 vertex selection also include the pTMiss at the vertex as an object. This should be added 
    * %ORANGE% line 180 add a reference to the method used for the mentioned off-set correction
       * This text is boilerplate, from the TWiki [[https://twiki.cern.ch/twiki/bin/viewauth/CMS/Internal/PubDetector][here]], and it doesn't have any references listed, so I'm not sure what to do.
@@ -458,8 +515,8 @@ Summary:
       * Type-2 events contain at least one large AK8 jet, with no top-tags, but the reconstruction only uses the resolved jets in the events, identical to that for type-3 events. I found that this bridged the gap between merged and resolved events more effectively than requiring a W-tagged jet, or anything else like that.
    * %BLUE% line 299: After this line one should add what the advantage is of using Type-2 at all in this paper. It concerns 10% of the events and we do not use the AK8 feature. I take that this class less background/better efficiency for the kinematic fitting than the type-3? 
       * Yeah, they don't give us a ton of power, I just include them to bridge the gap between the other two scenarios. Morris, thoughts on something to add?
-   * %PURPLE% line 379-380: "that are less resolved": do you mean broader? But the W+jet should not have a "top quark mass" at all..?
-      * "less resolved" does mean broader. The "top quark mass" referred to is the mass of the reconstructed leptonic top quark, which for W+jets events indeed is not localized around the top mass because it's not a real top, it's some hadronic stuff that gets collected together and forced to look as much like a top as possible by the kinematic fitting function.
+   * %GREEN% line 379-380: "that are less resolved": do you mean broader? But the W+jet should not have a "top quark mass" at all..?
+      * "less resolved" does mean broader. The "top quark mass" referred to is the mass of the reconstructed leptonic top quark, which for W+jets events indeed is not localized around the top mass because it's not a real top, it's some hadronic stuff that gets collected together and forced to look as much like a top as possible by the kinematic fitting function. Regardless, I changed this phrase to "that are further away from"
    * %PURPLE% line 383: So is region D the nominal signal selection region. Do we use this methodology to predict the background in region D? 
       * Yes, on both counts, except with the single distinction that the same estimate is made in the W+jets control regions, so in that case the "D" region is the nominal W+jets control selection region.
    * %PURPLE% line 414: "multiple independent methods" This very vague. Can we add a bit more information here on the type of cross check triggers that we used?
@@ -485,11 +542,15 @@ Summary:
 ---++++ Style comments 
 %TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
 
-   * %RED% Line 19: Is it possible to add a figure to show what theta star angle is (like figure 6 in the AN)?
-   * %RED% Line 257: “..p_T^Rel > 30 GeV or ..” (GeV is missing)
-   * %RED% Figure 3-4-5: Please use the same scale for the Data/MC plots: plot on the first row, right side of figure 5 show that MC is overestimating the data.
-   * %RED% Line 492: a little bit confusing, we suggest to change into: “… in the fits for d (with mu=0) and mu (with d=0), which assume A_FB = 0.036…”
-   * %RED% the paper doesn’t quote the number of the candidate ttbar events used in the analysis.
+   * %BLUE% Line 19: Is it possible to add a figure to show what theta star angle is (like figure 6 in the AN)?
+      * Morris: this is another ask for this, we should probably consider it.
+   * %GREEN% Line 257: “..p_T^Rel > 30 GeV or ..” (GeV is missing)
+      * I was told by someone else that p_T^Rel is dimensionaless, so I removed the unit, but that doesn't make any sense to me. I'm adding it back in as you suggest.
+   * %BLUE% Figure 3-4-5: Please use the same scale for the Data/MC plots: plot on the first row, right side of figure 5 show that MC is overestimating the data.
+      * I will adjust the scale on the plots in the next version. The overestimation is a known effect: our data-based QCD multijet background estimate tends to predict too large a nominal normalization of the QCD background; this gets tuned and corrected before fitting.
+   * %GREEN% Line 492: a little bit confusing, we suggest to change into: “… in the fits for d (with mu=0) and mu (with d=0), which assume A_FB = 0.036…”
+   * %GREEN% the paper doesn’t quote the number of the candidate ttbar events used in the analysis.
+      * Added this info at the end of the second-to-last paragraph of the "analysis strategy" section.
 
 %ENDTWISTY%
 
@@ -508,9 +569,12 @@ Summary:
 ---++++ Style comments 
 %TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
 
-   * %RED% L.160 "... with origination..." sounds a bit weird but if it passed the LE then it is fine
-   * %RED% L.377 being picky -> suggest replacing the colon by a "i.e." (if we have well understood) "quark mass: a logical OR..." -> "quark mass i.e. a logical OR ..."
-   * %RED% L.129: maybe add (type-I), (type-II), ... before or replace by of the first, second and thirds types ?
+   * %PURPLE% L.160 "... with origination..." sounds a bit weird but if it passed the LE then it is fine
+      * Yeah, this is boilerplate text from the publication guide TWiki.
+   * %GREEN% L.377 being picky -> suggest replacing the colon by a "i.e." (if we have well understood) "quark mass: a logical OR..." -> "quark mass i.e. a logical OR ..."
+      * I agree, thanks
+   * %GREEN% L.129: maybe add (type-I), (type-II), ... before or replace by of the first, second and thirds types ?
+      * I'm not sure about the specific suggestion here, but this whole sentence is better now I think.
 
 %ENDTWISTY%
 
@@ -550,8 +614,7 @@ General:
    * %GREEN% Throughout the paper (including in the Abstract, etc.), as the "AFB" has been introduced at the beginnings of the Abstract (on the 1st line) and the main text (on L23), it can be used afterward to shorten from (e.g. the 11th line of Abstract) "The forward-backward asymmetry measured ..." --> "The AFB measured ..." Other places where the similar changes can be made are L25, L48, L64-65, L78, L111, L113 and L520, etc.
       * I changed some of these. For others the distinction is important and so I've kept it.
 Specific:
-   * %PURPLE% L7-8 the "(SM)" may should be moved forward from "In the standard model of particle physics (SM)," --> "In the standard model (SM) of particle physics,"
-      * "the standard model of particle physics" is the full name of that to which "SM" refers; I'd like to leave this as is.
+   * %GREEN% L7-8 the "(SM)" may should be moved forward from "In the standard model of particle physics (SM)," --> "In the standard model (SM) of particle physics,"
 L18, L106 and L108: As the "CM" has only been used twice in whole paper and it is looked somehow similar as "CMS", it seems not very necessary to introduce it on 
    * %GREEN% L18, i.e. "in the ttbar center-of-mass (CM)" --> "in the ttbar center-of-mass" then, two places should be modified correspondingly, i.e. 
    * %GREEN% L106 and L108: (two places) "the CM frame," --> "the center-of-mass frame,"
@@ -670,12 +733,16 @@ Table 1
 %TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
 
 Even though structure and overall style of the paper are fine, there is an unusually large number of places where language improvements are needed, and/or where CMS style guidelines are not followed. To give some examples,
-   * %RED% Is it sub-process or subprocess?
-   * %RED% Wrong hyphenation in many places.
-   * %RED% Punctuation (commas) missing, wrong capitalization.
-   * %RED% Spacing in some math expressions.
-   * %RED% Jargon, such as pre-fit / post-fit and "ID".
-   * %RED% Sometimes very convoluted sentences/descriptions, such as the paragraph on L.381-398.
+   * %GREEN% Is it sub-process or subprocess?
+      * It's one word. Fixed all of these.
+   * %GREEN% Wrong hyphenation in many places.
+      * I've fixed a ton of these, some of them were supposed to be em-dashes, also.
+   * %GREEN% Punctuation (commas) missing, wrong capitalization.
+   * %GREEN% Spacing in some math expressions.
+   * %GREEN% Jargon, such as pre-fit / post-fit and "ID".
+      * and "toy"!!
+   * %BLUE% Sometimes very convoluted sentences/descriptions, such as the paragraph on L.381-398.
+      * everyone seems to hate this paragraph in particular...we need to do something about that.
 We trust that the authors work with the LE and the publications committee
 and improve all Type A issues.
 
@@ -688,6 +755,7 @@ and improve all Type A issues.
       * Morris? Thoughts?
    * %GREEN% The definition of LO and NLO in Fig. 1 caption can be removed, it is already in the text.
    * %GREEN% The trigger efficiencies given in L.152-154 might better be moved to the end of paragraph around L.213, where trigger conditions are discussed. Also, a comment on the comparatively low efficiency in the resolved electron channel might be added.
+      * moved, and added "The precision of the boosted {\Pe}+jets trigger efficiency measurement is limited by the number of events passing selection criteria."
    * %GREEN% L.202, "The subjects... are returned as individual objects": I guess what is meant is "retained" or "considered", rather than "returned"?
    * %GREEN% L.246, "mutually exclusive", along with L.269-281: From the text it is not clear how type-3 is made mutually exclusive with respect to the other two types of events. There must be some veto that is not mentioned in the text (or we missed it).
       * The exclusivity of type-3 events comes from a requirement that they not have any selected AK8 jets in them; I've updated the text at the end of this paragraph to make that clear. Thanks for the close reading!
@@ -781,41 +849,71 @@ and improve all Type A issues.
       * I changed "anomalous dipole moments" to just "d and mu," but they are defined as dipole moments the very first time they're used, on line 53.
    * %PURPLE% L122: "the first of the three". What is that? Not clear. Better to replace with something like: Three ttbar decay topologies are considered. The first uses two "fat" jets, in which the decay products of the top or tbar are merged in single jets.
       * I don't know if I agree with this. We state on line 64 that there will be three distinct topologies considered, and the point I'm making in this sentence is justifying inclusion of the first of those.
-   * %RED% L123: "second topology". Later it is referred to type-2. Please specify it here as well. The same applies to the all 3 topologies.
-   * %RED% L154: at this point one would expect to know which triggers have been used. However, they only appear at L208. It would be good to move that here.
-   * %RED% L154 and Table 1: So the boosted e+jets trigger efficiency is much higher than the resolved e+jets, but the systematic error on the boosted trigger is ~7x larger than on the resolved? Given that the boosted e+jets trigger is by far the largest systematic effect in the table, it would be nice to add some comment on what is driving this. 
-   * %RED% L194: Not needed to use both "modified mass drop tagger" and "soft drop". Use only one name for the algorithm.
-   * %RED% LL195-196: the names "angular exponent", "soft cutoff", "characteristic radius" do not mean much to the reader. It would be preferable to write what these values represent without having to read the Ref.
-   * %RED% L199: bosonic -> W/Z boson
-   * %RED% L209: Trigger: single muon pT>50 GeV, single ele pT>115GeV. These are non-isolated leptons. The efficiency for ttbar events for these triggers depends on the boost of the tops. How is this accounted for?
-   * %RED% LL236-238: It is not clear whether only one leg or both legs are considered separately. Please clarify.
-   * %RED% L239: "decaying with very high momentum" is confusing. What is high is the momentum of the initial top such that the decay products are boosted. Please rephrase.
-   * %RED% L241: "either a partially- or fully-merged..." is not clear. "partially-merged"? What is a partially or fully merged hadronic top decay? Are you referring to "top hadronic decay products"? Is it partially- or fully-merged?
-   * %RED% Also, if it is fully-merged, it does not fit into the other type-1 category?
-   * %RED% L243: "lower mass events": this is jargon. What does it mean? does it refer to m_ttbar? It is not clear.
-   * %RED% L248: muon/ele candidates have pT>50/80 GeV for boosted events. Are these values compatible with the triggers at L209? What are the efficiencies?
-   * %RED% L272: it would be useful to clarify what is the top-tagging efficiency in the kinematic regions relevant to this analysis.
-   * %RED% L291: Are the Refs needed? they are specific for what?
-   * %RED% L309: "leptonic top quark mass" is jargon. Are you referring to the leptonic leg? It may be good to define "leptonic/hadronic leg" or "leptonic/hadronic branch" earlier and then use it consistently.
-   * %RED% L310: form -> define
-   * %RED% L310: constraining -> used to constrain
-   * %RED% L312: what is c^star_tau? it was not defined. Please clarify.
-   * %RED% L312: what is a Drell-Yan variable? Please clarify (this comment also applies to other similar instances).
-   * %RED% L317: the sign of the lepton -> the sign of the lepton charge
-   * %RED% Figs. 3-5: It would be helpful to also show an example of how the ttbar shapes look for a non-SM scenario, for some choice of d/mu parameters close to your sensitivity.
-   * %RED% Fig.3/4/5, caption: what is "full" in this context? please clarify or remove.
-   * %RED% Fig.3/4/5: the last bin includes the overflows? please clarify in the caption.
-   * %RED% Fig.4, Type2: middle (x_f): there is a disagreement and the ratio shows a slope. It is strange that this does not appear for the electrons. How is this understood? It would be good to add a sentence in the text addressing this.
-   * %RED% Fig.5, Type3: x_f, the slope now appears for both electrons and muons. What is the dependence of x_f on the jet p_T?
-   * %RED% L325: It would be good to check if there are recent studies from the TRK or MUO POGs that could be cited to support this, instead of just saying the efficiency symmetry is assumed.
-   * %RED% L383: ABCD: The discussion is confusing as it is. Also, as it is, there is no much point in giving the specifics of the A, B, C regions. It would be good to add a sketch to explain this, and better define the regions in isolation and ptmiss. It would help.
-   * %RED% L496 and Fig. 6: It seems for d, the Best fit value is degenerate for True values between about -0.01 and 0.01. If this is true, could you add an explaination of how the True value is determined to be 0.002 for a Best fit value of 0?
-   * %RED% Fig. 6: It's not clear what is going on with the 2-sigma band around true mu=-0.04, where it becomes very wide vertically.
-   * %RED% Table 2: The many p-values of 1.000 for d and mu seem suspicious - can you add some comment to the text on how you interpret this?
-   * %RED% L488-492: How much does the assumption of fixing the other 2 parameters to 0/the MC values matter? Would larger values of mu be allowed if d was allowed to vary simultaneously, for example? If so, it should somehow be made more clear in the Results/Summary section that the results are valid for that particular assumption on the other parameters.
-   * %RED% L522: This sentence sounds like it's making excuses for not generating more MC. Please consider rephrasing, or even removing it, if it's not one of the main points that readers should take away from the paper.
-   * %RED% L531: in the summary only two categories appear, as "resolved" and "boosted", whereas the paper always refers to 3 categories. Please make it consistent.
-   * %RED% L536: Please add a comparison to results in earlier measurements. For example: those in [22] or in the ATLAS+CMS combined results JHEP 04(2018)033.
+   * %GREEN% L123: "second topology". Later it is referred to type-2. Please specify it here as well. The same applies to the all 3 topologies.
+      * This whole paragraph is structured better now.
+   * %PURPLE% L154: at this point one would expect to know which triggers have been used. However, they only appear at L208. It would be good to move that here.
+      * I was asked to move the trigger efficiencies to the end of the first paragraph in "Data and simulation" and I think they work best there. 
+   * %GREEN% L154 and Table 1: So the boosted e+jets trigger efficiency is much higher than the resolved e+jets, but the systematic error on the boosted trigger is ~7x larger than on the resolved? Given that the boosted e+jets trigger is by far the largest systematic effect in the table, it would be nice to add some comment on what is driving this. 
+      * I added the sentence "The precision of the boosted {\Pe}+jets trigger efficiency measurement is limited by the number of events passing selection criteria."
+   * %GREEN% L194: Not needed to use both "modified mass drop tagger" and "soft drop". Use only one name for the algorithm.
+   * %PURPLE% LL195-196: the names "angular exponent", "soft cutoff", "characteristic radius" do not mean much to the reader. It would be preferable to write what these values represent without having to read the Ref.
+      * This text is boilerplate from the publication TWiki; I'm loathe to change it from that.
+   * %PURPLE% L199: bosonic -> W/Z boson
+      * This text is also boilerplate
+   * %ORANGE% L209: Trigger: single muon pT>50 GeV, single ele pT>115GeV. These are non-isolated leptons. The efficiency for ttbar events for these triggers depends on the boost of the tops. How is this accounted for?
+      * The efficiency scalefactors applied depend on the lepton kinematics. Is that what this question is asking?
+   * %GREEN% LL236-238: It is not clear whether only one leg or both legs are considered separately. Please clarify.
+      * This was missing an Oxford comma; I think that helps.
+   * %GREEN% L239: "decaying with very high momentum" is confusing. What is high is the momentum of the initial top such that the decay products are boosted. Please rephrase.
+      * This line is gone now
+   * %GREEN% L241: "either a partially- or fully-merged..." is not clear. "partially-merged"? What is a partially or fully merged hadronic top decay? Are you referring to "top hadronic decay products"? Is it partially- or fully-merged?
+      * Also gone
+   * %GREEN% Also, if it is fully-merged, it does not fit into the other type-1 category?
+      * It could  be fully-merged, but if it doesn't pass the top-tagging criteria then the event is not in the type-1 category. I explain this better now in the section I initially introduce this idea.
+   * %GREEN% L243: "lower mass events": this is jargon. What does it mean? does it refer to m_ttbar? It is not clear.
+      * Also gone
+   * %BLUE% L248: muon/ele candidates have pT>50/80 GeV for boosted events. Are these values compatible with the triggers at L209? What are the efficiencies?
+      *  Yes, these values were chosen specifically to sync with the triggers used and the selections used to measure their efficiencies. The selection efficiencies for these cuts are listed in the AN. Morris, do I need to figure out a way to include them here? That seems like it would take up a lot of space to add not much info.
+   * %BLUE% L272: it would be useful to clarify what is the top-tagging efficiency in the kinematic regions relevant to this analysis.
+      * Same case as the above: it varies depending on selection region, and I don't have the measurements readily available. Again this seems like too much text to me.
+   * %GREEN% L291: Are the Refs needed? they are specific for what?
+      * I think so. One of them is the source of the functional form used in the kinematic fit, and the other is for Minuit, which we use to actually do the fit.
+   * %GREEN% L309: "leptonic top quark mass" is jargon. Are you referring to the leptonic leg? It may be good to define "leptonic/hadronic leg" or "leptonic/hadronic branch" earlier and then use it consistently.
+      * Changed this to "leptonically-decaying top quark mass"
+   * %GREEN% L310: form -> define
+   * %GREEN% L310: constraining -> used to constrain
+   * %GREEN% L312: what is c^star_tau? it was not defined. Please clarify.
+      * It's a subscript "r" for "reconstructed;" I define this much more clearly now.
+   * %BLUE% L312: what is a Drell-Yan variable? Please clarify (this comment also applies to other similar instances).
+      * Morris? Is there a specific reason we keep saying "Drell-Yan variables" or is there a better way to get that across? Several people have mentioned this.
+   * %GREEN% L317: the sign of the lepton -> the sign of the lepton charge
+   * %BLUE% Figs. 3-5: It would be helpful to also show an example of how the ttbar shapes look for a non-SM scenario, for some choice of d/mu parameters close to your sensitivity.
+      * I don't think this is going to happen. Is this worth the effort, Morris?
+   * %GREEN% Fig.3/4/5, caption: what is "full" in this context? please clarify or remove.
+      * removed
+   * %GREEN% Fig.3/4/5: the last bin includes the overflows? please clarify in the caption.
+      * The last bins of the abs(x_r) and m_r plots do include overflow, I explain that in the caption now.
+   * %BLUE% Fig.4, Type2: middle (x_f): there is a disagreement and the ratio shows a slope. It is strange that this does not appear for the electrons. How is this understood? It would be good to add a sentence in the text addressing this.
+      * This is due to the PDF uncertainty, and it gets corrected in the full fit that includes systematic nuisances. Morris, suggestions for how to add this to the text/if we need to add it?
+   * %BLUE% Fig.5, Type3: x_f, the slope now appears for both electrons and muons. What is the dependence of x_f on the jet p_T?
+      * This is the same effect as above; you'd see it for type-1/2 electrons as well if the statistical precision was better. I don't know the dependence of x_F on jet pT. Morris, does anything need to change here?
+   * %BLUE% L325: It would be good to check if there are recent studies from the TRK or MUO POGs that could be cited to support this, instead of just saying the efficiency symmetry is assumed.
+      * Morris, this is an assumption we make; I can poke around for some publications to support it but I'm not sure what I'm looking for.
+   * %BLUE% L383: ABCD: The discussion is confusing as it is. Also, as it is, there is no much point in giving the specifics of the A, B, C regions. It would be good to add a sketch to explain this, and better define the regions in isolation and ptmiss. It would help.
+      * Multiple people have said this is confusing. I'm not sure what to do about it. I used to have an image here but was asked to remove it.
+   * %BLUE% L496 and Fig. 6: It seems for d, the Best fit value is degenerate for True values between about -0.01 and 0.01. If this is true, could you add an explaination of how the True value is determined to be 0.002 for a Best fit value of 0?
+      * * Our analysis isn't very sensitive to small values of d; the perfect flatness comes from there being many toy experiments where d is found to be exactly zero. Outside of these values we're more sensitive, as shown by the rest of the Neyman plot. The curve there isn't precisely flat, though, it does fluctuate some, which is how we got the value of 0.002.
+   * %BLUE% Fig. 6: It's not clear what is going on with the 2-sigma band around true mu=-0.04, where it becomes very wide vertically.
+      * That's just the distribution of the values from the toy experiments; if the plot were wider it would be on the other side as well. I don't have any further "explanation" for this.
+   * %ORANGE% Table 2: The many p-values of 1.000 for d and mu seem suspicious - can you add some comment to the text on how you interpret this?
+      * Working on this, it will not be the case soon.
+   * %BLUE% L488-492: How much does the assumption of fixing the other 2 parameters to 0/the MC values matter? Would larger values of mu be allowed if d was allowed to vary simultaneously, for example? If so, it should somehow be made more clear in the Results/Summary section that the results are valid for that particular assumption on the other parameters.
+      * Morris? I don't know how those parameters constrain one another.
+   * %GREEN% L522: This sentence sounds like it's making excuses for not generating more MC. Please consider rephrasing, or even removing it, if it's not one of the main points that readers should take away from the paper.
+   * %PURPLE% L531: in the summary only two categories appear, as "resolved" and "boosted", whereas the paper always refers to 3 categories. Please make it consistent.
+      * The first two categories are both "boosted." The language here mirrors that used in the abstract.
+   * %BLUE% L536: Please add a comparison to results in earlier measurements. For example: those in [22] or in the ATLAS+CMS combined results JHEP 04(2018)033.
+      * Multiple people have commented on comparing to earlier measurements. I do not think this measurement is directly comparable to any others, since the expected Afb is different for ppbar and pp scenarios, and this is the first measurement of the parton-level quantity at the LHC.
 
 %ENDTWISTY%
 
@@ -825,112 +923,129 @@ and improve all Type A issues.
 %TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
 
 From Dick Loveless:
-   * %RED% Title: I suggest removing "Template" and writing "measurements" in plural.  I would also delete "in the senileptonic channel" and add "in proton-proton collisions".  Thus it would read "Measurements of the top quark forward-backward asymmetry and the anomalous chromoeletric and chromomagnetic moments in proton-proton collisions at sqrt(s) = 13 TeV".
-   * %RED% line 3:  Change "top quark's Yukawa coupling" to "Yukawa coupling of the top quark".
-   * %RED% line 7:  Define SM here by writing " . . standard model (SM) of particle physics . . ".
-   * %RED% line 8:  Move "predominantly" to after "produced".
-   * %RED% line 10:  Isn't this a "process" and not a subprocess".  Shouldn't all occurrences of "subprocess" become "process"? 
-   * %RED% Fig. 1 caption:  Change "subprocesses" to "processes" etc.
-   * %RED% line 17:  Add a comma before "where".
-   * %RED% line 20:  Add hyphens to "initial-state" and "final-state".
-   * %RED% line 28:  Change "sub-processes" to "processes".
-   * %RED% line 32:  Change "appeared to be" to "were". 
-   * %RED% line 33:  Add "the" before "NLO" and change the comma after "expectation" to a semicolon.
-   * %RED% line 35:  Delete "have"
-   * %RED% line 36:  Add a comma after "A_C" and change "that" to "which" and add a comma after "states".
-   * %RED% line 38:  Add "existing" before ""A_FB" and change "done to date have been" to "are".
-   * %RED% line 39:  End the sentence with "approach" and start a new sentence with "A simplified model . . ".
-   * %RED% line 40:  Change "adopted, allowing" to "adopted that allows".
-   * %RED% line 41:  Change "subprocesses" to "processes".
-   * %RED% line 42:  Maybe put quotes around "beyond the SM processes".
-   * %RED% line 44:  Add a comma after "angle".
-   * %RED% line 48:  Add a hyphen to "leading-order".
-   * %RED% lines 80,82,84,85,90,92:  Change "subprocesses" to "processes".
-   * %RED% lines 91, 105:  Delete "note that".
-   * %RED% line 120:  Delete the hyphen in "nonzero".
-   * %RED% line 122: Delete "considered".
-   * %RED% line 123:  Do you mean each t quark and tbar quark produce "a single jet"?  or do they produce one single jet?  Based on the remainder of the paragraph I think you should change "single jets" to a single jet".
-   * %RED% line 124:  Change "considers" to "consists of".
-   * %RED% line 133:  Maybe delete "Truth".  
-   * %RED% line 169:  Delete "taken to be".
-   * %RED% lines 175,176:  Delete "from from simulation to be".
-   * %RED% line 177: Add "based on simulation." after "acceptance".
-   * %RED% line 179:  Delete "identified to be".
-   * %RED% line 180:  Add a comma after "discarded" and change "correct" to "account".
-   * %RED% line 181:  Delete "that".
-   * %RED% line 182:  Add a hyphen to "particle-level".
-   * %RED% line 183:  Change "determine" to "detect".  You don't determine the differences, you observe them and then correct.
-   * %RED% line 188:  Change "for which" to "where".
-   * %RED% lines 189-192:  It is not necessary to introduce a slang term (cleaning).  Write " . . each jet has removed the momenta . .  Muons are removed from jets . . .electrons are removed from jets . . .".
-   * %RED% line 193:  Add "the" before "jet radius".
-   * %RED% lines 199,200:  Add a comma after "events" and change "comprising uniquely jets produced through" to "which consist of jets produced via . . ".  End the sentence with "events.  Start a new sentence "This improves the jet mass . . ".
-   * %RED% line 203:  Add "the" before "reconstruction".
-   * %RED% line 206:  Change "has been" to "is".
-   * %RED% line 208:  Change "are those passing" to "pass".
-   * %RED% line 210:  Change "on" to "for" after "thresholds".
-   * %RED% line 211:  Add a comma after "pt".
-   * %RED% line 217:  The phrase "as they are halved and doubled [43.44]" does not belong here.  Move it to the discussion of uncertainty (line 404).
-   * %RED% line 228:  Change "MC samples used" to "These MC samples".
-   * %RED% line 232:  Change "used have been" to "are".
-   * %RED% line 236:  Delete the comma after "topologies" and change "in which" to "where".
-   * %RED% line 238:  Delete "are those identified to".
-   * %RED% lines 239,240:  Suggest deleting "top quark's".
-   * %RED% lines 240,241:  Write "Type-2" events have a large, high-momentum, high-mass jet that indicates either a partially- or fully-merged hadronic top quark decay, but which lack a single large jet likely to have originated from a top quark decay.".
-   * %RED% lines 246,247:  How about writing " . . categories: e+jets and mu+jets, each of type-1, type-2, or type-3.".
-   * %RED% line 254:  Change "cut" to "constraint".
-   * %RED% line 255:  Change "cuts" to "constraints",
-   * %RED% line 256:  Delete "In order".
-   * %RED% lines 257,258:  Change "a lepton candidate's isolation" to "the isolation of a lepton    candidate".
-   * %RED% line 261:  Change "cut" to "constraint".
-   * %RED% line 275:  Add "a" before "greater".
-   * %RED% line 296:  Delete "represented by".
-   * %RED% line 306:  Add commas around ", respectively,".
-   * %RED% Figures 3,4,5 caption line 4:  Add "The" before "contribution".
-   * %RED% Figures 3,4,5 caption line 6:  Write "observed date/MC for each bin.".
-   * %RED% line 315:  Better to write "Signal distributions and background estimation".
-   * %RED% line 341:  Delete "Note that".
-   * %RED% line 355:  Change "Each channel's binning scheme" to "The binning scheme of each channel".
-   * %RED% line 357:  Delete "that".
-   * %RED% line 371:  Change "is accounted for by" to "has".
-   * %RED% line 377:  Change "was" to "is".
-   * %RED% line 381:  Add a hyphen to "well-described" and change "due to" to "because of".
-   * %RED% line 382:  Add "the" before "full" and add "the" before "QCD".
-   * %RED% line 400:  Change "in" to "for" before "fitting".
-   * %RED% line 401:  Add "by" before "using".
-   * %RED% lines 402,403:  Delete "and their methods of accounting".
-   * %RED% line 412:  Change "accounted for" to "included".
-   * %RED% line 417:  Write ". . .pileup-, lepton pt-, and eta-dependent . . ".
-   * %RED% line 434:  Write " . . in ways that NLO generators cannot reproduce.".
-   * %RED% line 439:  Change "accounted for" to "included".
-   * %RED% line 441:  Change "accounted for" to "included".
-   * %RED% line 446:  Change "accounted for" to "included".
-   * %RED% line 453:  Change "accounted for" to "included".
-   * %RED% line 459:  Change "accounted for" to "included".
-   * %RED% line 464:  Change "accounted for" to "included".
-   * %RED% line 469:  Change "accounted for" to "included".
-   * %RED% line 471:  Change "on" to "in" after "uncertainty".
-   * %RED% line 472:  Change "due to" to "caused by".
-   * %RED% line 479:  Change "accounted for" to "included".
-   * %RED% lines 485, 486, 487:  Change "accounted for" to "included".
-   * %RED% line 496:  The word "toy" is slang, and trivializes the content of the paper.
-   * %RED% lines 496,497:  Change "was that of" to "is".
-   * %RED% line 512:  Delete "toy".
-   * %RED% line 529:  Delete "toy".
-   * %RED% line 523:  Change "was" to "is".
-   * %RED% Figure 6:  Delete "toy" in the plots and the caption.
-   * %RED% line 534:  Change "Parameters of interest have been measured" to "Measurements".
-   * %RED% line 536:  Write " . . .initial states are A_FB . . .".
-   * %RED% Ref. 23:  Change "New" to "new".
-   * %RED% Ref. 24:  Change "Parton Shower" to "parton shower".
-   * %RED% Ref. 30:  Use penname for "anti-k_T".
-   * %RED% Ref. 41:  Put "PYTHIA" in special capitals.
-   * %RED% Ref. 53:  Change "Updated" to "updated".
-   * %RED% Ref. 64:  Only the first word of the title is capitalized.
+   * %GREEN% Title: I suggest removing "Template" and writing "measurements" in plural.  I would also delete "in the senileptonic channel" and add "in proton-proton collisions".  Thus it would read "Measurements of the top quark forward-backward asymmetry and the anomalous chromoeletric and chromomagnetic moments in proton-proton collisions at sqrt(s) = 13 TeV".
+   * %GREEN% line 3:  Change "top quark's Yukawa coupling" to "Yukawa coupling of the top quark".
+   * %GREEN% line 7:  Define SM here by writing " . . standard model (SM) of particle physics . . ".
+   * %GREEN% line 8:  Move "predominantly" to after "produced".
+   * %BLUE% line 10:  Isn't this a "process" and not a subprocess".  Shouldn't all occurrences of "subprocess" become "process"? 
+      * I might agree with this...Morris?
+   * %BLUE% Fig. 1 caption:  Change "subprocesses" to "processes" etc.
+   * %GREEN% line 17:  Add a comma before "where".
+   * %GREEN% line 20:  Add hyphens to "initial-state" and "final-state".
+   * %BLUE% line 28:  Change "sub-processes" to "processes".
+   * %GREEN% line 32:  Change "appeared to be" to "were". 
+   * %GREEN% line 33:  Add "the" before "NLO" and change the comma after "expectation" to a semicolon.
+   * %GREEN% line 35:  Delete "have"
+   * %GREEN% line 36:  Add a comma after "A_C" and change "that" to "which" and add a comma after "states".
+   * %GREEN% line 38:  Add "existing" before ""A_FB" and change "done to date have been" to "are".
+   * %PURPLE% line 39:  End the sentence with "approach" and start a new sentence with "A simplified model . . ".
+      * I restructured this to have a new sentence starting with "This work represents..." which came from another reviewer and which I think is best.
+   * %GREEN% line 40:  Change "adopted, allowing" to "adopted that allows".
+   * %BLUE% line 41:  Change "subprocesses" to "processes".
+   * %GREEN% line 42:  Maybe put quotes around "beyond the SM processes".
+   * %GREEN% line 44:  Add a comma after "angle".
+   * %GREEN% line 48:  Add a hyphen to "leading-order".
+      * changed to LO now that that's defined above.
+   * %BLUE% lines 80,82,84,85,90,92:  Change "subprocesses" to "processes".
+   * %GREEN% lines 91, 105:  Delete "note that".
+   * %GREEN% line 120:  Delete the hyphen in "nonzero".
+   * %GREEN% line 122: Delete "considered".
+   * %GREEN% line 123:  Do you mean each t quark and tbar quark produce "a single jet"?  or do they produce one single jet?  Based on the remainder of the paragraph I think you should change "single jets" to a single jet".
+      * I agree this is unclear. I reworded this whole sentence.
+   * %GREEN% line 124:  Change "considers" to "consists of".
+   * %GREEN% line 133:  Maybe delete "Truth".  
+      * Changed this to "The generator-level information"
+   * %GREEN% line 169:  Delete "taken to be".
+   * %GREEN% lines 175,176:  Delete "from from simulation to be".
+   * %GREEN% line 177: Add "based on simulation." after "acceptance".
+   * %GREEN% line 179:  Delete "identified to be".
+   * %GREEN% line 180:  Add a comma after "discarded" and change "correct" to "account".
+   * %GREEN% line 181:  Delete "that".
+   * %GREEN% line 182:  Add a hyphen to "particle-level".
+   * %GREEN% line 183:  Change "determine" to "detect".  You don't determine the differences, you observe them and then correct.
+   * %GREEN% line 188:  Change "for which" to "where".
+      * updated boilerplate text no longer has this issue
+   * %GREEN% lines 189-192:  It is not necessary to introduce a slang term (cleaning).  Write " . . each jet has removed the momenta . .  Muons are removed from jets . . .electrons are removed from jets . . .".
+   * %GREEN% line 193:  Add "the" before "jet radius".
+   * %GREEN% lines 199,200:  Add a comma after "events" and change "comprising uniquely jets produced through" to "which consist of jets produced via . . ".  End the sentence with "events.  Start a new sentence "This improves the jet mass . . ".
+   * %GREEN% line 203:  Add "the" before "reconstruction".
+   * %GREEN% line 206:  Change "has been" to "is".
+   * %GREEN% line 208:  Change "are those passing" to "pass".
+   * %GREEN% line 210:  Change "on" to "for" after "thresholds".
+   * %GREEN% line 211:  Add a comma after "pt".
+   * %GREEN% line 217:  The phrase "as they are halved and doubled [43.44]" does not belong here.  Move it to the discussion of uncertainty (line 404).
+   * %GREEN% line 228:  Change "MC samples used" to "These MC samples".
+   * %GREEN% line 232:  Change "used have been" to "are".
+   * %GREEN% line 236:  Delete the comma after "topologies" and change "in which" to "where".
+   * %GREEN% line 238:  Delete "are those identified to".
+      * these few sentences are gone since we define "type-1/2/3" events higher up in the next version.
+   * %GREEN% lines 239,240:  Suggest deleting "top quark's".
+   * %GREEN% lines 240,241:  Write "Type-2" events have a large, high-momentum, high-mass jet that indicates either a partially- or fully-merged hadronic top quark decay, but which lack a single large jet likely to have originated from a top quark decay.".
+      * awesome suggestion, thank you!! (I put this description up higher where I now define the topologies, but I still used it)
+   * %GREEN% lines 246,247:  How about writing " . . categories: e+jets and mu+jets, each of type-1, type-2, or type-3.".
+   * %PURPLE% line 254:  Change "cut" to "constraint".
+      * another reveiwer suggested "cut" -> selection, which I think is more apt  than "constraint"
+   * %PURPLE% line 255:  Change "cuts" to "constraints",
+   * %GREEN% line 256:  Delete "In order".
+   * %GREEN% lines 257,258:  Change "a lepton candidate's isolation" to "the isolation of a lepton    candidate".
+   * %PURPLE% line 261:  Change "cut" to "constraint".
+   * %GREEN% line 275:  Add "a" before "greater".
+   * %GREEN% line 296:  Delete "represented by".
+   * %GREEN% line 306:  Add commas around ", respectively,".
+   * %GREEN% Figures 3,4,5 caption line 4:  Add "The" before "contribution".
+   * %GREEN% Figures 3,4,5 caption line 6:  Write "observed date/MC for each bin.".
+   * %PURPLE% line 315:  Better to write "Signal distributions and background estimation".
+      * I changed this to "template construction and background estimation" but I'm wary of changing "template construction" to "signal distributions" since the section talks about how all the templates are constructed, signal and background
+   * %GREEN% line 341:  Delete "Note that".
+   * %GREEN% line 355:  Change "Each channel's binning scheme" to "The binning scheme of each channel".
+   * %GREEN% line 357:  Delete "that".
+   * %GREEN% line 371:  Change "is accounted for by" to "has".
+   * %GREEN% line 377:  Change "was" to "is".
+   * %GREEN% line 381:  Add a hyphen to "well-described" and change "due to" to "because of".
+   * %GREEN% line 382:  Add "the" before "full" and add "the" before "QCD".
+   * %GREEN% line 400:  Change "in" to "for" before "fitting".
+   * %GREEN% line 401:  Add "by" before "using".
+   * %GREEN% lines 402,403:  Delete "and their methods of accounting".
+   * %GREEN% line 412:  Change "accounted for" to "included".
+   * %GREEN% line 417:  Write ". . .pileup-, lepton pt-, and eta-dependent . . ".
+   * %GREEN% line 434:  Write " . . in ways that NLO generators cannot reproduce.".
+   * %GREEN% line 439:  Change "accounted for" to "included".
+   * %GREEN% line 441:  Change "accounted for" to "included".
+   * %GREEN% line 446:  Change "accounted for" to "included".
+   * %GREEN% line 453:  Change "accounted for" to "included".
+   * %GREEN% line 459:  Change "accounted for" to "included".
+   * %GREEN% line 464:  Change "accounted for" to "included".
+   * %GREEN% line 469:  Change "accounted for" to "included".
+   * %GREEN% line 471:  Change "on" to "in" after "uncertainty".
+   * %GREEN% line 472:  Change "due to" to "caused by".
+   * %GREEN% line 479:  Change "accounted for" to "included".
+   * %GREEN% lines 485, 486, 487:  Change "accounted for" to "included".
+   * %GREEN% line 496:  The word "toy" is slang, and trivializes the content of the paper.
+      * replaced those instances with "pseudo-data" or "pseudo-experiments" as necessary
+   * %GREEN% lines 496,497:  Change "was that of" to "is".
+   * %GREEN% line 512:  Delete "toy".
+   * %GREEN% line 519:  Delete "toy".
+   * %PURPLE% line 523:  Change "was" to "is".
+      * This whole sentence is gone now
+   * %BLUE% Figure 6:  Delete "toy" in the plots and the caption.
+      * caption is handled but I need to change this legend still when I rerun the plots.
+   * %GREEN% line 534:  Change "Parameters of interest have been measured" to "Measurements".
+   * %GREEN% line 536:  Write " . . .initial states are A_FB . . .".
+   * %GREEN% Ref. 23:  Change "New" to "new".
+   * %GREEN% Ref. 24:  Change "Parton Shower" to "parton shower".
+   * %BLUE% Ref. 30:  Use penname for "anti-k_T".
+      * Maggie: double-check this one; I'm not 100% sure that the type-setting will come out right
+   * %BLUE% Ref. 41:  Put "PYTHIA" in special capitals.
+      * double-check this one, too
+   * %GREEN% Ref. 53:  Change "Updated" to "updated".
+   * %GREEN% Ref. 64:  Only the first word of the title is capitalized.
 From Camilla Galloni:
-   * %RED% Abtract, line 1: “top quark” -> “top quark (t)” since later “\ttbar” is used 
-   * %RED% line 7 standard model of particle physics (SM) -> standard model (SM) of particle physics
-   * %RED% line 63 “lepton+jets,” -> “lepton+jets”,
-   * %RED% line 189 This phrase sounds a bit convoluted, maybe would be better to rephrase it to something along this:“each jet has subtracted (“cleaned”) from it the momenta of any leptons within it.” -> “leptons reconstructed and identified within jets are not taken into account in the jet momentum computation. This procedure is called “cleaning”.”
+   * %GREEN% Abtract, line 1: “top quark” -> “top quark (t)” since later “\ttbar” is used 
+   * %GREEN% line 7 standard model of particle physics (SM) -> standard model (SM) of particle physics
+   * %PURPLE% line 63 “lepton+jets,” -> “lepton+jets”,
+      * We're using the American English convention, in which commas go inside quotes.
+   * %GREEN% line 189 This phrase sounds a bit convoluted, maybe would be better to rephrase it to something along this:“each jet has subtracted (“cleaned”) from it the momenta of any leptons within it.” -> “leptons reconstructed and identified within jets are not taken into account in the jet momentum computation. This procedure is called “cleaning”.”
+      * I got other suggestions on this too, and ended up dropping the slang "cleaning" altogether. Love this sentence structure, though, thanks for that!!
 
 %ENDTWISTY%
 
@@ -938,61 +1053,32 @@ From Camilla Galloni:
 %TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
 
 From Dick Loveless:
-   * %RED% Abstract, lines 11-13:  Does this measurement agree with Tevatron measurements? Line 520 says it agrees, so the sentence should read "This forward-backward asymmetry measurement agrees with Tevatron experiments.".
-   * %RED% line 47:  Why is it necessary to set "A_FB" to "A_FB^1"?  In line 25 why not define "A_FB" as the linearized forward-backward asymmetry", change Eq. (2) to "A_FB" and delete the sentence on line 47?  In lines 50 and 59 "A_FB^1" appears again so obviously I (and the reader) are missing some important clarification.
-   * %RED% line 60:  What is a "template description of the total cross section"?  Is this a theoretical distribution of the expected cross section as a function of A_FB, d, and mu?  How about writing "The analysis matches a theoretical description of the total cross section as a function of A_FB, d, and mu with a sample of ttbar-enriched events . . .".
-   * %RED% line 64:  What are the "three distinct topologies"?  Is it important to explain this in the Introduction?  It is covered in lines 120-129.  I suggest you simply drop "with three distinct topologies" in the introduction.
-   * %RED% line 388:  What is "non-QCD MC contamination?
-   * %RED% line 404:  This is the location to add the phrase removed from line 217.
+   * %PURPLE% Abstract, lines 11-13:  Does this measurement agree with Tevatron measurements? Line 520 says it agrees, so the sentence should read "This forward-backward asymmetry measurement agrees with Tevatron experiments.".
+      * I actually removed this sentence from the abstract; I don't think a direct comparison is possible to make.
+   * %BLUE% line 47:  Why is it necessary to set "A_FB" to "A_FB^1"?  In line 25 why not define "A_FB" as the linearized forward-backward asymmetry", change Eq. (2) to "A_FB" and delete the sentence on line 47?  In lines 50 and 59 "A_FB^1" appears again so obviously I (and the reader) are missing some important clarification.
+      * Morris, your thoughts on this?
+   * %GREEN% line 60:  What is a "template description of the total cross section"?  Is this a theoretical distribution of the expected cross section as a function of A_FB, d, and mu?  How about writing "The analysis matches a theoretical description of the total cross section as a function of A_FB, d, and mu with a sample of ttbar-enriched events . . .".
+      * Agreed, love this wording, too.
+   * %GREEN% line 64:  What are the "three distinct topologies"?  Is it important to explain this in the Introduction?  It is covered in lines 120-129.  I suggest you simply drop "with three distinct topologies" in the introduction.
+      * Agreed
+   * %BLUE% line 388:  What is "non-QCD MC contamination?
+      * by "non-QCD contamination" I mean "events from the non-QCD MC samples that end up in the sidebands." We're looking to describe QCD multijet background, so anything that's not QCD in the sidebands is contamination. This wording needs to get changed, though, lots of people have disliked this paragraph.
+   * %GREEN% line 404:  This is the location to add the phrase removed from line 217.
 From Camilla Galloni:
-   * %RED% line 3-4: “The top  quark’s Yukawa coupling to the Higgs potential is close to unity” can you insert a reference?  line 87 : “ longitudinal momentum pL “ by longitudinal do you mean parallel to the beam pipe? Not clear to me also from what is written in line 99-102. Could you improve a bit the description since is one of the main ingredients of the analysis?
-   * %RED% line 165: is it possible to put a reference for “zero-suppression”? I’m not sure how much that is jargon. 
-   * %RED% line 278: No tau21= tau2/tau1 is applied to select Type 2 events? It should increase the purity of events in which an hadronic decaying W boson originates a large con jet. 
-   * %RED% line 299:  in line 240  it’s stated that ““Type-2” events are those for which the  presence of a large, high-momentum, high-mass jet indicates either a partially- or fully-merged hadronic top quark decay”. Instead from line 299  it would seem that you ignore AK8 jets for the hadronic top reconstruction for Type 2 events “Type-2 and type-3 events ignore AK8 jets entirely in their reconstruction, and instead assign each of the four or five AK4 jets with the highest pT either to the leptonic or hadronic side of the decay, or neither, with b-tagged jets in place.”. Please clarify.
-   * %RED% line 502: Can an explanation about the 1 and 2 sigma lines irregularities for  the d and mu plots be added? The toy median functions are much more monotone than the 1 and 2 sigma bands.
+   * %BLUE% line 3-4: “The top  quark’s Yukawa coupling to the Higgs potential is close to unity” can you insert a reference?  
+      * Morris? Does this really need a citation?
+   * %BLUE% line 87 : “ longitudinal momentum pL “ by longitudinal do you mean parallel to the beam pipe? Not clear to me also from what is written in line 99-102. Could you improve a bit the description since is one of the main ingredients of the analysis?
+      * Morris? I know the p_L symbol is standard, but I agree that it's not terribly clear what's said in lines 99-102.
+   * %PURPLE% line 165: is it possible to put a reference for “zero-suppression”? I’m not sure how much that is jargon. 
+      * This is boilerplate text from the publication guidelines TWiki.
+   * %PURPLE% line 278: No tau21= tau2/tau1 is applied to select Type 2 events? It should increase the purity of events in which an hadronic decaying W boson originates a large con jet. 
+      * I looked at this, and found that the W-tagging requirement didn't bridge the gap between the other two event categories as smoothly as just using the resolved jets for type-2 events, even if they might have a merged W. Requiring even a loose W-tag also decreased the selection efficiency, which was already pretty low for type-2 events.
+   * %GREEN% line 299:  in line 240  it’s stated that ““Type-2” events are those for which the  presence of a large, high-momentum, high-mass jet indicates either a partially- or fully-merged hadronic top quark decay”. Instead from line 299  it would seem that you ignore AK8 jets for the hadronic top reconstruction for Type 2 events “Type-2 and type-3 events ignore AK8 jets entirely in their reconstruction, and instead assign each of the four or five AK4 jets with the highest pT either to the leptonic or hadronic side of the decay, or neither, with b-tagged jets in place.”. Please clarify.
+      * I think the way I've worded this now is better.
+   * %BLUE% line 502: Can an explanation about the 1 and 2 sigma lines irregularities for  the d and mu plots be added? The toy median functions are much more monotone than the 1 and 2 sigma bands.
+      * alright, enough people have said this that I need to come up with something to say here I think. I just don't know what's appropriate at this time....
 
 %ENDTWISTY%
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ---++ Comments and issues from/after first preapproval
@@ -1318,4 +1404,4 @@ Detailed comments:
 %ENDTWISTY%
 
 %RESPONSIBLE% Main.MargaretEminizer %BR%
--- Main.MargaretEminizer - 2019-10-09
+-- Main.MargaretEminizer - 2019-10-16
