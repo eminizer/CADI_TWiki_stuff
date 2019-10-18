@@ -95,10 +95,10 @@ more detailed responses in bullets under comments if necessary
       * The text I had used was out of date; I've changed it, and added the recommended bit about MET filters, as well.
    * %GREEN% L174: ... are clustered from the PF objects in an event using the anti-kT algorithm with a distance parameter of 0.4 (0.8).
    * %ORANGE% L186: give a reference to the noise filters here.
-      * This text is boilerplate, from the TWiki [[https://twiki.cern.ch/twiki/bin/viewauth/CMS/Internal/PubDetector][here]], and it doesn't have any references listed, so I'm not sure what to do.
+      * This text is boilerplate, from the TWiki [[https://twiki.cern.ch/twiki/bin/viewauth/CMS/Internal/PubDetector][here]], and it doesn't have any references listed, so I'm not sure what I'm supposed to do.
    * %GREEN% L214: delete "v2 [23-25]" - already given earlier.
    * %ORANGE% L223: we didn't use standalone MC@NLO in Run 2. Are you sure this was not generated with \MGvATNLO? Also, say that the sample was simulated at NLO.
-      * the sample I used is /ST_s-channel_4f_leptonDecays_13TeV-amcatnlo-pythia8_TuneCUETP8M1/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM; I thought that this was indeed MC@NLO, but if it isn't I don't know how to reference it correctly. I did add "simulated at NLO" to this line, though.
+      * the sample I used is /ST_s-channel_4f_leptonDecays_13TeV-amcatnlo-pythia8_TuneCUETP8M1/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM; I thought that this was indeed MC@NLO, but if it isn't I don't know how to reference it correctly. I did add "simulated at NLO" to this line, though. I used the same reference and info as another paper that used this sample....
    * %ORANGE% L226: are you sure you used MLM and not FxFx prescription? - The MLM is used for LO and not NLO!
       * This was my mistake. These samples are generated at LO, with MadGraph5 and indeed the MLM prescription. I changed the MadGraph reference but I'm not sure if it's correct because the twiki page [[https://twiki.cern.ch/twiki/bin/view/CMS/Internal/PubGuidelines][here]] says to not cite the paper that I did...I need help with this.
    * %GREEN% LL238-244: please delete this tex, as it's a direct repetition of what you already said on LL120-129.
@@ -121,8 +121,8 @@ more detailed responses in bullets under comments if necessary
       * Waiting to do all of these at once
    * %PURPLE% What are the two significant outliers in the third-row plot between bins 180 and 190? How many standard deviations are they away from the predictions?
       * These only look large because of the large bin content. The residuals in the plot below show that the corresponding deviations are reasonably within uncertainties.
-   * %ORANGE% Table 2: observed p values appear to be too good. For instance for the d and μ fits, all of them are above 50% and most are very close to 1. I think you need to comment on this in the paper, as it clearly looks like your error bars are too big.
-      * This is an outstanding issue; I do not have a better explanation for why the p-values for these fits are so close to one except that the PoIs deviating significantly from 0 cause very noticeable effects in the shapes of the distributions. I need guidance from the ARC on  what additional checks I should perform for this, and several reviewers have asked about it.
+   * %GREEN% Table 2: observed p values appear to be too good. For instance for the d and μ fits, all of them are above 50% and most are very close to 1. I think you need to comment on this in the paper, as it clearly looks like your error bars are too big.
+      * This was indeed an issue; it was related to my accounting of signal vs. background processes in combine for the d and mu fits in particular. I've switched to using the "saturated" test statistic for goodness of fit, and the p-values calculated over all signal regions are 0.206, 0.233, and 0.274 for the fits for Afb, d, and mu, respectively. The next version of the paper draft will include this information, and the AN will be updated with the plots showing how the test-statistic values for fits to data are well-distributed within those observed for pseudo-experiments.
    * %GREEN% L802: here you should really give a reference documenting the calculation of the weights.
 
 %ENDTWISTY%
@@ -291,8 +291,8 @@ Appendix:
    * %GREEN%  Abstract: The fit results on the three parameters (pars) of interest are presented, this is very nice, but it is not clear if this is a simultaneous fit of the three pars or fitting only one par at the time and setting others to zero. Same for the summary of the paper. I think the important point of fitting only par at a time should be made clear in those places.
    * %GREEN% Drell Yan variables, you call them first (l.90) c*, xF and mTT and then suddenly in l.312 c*_r, x_r and m_r, are the latter really introduced. I searched for it by eye and couldn't find it.
       * added a clause explaining that this is to distinguish the reconstructed values from those at parton-level.
-   * %ORANGE% p.14 you discuss the 4D binned observable vector and that you optimise the binning for the different Channels. In Fig. 7 then one can see the bins, but one has to do guess work how e.g. the 222 bins in the Type 3 mu + jets are related to the 4D space (m_r, x_r, c*_R) and Q. Couldn't you give somewhere (e.g. appendix) some more information on the order of variables in the 222 bins and roughly how many bins for each of the variables are used?
-      * I added the info I had in the AN about this in another appendix. The language used there has never been reviewed.
+   * %BLUE% p.14 you discuss the 4D binned observable vector and that you optimise the binning for the different Channels. In Fig. 7 then one can see the bins, but one has to do guess work how e.g. the 222 bins in the Type 3 mu + jets are related to the 4D space (m_r, x_r, c*_R) and Q. Couldn't you give somewhere (e.g. appendix) some more information on the order of variables in the 222 bins and roughly how many bins for each of the variables are used?
+      * I'll add this information soon; I also changed the postfit comparison plots to show the bin boundaries, so that should make this a lot more clear.
 
    * %ORANGE% l.455 the smoothing of the templates seems quite important. For the nominal templates you use Barlow Beeston light but for the alternative templates zero stat. Uncertainty right? 
       * that's correct, no stat. uncertainty on the shifted templates.
@@ -309,17 +309,17 @@ Further question:
       * The systematic nuisances are either not varied at all, or allowed to float within their uncertainties in generating the toys, depending on whether the group of toys is used to estimate statistical uncertainty only, or the full statistical+systematic uncertainty. The explanation in the AN is more clear about how the Neyman construction is done. I added a sentence explaining this at the end of the paragraph: "The statistical uncertainties are estimated using groups of datasets where the systematic nuisance parameters are fixed, and the full statistical+systematic uncertainties are estimated using groups of datasets where the systematic nuisance parameters are allowed to vary within their uncertainties."
 
 l508-519 GOF-tests. From the CMS Statistics Committee we have some overview of suitable tests at https://twiki.cern.ch/twiki/bin/view/CMS/StatComGOF On this page there is a link to Bob Cousins's article http://cousins.web.cern.ch/cousins/ongoodness6march2016.pdf In his article he points out difficulties with GOF tests in higher dimensions. 
-   * %ORANGE% The test you are doing is in the 4D observable space y, right? So the test would depend on the binning ordering scheme of the four variables, right? 
+   * %GREEN% The test you are doing is in the 4D observable space y, right? So the test would depend on the binning ordering scheme of the four variables, right? 
       * Yes. I was not aware of this until now.
-   * %ORANGE% Why are the p values for d and mu so close to unity, any idea? Wouldn't one expect them to be uniformly distributed between 0 and 1?
-      * This is an outstanding issue; I do not have a better explanation for why the p-values for these fits are so close to one except that the PoIs deviating significantly from 0 cause very noticeable effects in the shapes of the distributions. I need guidance from the ARC on  what additional checks I should perform for this, and several reviewers have asked about it.
-   * %ORANGE% Maybe a chi2 GOF test would have been also possible based on the -2ln L using the saturated model, as implemented in the combine tool and described on the above twiki.
-      * I tried the saturated test, but that can only be calculated over all the channels at once, and I and the StatComm thought that the distributions per-channel were more informative. I also tried the AD test, and the results were very similar to those from KS. I don't know the best way to proceed here.
+   * %GREEN% Why are the p values for d and mu so close to unity, any idea? Wouldn't one expect them to be uniformly distributed between 0 and 1?
+      * This was indeed an issue; it was related to my accounting of signal vs. background processes in combine for the d and mu fits in particular. I've switched to using the "saturated" test statistic for goodness of fit, and the p-values calculated over all signal regions are 0.206, 0.233, and 0.274 for the fits for Afb, d, and mu, respectively. The next version of the paper draft will include this information, and the AN will be updated with the plots showing how the test-statistic values for fits to data are well-distributed within those observed for pseudo-experiments.
+   * %GREEN% Maybe a chi2 GOF test would have been also possible based on the -2ln L using the saturated model, as implemented in the combine tool and described on the above twiki.
+      * Indeed, this is exactly what I did! Thank you!
 
    * %PURPLE% There is not much said about the outcome of the template fits on the nuisance pars, are there any large pulls observed or not?
       * this was the subject of a LOT of my work and several presentations in Top Properties and also Higgz Combine. The long story short is that the few pulls that are large have real, explicable causes. The AN has the pull plots in it, and explanation of some of them in an Appendix as well.
-   * %BLUE% Figure 7 what does the MC uncertainty in the plot mean, is this something related to Post-fit uncertainties?
-      * It's the full statistical+post-fit systematic uncertainty from combine.
+   * %GREEN% Figure 7 what does the MC uncertainty in the plot mean, is this something related to Post-fit uncertainties?
+      * It's the full statistical+post-fit systematic uncertainty from combine. I added a line to the caption explaining this.
 
 %ENDTWISTY%
 
@@ -373,7 +373,7 @@ l508-519 GOF-tests. From the CMS Statistics Committee we have some overview of s
    * %PURPLE% Table 1: Note that "shape" is not a scientific term. What you mean is "distribution," which is fine. And perhaps can also change the "S" to "D"
       * I've seen "shape" used in many CMS papers, and no other reviewers have raised issue with it
    * %GREEN% Table 1: Please change all the "type" to "Type"; remove the hyphens after the "b" and "t";
-   * %BLUE% Table 1: You should define all \sigma terms, or simplify the table. Do you mean the dependence of the uncertainty? That is, "Uncertainty in"? 
+   * %GREEN% Table 1: You should define all \sigma terms, or simplify the table. Do you mean the dependence of the uncertainty? That is, "Uncertainty in"? 
       * I changed this to "uncertainty in" and I'm not sure what else I can do to make the column more clear. I intended for it to summarize the dependencies that were discussed in the section above the table.
    * %PURPLE% L493-498 (???): These three lines are annoying! Please remove the theatrics and simplify the language. 
       * I don't know what this comment is referring to; it was floating in the PDF document.
@@ -497,7 +497,7 @@ Summary:
 %TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
 
    * %BLUE% line 49-51: did we make this check ourselves? If so we could say so
-      * Morris?
+      * Morris? Did we do this or did this come right from the Kuhn/Rodrigo paper?
    * %BLUE% line 105: I get confused on the discussion you have on figure 2.  First: is Dilution the right name for this variable in fig 2d?  D=1 means  no dilution, right? Then there is the discussion on the increasing value  with xF. For xF <0.7 the values are close to one and I assume this is  what you mean with the 'increasing values in the qqbar dominated area. But then there is a drop of D for larger xF values. What is the reason for that? It looks beyond just statistics.
       * I'd be open to changing the name of the variable; I agree it's confusing. The drop is indeed statistical; it wasn't observed in larger MC samples, but regardless there are hardly any events selected in any channel with |xF|>0.7. 
    * %GREEN% line 170 The ruin-2 vertex selection also include the pTMiss at the vertex as an object. This should be added 
@@ -513,8 +513,8 @@ Summary:
       * This was my mistake. These samples are generated at LO, with MadGraph5 and indeed the MLM prescription. I changed the MadGraph reference but I'm not sure if it's correct because the twiki page [[https://twiki.cern.ch/twiki/bin/view/CMS/Internal/PubGuidelines][here]] says to not cite the paper that I did...I need help with this.
    * %PURPLE% line 278 For the type-2 we require 4 AK4 jets (as for type-3, see line 281), I assume one from the leptonicaly  decaying top and one from the hadronically decaying one. So it means that all jets from the top decays must be resolved? If not, why do we have the condition of 4 AK4 jets for type-2?
       * Type-2 events contain at least one large AK8 jet, with no top-tags, but the reconstruction only uses the resolved jets in the events, identical to that for type-3 events. I found that this bridged the gap between merged and resolved events more effectively than requiring a W-tagged jet, or anything else like that.
-   * %BLUE% line 299: After this line one should add what the advantage is of using Type-2 at all in this paper. It concerns 10% of the events and we do not use the AK8 feature. I take that this class less background/better efficiency for the kinematic fitting than the type-3? 
-      * Yeah, they don't give us a ton of power, I just include them to bridge the gap between the other two scenarios. Morris, thoughts on something to add?
+   * %GREEN% line 299: After this line one should add what the advantage is of using Type-2 at all in this paper. It concerns 10% of the events and we do not use the AK8 feature. I take that this class less background/better efficiency for the kinematic fitting than the type-3? 
+      * Yeah, they don't give us a ton of power, I just include them to bridge the gap between the other two scenarios. I improved my overall explanation of the topologies and their purposes in this paragraph.
    * %GREEN% line 379-380: "that are less resolved": do you mean broader? But the W+jet should not have a "top quark mass" at all..?
       * "less resolved" does mean broader. The "top quark mass" referred to is the mass of the reconstructed leptonic top quark, which for W+jets events indeed is not localized around the top mass because it's not a real top, it's some hadronic stuff that gets collected together and forced to look as much like a top as possible by the kinematic fitting function. Regardless, I changed this phrase to "that are further away from"
    * %PURPLE% line 383: So is region D the nominal signal selection region. Do we use this methodology to predict the background in region D? 
@@ -585,23 +585,23 @@ Summary:
    * %BLUE% Formula 9. there are indices 0,1,2,3,4 in formula 9, do they correspond to flavors in some sense i.e. 0,1,2,3,4 = g,u,d,s,c ?
       * no, it's a sum over the different background templates, of which there are three: W+Jets, QCD multijet, and everything else. This is explained in text near both of the formulas using this, but maybe we should change the index used since j was earlier used to represent flavors...
    * %BLUE% L.395-396 to which precision are these transfer factors known ?
-      * They vary per channel. For type-1 mu+jets they are 30% and 20% for positively and negatively charged muons, respectively. For type-1 e+jets they are about 10%. For type-2 and type-3 events they are on the order of a few percent.
+      * They vary per channel. For type-1 mu+jets they are 30% and 20% for positively and negatively charged muons, respectively. For type-1 e+jets they are about 10%. For type-2 and type-3 events they are on the order of a few percent. Morris: should I put this info somewhere?
    * %ORANGE% L.412 is there a justification for this value of 4.6%  (maybe add a reference) ?
       * * I have no idea what exactly to cite for this. The TWiki I used to get this original number links only to [[https://hypernews.cern.ch/HyperNews/CMS/get/luminosity/613/2/1/1/1.html][this]] HN thread as justification, and I looked at five other published TOP papers that use the 2016 dataset, none of which cited anything for their pileup uncertainty measurements. I don't think this is coming directly from an inelastic cross section measurment?
    * %BLUE% L.475-478 the stat. uncertainty on the transfer factors is mentioned but we don't have any idea of its size (difficult to relate with table 1)
       * (related to above, maybe add this here?)
    * %BLUE% Figure 6 for d it is difficult to see but the toy median values of the best fit for d versus the true d seems to be perfectly flat between -0.01 and 0.01 - is this large flat "step" a consequence of the sign ambiguity ? Why at these (apparent) particular values ?
-      * Our analysis isn't very sensitive to small values of d; the perfect flatness comes from there being many toy experiments where d is found to be exactly zero. Outside of these values we're more sensitive, as shown by the rest of the Neyman plot.
-   * %ORANGE% Table 2 Why the d fit and mu fit p-values are so differents for type 2 e+jets between Q>0 and Q<0 ?
-      * This is an outstanding issue; I do not have a better explanation for why the p-values for many of these fits are so close to one, or why they would be so different between channels, except that the PoIs deviating significantly from 0 cause very noticeable effects in the shapes of the distributions. I need guidance from the ARC on what additional checks I should perform for this, and several reviewers have asked about it.
+      * Our analysis isn't very sensitive to small values of d; the perfect flatness comes from there being many toy experiments where d is found to be exactly zero. Outside of these values we're more sensitive, as shown by the rest of the Neyman plot. Morris: multiple people mention this; should I talk about it somewhere would you say?
+   * %GREEN% Table 2 Why the d fit and mu fit p-values are so differents for type 2 e+jets between Q>0 and Q<0 ?
+      * This was indeed an issue; it was related to my accounting of signal vs. background processes in combine for the d and mu fits in particular. I've switched to using the "saturated" test statistic for goodness of fit, and the p-values calculated over all signal regions are 0.206, 0.233, and 0.274 for the fits for Afb, d, and mu, respectively. The next version of the paper draft will include this information, and the AN will be updated with the plots showing how the test-statistic values for fits to data are well-distributed within those observed for pseudo-experiments.
    * %BLUE% Fig 2 or elsewhere: maybe you could illustrate the effect of mu and d since the equations are quite complicated (while for AFB it looks relatively straightforward) ?
       * Morris?
    * %BLUE% Fig 7: maybe adding dashed lines to separate regions of each (or some observables) would help understanding the binning and the sensitive variables
       * I could add lines indicating the bins in xF and M! Cool idea!
    * %BLUE% l.137: why the extraction of each of the parameters is done separately instead of a combined extraction with e.g. a profile likelihood ratio ?
-      * Morris, is there a motivation for this, or did I just decide this? I seem to remember asking you about this a long time ago.
-   * %ORANGE% the distributions are constructed by unrolling 4D distributions, which introduces discontinuities. Is the KS test really meaningful in this case ? There exist some versions for the multidimensional case but they look more complicated. Also, the p-values seem to cluster around 1 or < 0.2. Do you have an explanation ?
-      * Same as my comment above, this is an outstanding issue. Indeed the KS test shouldn't be used for anything in more than one dimension. I did not know this at the time, and StatComm didn't mention it when I made my presentation there....
+      * Morris, I don't have a good answer for this question.
+   * %GREEN% the distributions are constructed by unrolling 4D distributions, which introduces discontinuities. Is the KS test really meaningful in this case ? There exist some versions for the multidimensional case but they look more complicated. Also, the p-values seem to cluster around 1 or < 0.2. Do you have an explanation ?
+      * Same as my comment above, this is no longer an issue now that we've switched to the "saturated" test statistic.
 
 %ENDTWISTY%
 
@@ -708,15 +708,15 @@ L412, L418-419, L440 and L471-472.
    * %PURPLE% L426, similar as the item (20g) above, the 1st letter of this line should be capital in order to be consistent in this Section, i.e. "top tagging efficiency:" --> "Top tagging efficiency:"
       * I believe this is not recommended; I changed it to the way that it is some time back.
    * %GREEN% L430, from the pronunciation point of view, the article word "a" should be changed from "by a MC matching procedure," --> "by an MC matching procedure,"
-   * %BLUE% L465, I'm not sure whether the "B" in the nominator should be explained, but an extra space in the denominator after the "b" should be removed or be replaced by a hyphen, i.e. "xb = pT(B)/pT(b   jet) for" --> "xb = pT(B)/pT(b jet) (where B is ...) for" "xb = pT(B)/pT(b-jet) (where B is ...) for"
-      * definitely agree with and added the hyphen. I'm not sure either about explaining "B"
+   * %GREEN% L465, I'm not sure whether the "B" in the nominator should be explained, but an extra space in the denominator after the "b" should be removed or be replaced by a hyphen, i.e. "xb = pT(B)/pT(b   jet) for" --> "xb = pT(B)/pT(b jet) (where B is ...) for" "xb = pT(B)/pT(b-jet) (where B is ...) for"
+      * added the hyphen and an explanation that "B" refers to the B meson.
 Table 1
    * %PURPLE% (a) In the header column, the 9th row above the bottom of Table, similar as the item (20) above, the 1st letter of this row should be capital to be consistent in this Table, i.e. "top pT reweighting" --> "Top pT reweighting"
       * again i don't think this is recommended; I was asked to make it this way.
    * %GREEN% (b) The location of Table 1 may should be moved backward to be below L495 since the "sigma" used in the 2nd column of this Table has not been explained until L495.
 
-   * %BLUE% L515, the "p-value" may should be given a Reference article, i.e. "in terms of a “p-value”:" --> "in terms of a “p-value”[xx]:"
-      * Morris? I'd have to figure out what to cite....
+   * %PURPLE% L515, the "p-value" may should be given a Reference article, i.e. "in terms of a “p-value”:" --> "in terms of a “p-value”[xx]:"
+      * I think this usage is pretty standard; I've not seen other papers cite references for it.
    * %GREEN% Fig.7, in the caption, the last two lines, to be consistent in this paper, a space before the symbol "+" should be removed, i.e. (at four places)"mu  +jets (left column) and e  +jets (right column) channels, and the ... type-3 mu  +jets (third row) and e  +jets (lower row) channels," --> "mu+jets (left column) and e+jets (right column) channels, and the ... type-3 mu+jets (third row) and e+jets (lower row) channels,"
    * %GREEN% Page 21, Table 2: In the header column, (a) the 1st letter of each row should be capital; (b) an extra space before the symbol "+" should be removed in order to be consistent in this paper; (c) a space should be added after the symbol ">" or "<" at the end of row in order to be consistent in this paper, e.g. (the 1st two rows) "type-1 mu  +jets (Q >0)" --> "Type-1 mu+jets (Q >  0)" 
    * %GREEN% L669, in [20], to be consistent in this paper and with all other CMS papers, a hyphen should be added in the article title, i.e. "Top production in hadron hadron collisions and" --> "Top production in hadron-hadron collisions and"
@@ -779,12 +779,11 @@ and improve all Type A issues.
       * The control regions just provide information on where the cross section value should lie within this uncertainty. They don't determine anything about the contributions themselves, W+jets is always estimated using MC.
    * %PURPLE% L.475, "statistical uncertainty": really only "statistical", isn't this supposed to cover the entire uncertainty on QCD background?
       * The uncertainty I'm describing here is a (fully statistical) uncertainty on the transfer factors used to estimate the nominal normalization of the QCD background in each channel: the magnitude of the uncertainty is directly dependent only on the numbers of observed events in each sideband region.
-   * %BLUE% Table 1, the column heading "Scale" seems somewhat unusual and easy to misinterpret. Maybe better "Average size"?
-      * Morris, thoughts? I chose "scale" literally because it's about as wide as the widest entry in the column and I had trouble fitting this table on the page... I explain what it means in the table caption!
-   * %ORANGE% Table 2: The p-values for the measurements of d and mu in the 12 (!) different regions are mostly very close to 1. This must be explained in the paper, because from the present description it is unclear how such an unphysical result could happen.
-      * This is an outstanding issue; I do not have a better explanation for why the p-values for these fits are so close to one except that the PoIs deviating significantly from 0 cause very noticeable effects in the shapes of the distributions. I need guidance from the ARC on  what additional checks I should perform for this, and several reviewers have asked about it.
-   * %BLUE% L.534-537 is very convoluted and should be simplified or split in two sentences.
-      * Morris, thoughts? This is repeated from the abstract....
+   * %GREEN% Table 1, the column heading "Scale" seems somewhat unusual and easy to misinterpret. Maybe better "Average size"?
+      * Changed this to "size" and explain it in the caption
+   * %GREEN% Table 2: The p-values for the measurements of d and mu in the 12 (!) different regions are mostly very close to 1. This must be explained in the paper, because from the present description it is unclear how such an unphysical result could happen.
+      * This was indeed an issue; it was related to my accounting of signal vs. background processes in combine for the d and mu fits in particular. I've switched to using the "saturated" test statistic for goodness of fit, and the p-values calculated over all signal regions are 0.206, 0.233, and 0.274 for the fits for Afb, d, and mu, respectively. The next version of the paper draft will include this information, and the AN will be updated with the plots showing how the test-statistic values for fits to data are well-distributed within those observed for pseudo-experiments.
+   * %GREEN% L.534-537 is very convoluted and should be simplified or split in two sentences.
 
 %ENDTWISTY%
 
@@ -795,43 +794,42 @@ and improve all Type A issues.
 
    * %PURPLE% Given that this is mainly a search for BSM effects, it seems difficult to justify not including 2017+2018 data to a referee. The A_fb appears to be completely statistics limited, and for the other parameters the statistical errors are similar to the systematics. So the additional data should give improved sensitivity to deviations from the SM.
       * I agree! This work would absolutely be better with the whole Run 2 dataset included. There are two reasons we have not done so at this time. First, the method itself is novel and remains unpublished. Second, I am the only person who has worked on this analysis; it's my thesis project and I need to graduate. If our paper is rejected by a referee for this reason I'll be absolutely devastated, for sure, but I'll understand, and most importantly I'll still graduate.
-   * %BLUE% Title: It would be more effective if it could be shortened and more to the point. For example: "Forward-backward asymmetry in top quark events in pp collisions at sqrt(s)=13 TeV"
-      * We have to figure out what to do about the title, multiple reviewers have pointed this out.
+   * %GREEN% Title: It would be more effective if it could be shortened and more to the point. For example: "Forward-backward asymmetry in top quark events in pp collisions at sqrt(s)=13 TeV"
    * %GREEN% abstract, last sentence: "The forward-backward ...comparable...measurements." It is not clear what you are referring to. Presumably the comparison is to the d and mu values. Why not just say that? It could be replaced by: "Results on d and mu are comparable to those obtained at the Tevatron." In general, comparison to Tevatron results is not straightforward. It would be better to remove the sentence from the abstract. It would fit better in the conclusions.
       * In my opinion, none of the comparisons are straightforward. I've been wanting to remove this for some time.
-   * %BLUE% L16: It would be good to clarify earlier what is the final state used for the study.
-      * Morris: thoughts?
+   * %PURPLE% L16: It would be good to clarify earlier what is the final state used for the study.
+      * Hmm, it's in the abstract that we're using lepton+jets events
    * %BLUE% LL20-21: it would be good to add a sketch
       * more than one person has suggested this....
    * %BLUE% L22: There is also a 13 TeV paper submitted (http://inspirehep.net/record/1742786?ln=en), that should presumably be cited here. Unfortunately it seems nearly impossible to compare to those previous CMS results, since they use a different notation (+ different theory formalism?), and quote 95% CL limits instead of a central value with 1-sigma errors. It would have been extremely helpful to present the results in a way that could be directly compared. If that's not possible, at least some statement explaining how the sensitivity of this result compares to previous limits on the chromo-E/M moments seems mandatory.
       * I have to look into this in more detail
-   * %BLUE% L22: odd and even distributions: not clear what that means in this context. Please clarify.
-      * Morris: can we just remove this sentence? I don't see what clarity it adds....
+   * %GREEN% L22: odd and even distributions: not clear what that means in this context. Please clarify.
+      * I think linking the following sentence to this helps clarify.
    * %BLUE% L27: NLO ...expected to produced ... positive values for AFB. How is this relevant? "small" should be quantified. AFB is expected to be symmetric at 13 TeV. The quark-related interactions are a small fraction at LO, and even smaller at NLO.
-      * Morris?
-   * %BLUE% L37: A_C is a different measurement. It is not clear why A_C "uses only a fraction of the available information". Please clarify.
-      * Morris....
+      * Morris, does anything need to change here?
+   * %GREEN% L37: A_C is a different measurement. It is not clear why A_C "uses only a fraction of the available information". Please clarify.
+      * I think the explanation of this is better now.
    * %GREEN% L38: done-> performed
-   * %BLUE% LL38-40: rather than "model-independent" and "simplified model", it would be better to mention that here the goal is to model the different qq, qg, and gg contributions with the goal of isolating the different components.
-      * Morris: ideas on how to re-word this?
-   * %BLUE% LL45-51: The formulation is hard to follow. Is this necessary? It would be better to describe the measurement from the point of view of the observables.
-      * Morris....
-   * %PURPLE% Eq.3: many terms are not defined. Is this really needed?
-      * I've added the missing definitions, but I'm pretty certain this needs to stay. It's the most concise way to define mu and d, and links directly to the cited publication.
+   * %GREEN% LL38-40: rather than "model-independent" and "simplified model", it would be better to mention that here the goal is to model the different qq, qg, and gg contributions with the goal of isolating the different components.
+      * I think the new version of this is more clear.
+   * %PURPLE% LL45-51: The formulation is hard to follow. Is this necessary? It would be better to describe the measurement from the point of view of the observables.
+      * I think it's necessary to keep this here to explain the relation between A_FB and A_FB^(1); it defines what we mean by "linearized."
+   * %BLUE% Eq.3: many terms are not defined. Is this really needed?
+      * Morris: multiple people have mentioned that including the Lagrangian here complicates things. Do we want to just leave it as a citation to the reference that has that Lagrangian in it, rather than take all the space to redefine it in our paper?
    * %PURPLE% L59: why the subscript 1? The observable is defined in Eq. 1.
       * This is to distinguish the linearized from the parton-level quantity as explained in lines 46-51
    * %BLUE% L67: how does this measurement compare to those in Ref.22, in terms of accuracy? Please clarify it in the Summary.
-      * Morris, you know more about this than I do....
+      * Morris, we should come up with a line to add to the summary here. I'm not sure if our quantities are directly comparable or if we need to do anything to  them....
    * %PURPLE% L78: more challenging -> less sensitive ?
       * I think "more challenging" is indeed the point we're trying to make. We're not necessarily less sensitive, depending on statistics and many other factors, but there will always be the hurdle of ttbar production being primarily gg and not qqbar since we're in a pp lab not a ppbar one.
    * %BLUE% L85: what are the "Drell-Yan variables"? why not just "the following variables... "? Please clarify.
-      * Morris: do we need this here? I see no need to keep it.
+      * Morris: do we need this here? I see no need to keep it, and multiple reviewers have complained about it.
    * %PURPLE% LL90-91: In Fig.2 there are 4 distributions. Please add description of all 4.
       * The last one isn't a distribution, but that plot is explained in lines 98-105.
    * %BLUE% L92: It is not clear the logic. "smaller" it certainly is, but it would be good to quantify. The combination of qg and gg is probably because there is little (or no) added sensitivity to the measurement. Yet, the asymmetry in qg may still provide some information. Suggest to either simply state that the qg and gg are combined as they provide negligible sensitivity or to quantify what is "small".
       * Morris: I agree with this comment but am not sure the best way to reword this sentence.
-   * %BLUE% L98: May want to clarify the reason. At LHC, g and qbar come from the sea and are softer.
-      * Morris: thoughts?
+   * %GREEN% L98: May want to clarify the reason. At LHC, g and qbar come from the sea and are softer.
+      * I think the way this has been reworded is more clear than the original.
    * %GREEN% L99: Please remove "much".
    * %GREEN% L105: what is "CM frame"? please clarify.
       * Removed this abbreviation everywhere since it was only used three or four times and is confusing.
@@ -839,10 +837,10 @@ and improve all Type A issues.
       * Added this in the caption.
    * %PURPLE% Also, distribution in lower right panel: please describe the variable and define it in the text and in the caption.
       * this variable is defined on line 104, and I've been asked explicitly by the ARC and LE to not repeat its definition in the caption.
-   * %BLUE% Eq.4 and Eq.5: What is the relation between the two? Are they both really needed? Eq.4 is at NLO and Eq.5 includes the anomalous parameters. However, from Eq.5 one does not get Eq.4 after setting d=mu=0. It is not clear.
-      * They describe different cross section extensions for the AFB and d/mu measurements. Morris, can you help me make this more clear maybe? 
-   * %BLUE% L116: not straightforward that "large beta" means "large pair mass". Also, what is "pair mass"? Please clarify.
-      * I agree that this is ambiguous. Morris, suggestions?
+   * %PURPLE% Eq.4 and Eq.5: What is the relation between the two? Are they both really needed? Eq.4 is at NLO and Eq.5 includes the anomalous parameters. However, from Eq.5 one does not get Eq.4 after setting d=mu=0. It is not clear.
+      * They describe different cross section extensions for the AFB and d/mu measurements, and I make that more clear later on explaining that the equations are used for independent analyses.
+   * %GREEN% L116: not straightforward that "large beta" means "large pair mass". Also, what is "pair mass"? Please clarify.
+      * Beta and mttbar are directly related, but I agree it was hard before to see that "pair mass" means mttbar. I've made that more clear.
    * %BLUE% general: Eq4/5 is qq and Eq6 is gg. It is missing the contribution of qg. Why?
       * Morris, we do state that Eqs. 4/5/6 are NLO with approximately LO extensions. How can we reconcile that with the lumping of qg into the gg distribution? Do we need to explain that?
    * %GREEN% L120: "dipole moments". Are you referring to d and mu? it would be good to clarify earlier these are dipole moments.
@@ -861,7 +859,7 @@ and improve all Type A issues.
    * %PURPLE% L199: bosonic -> W/Z boson
       * This text is also boilerplate
    * %ORANGE% L209: Trigger: single muon pT>50 GeV, single ele pT>115GeV. These are non-isolated leptons. The efficiency for ttbar events for these triggers depends on the boost of the tops. How is this accounted for?
-      * The efficiency scalefactors applied depend on the lepton kinematics. Is that what this question is asking?
+      * The efficiency scalefactors applied depend on the lepton kinematics. Is that what this question is asking???
    * %GREEN% LL236-238: It is not clear whether only one leg or both legs are considered separately. Please clarify.
       * This was missing an Oxford comma; I think that helps.
    * %GREEN% L239: "decaying with very high momentum" is confusing. What is high is the momentum of the initial top such that the decay products are boosted. Please rephrase.
@@ -872,9 +870,9 @@ and improve all Type A issues.
       * It could  be fully-merged, but if it doesn't pass the top-tagging criteria then the event is not in the type-1 category. I explain this better now in the section I initially introduce this idea.
    * %GREEN% L243: "lower mass events": this is jargon. What does it mean? does it refer to m_ttbar? It is not clear.
       * Also gone
-   * %BLUE% L248: muon/ele candidates have pT>50/80 GeV for boosted events. Are these values compatible with the triggers at L209? What are the efficiencies?
-      *  Yes, these values were chosen specifically to sync with the triggers used and the selections used to measure their efficiencies. The selection efficiencies for these cuts are listed in the AN. Morris, do I need to figure out a way to include them here? That seems like it would take up a lot of space to add not much info.
-   * %BLUE% L272: it would be useful to clarify what is the top-tagging efficiency in the kinematic regions relevant to this analysis.
+   * %PURPLE% L248: muon/ele candidates have pT>50/80 GeV for boosted events. Are these values compatible with the triggers at L209? What are the efficiencies?
+      *  Yes, these values were chosen specifically to sync with the triggers used and the selections used to measure their efficiencies. The trigger efficiencies are given in the paper, but selection efficiencies for these cuts are listed in the AN in the cutflow tables. I don't think it's common to mention the efficiency of individual selections beyond triggers. 
+   * %PURPLE% L272: it would be useful to clarify what is the top-tagging efficiency in the kinematic regions relevant to this analysis.
       * Same case as the above: it varies depending on selection region, and I don't have the measurements readily available. Again this seems like too much text to me.
    * %GREEN% L291: Are the Refs needed? they are specific for what?
       * I think so. One of them is the source of the functional form used in the kinematic fit, and the other is for Minuit, which we use to actually do the fit.
@@ -902,18 +900,18 @@ and improve all Type A issues.
    * %BLUE% L383: ABCD: The discussion is confusing as it is. Also, as it is, there is no much point in giving the specifics of the A, B, C regions. It would be good to add a sketch to explain this, and better define the regions in isolation and ptmiss. It would help.
       * Multiple people have said this is confusing. I'm not sure what to do about it. I used to have an image here but was asked to remove it.
    * %BLUE% L496 and Fig. 6: It seems for d, the Best fit value is degenerate for True values between about -0.01 and 0.01. If this is true, could you add an explaination of how the True value is determined to be 0.002 for a Best fit value of 0?
-      * * Our analysis isn't very sensitive to small values of d; the perfect flatness comes from there being many toy experiments where d is found to be exactly zero. Outside of these values we're more sensitive, as shown by the rest of the Neyman plot. The curve there isn't precisely flat, though, it does fluctuate some, which is how we got the value of 0.002.
+      * Our analysis isn't very sensitive to small values of d; the perfect flatness comes from there being many toy experiments where d is found to be exactly zero. Outside of these values we're more sensitive, as shown by the rest of the Neyman plot. The curve there isn't precisely flat, though, it does fluctuate some, which is how we got the value of 0.002.
    * %BLUE% Fig. 6: It's not clear what is going on with the 2-sigma band around true mu=-0.04, where it becomes very wide vertically.
       * That's just the distribution of the values from the toy experiments; if the plot were wider it would be on the other side as well. I don't have any further "explanation" for this.
-   * %ORANGE% Table 2: The many p-values of 1.000 for d and mu seem suspicious - can you add some comment to the text on how you interpret this?
-      * Working on this, it will not be the case soon.
+   * %GREEN% Table 2: The many p-values of 1.000 for d and mu seem suspicious - can you add some comment to the text on how you interpret this?
+      * This is no longer the case; I changed the test-statistic I was using, and some book-keeping things in the combine fits, and now the p-values are not suspicious at all.
    * %BLUE% L488-492: How much does the assumption of fixing the other 2 parameters to 0/the MC values matter? Would larger values of mu be allowed if d was allowed to vary simultaneously, for example? If so, it should somehow be made more clear in the Results/Summary section that the results are valid for that particular assumption on the other parameters.
       * Morris? I don't know how those parameters constrain one another.
    * %GREEN% L522: This sentence sounds like it's making excuses for not generating more MC. Please consider rephrasing, or even removing it, if it's not one of the main points that readers should take away from the paper.
    * %PURPLE% L531: in the summary only two categories appear, as "resolved" and "boosted", whereas the paper always refers to 3 categories. Please make it consistent.
       * The first two categories are both "boosted." The language here mirrors that used in the abstract.
    * %BLUE% L536: Please add a comparison to results in earlier measurements. For example: those in [22] or in the ATLAS+CMS combined results JHEP 04(2018)033.
-      * Multiple people have commented on comparing to earlier measurements. I do not think this measurement is directly comparable to any others, since the expected Afb is different for ppbar and pp scenarios, and this is the first measurement of the parton-level quantity at the LHC.
+      * Multiple people have commented on comparing to earlier measurements. I do not think this measurement is directly comparable to any others, since the expected Afb is different for ppbar and pp scenarios, and this is the first measurement of the parton-level quantity at the LHC, but we might be able to come up with something for d and mu.
 
 %ENDTWISTY%
 
@@ -1034,7 +1032,7 @@ From Dick Loveless:
    * %GREEN% Ref. 23:  Change "New" to "new".
    * %GREEN% Ref. 24:  Change "Parton Shower" to "parton shower".
    * %BLUE% Ref. 30:  Use penname for "anti-k_T".
-      * Maggie: double-check this one; I'm not 100% sure that the type-setting will come out right
+      * Maggie: double-check this one when you recompile the document; I'm not 100% sure that the type-setting will come out right
    * %BLUE% Ref. 41:  Put "PYTHIA" in special capitals.
       * double-check this one, too
    * %GREEN% Ref. 53:  Change "Updated" to "updated".
@@ -1067,8 +1065,8 @@ From Dick Loveless:
 From Camilla Galloni:
    * %BLUE% line 3-4: “The top  quark’s Yukawa coupling to the Higgs potential is close to unity” can you insert a reference?  
       * Morris? Does this really need a citation?
-   * %BLUE% line 87 : “ longitudinal momentum pL “ by longitudinal do you mean parallel to the beam pipe? Not clear to me also from what is written in line 99-102. Could you improve a bit the description since is one of the main ingredients of the analysis?
-      * Morris? I know the p_L symbol is standard, but I agree that it's not terribly clear what's said in lines 99-102.
+   * %PURPLE% line 87 : “ longitudinal momentum pL “ by longitudinal do you mean parallel to the beam pipe? Not clear to me also from what is written in line 99-102. Could you improve a bit the description since is one of the main ingredients of the analysis?
+      * The p_L symbol is standard, according to the guidelines it doesn't need a definition any longer.
    * %PURPLE% line 165: is it possible to put a reference for “zero-suppression”? I’m not sure how much that is jargon. 
       * This is boilerplate text from the publication guidelines TWiki.
    * %PURPLE% line 278: No tau21= tau2/tau1 is applied to select Type 2 events? It should increase the purity of events in which an hadronic decaying W boson originates a large con jet. 
@@ -1404,4 +1402,4 @@ Detailed comments:
 %ENDTWISTY%
 
 %RESPONSIBLE% Main.MargaretEminizer %BR%
--- Main.MargaretEminizer - 2019-10-16
+-- Main.MargaretEminizer - 2019-10-18
