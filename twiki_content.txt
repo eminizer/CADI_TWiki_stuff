@@ -87,7 +87,7 @@ more detailed responses in bullets under comments if necessary
    * %GREEN% Figure 2, lower left plot: the upper end of the x axis has value labels overlapping with one the other - please decrease the number of labels; lower right plot: replace "Dilution factor" with D in the y axis label.
    * %GREEN% L107: strong coupling constant.
    * %GREEN% L108: drop "rest".
-      * I was asked to add "rest" at some earlier point, but i forget when and I agree with this comment so I dropped it again haha
+      * I was asked to add "rest" at some earlier point, but i forget when and I agree with this comment so I dropped it again
    * %GREEN% L117: give a reference here ([20] ?).
       * indeed this is the correct reference; I added it.
    * %GREEN% L138: The CMS detector and physics objects.
@@ -98,8 +98,8 @@ more detailed responses in bullets under comments if necessary
    * %GREEN% L174: ... are clustered from the PF objects in an event using the anti-kT algorithm with a distance parameter of 0.4 (0.8).
    * %GREEN% L186: give a reference to the noise filters here.
    * %GREEN% L214: delete "v2 [23-25]" - already given earlier.
-   * %ORANGE% L223: we didn't use standalone MC@NLO in Run 2. Are you sure this was not generated with \MGvATNLO? Also, say that the sample was simulated at NLO.
-      * the sample I used is /ST_s-channel_4f_leptonDecays_13TeV-amcatnlo-pythia8_TuneCUETP8M1/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM; I thought that this was indeed MC@NLO, but if it isn't I don't know how to reference it correctly. I did add "simulated at NLO" to this line, though. I used the same reference and info as another paper that used this sample....
+   * %GREEN% L223: we didn't use standalone MC@NLO in Run 2. Are you sure this was not generated with \MGvATNLO? Also, say that the sample was simulated at NLO.
+      * This comment is correct, the sample used was generated with aMC@NLO. I added "simulated at NLO" to the text and also fixed the referece.
    * %GREEN% L226: are you sure you used MLM and not FxFx prescription? - The MLM is used for LO and not NLO!
       * This was my mistake. These samples are generated at LO, with MadGraph5 and indeed the MLM prescription. I fixed the language and the reference here.
    * %GREEN% LL238-244: please delete this tex, as it's a direct repetition of what you already said on LL120-129.
@@ -158,8 +158,7 @@ Introduction:
    * %GREEN% L47: add a comma before "which";
    * %GREEN% L48: the LO exchange;
    * %GREEN% L51: of the AFB values;
-   * %PURPLE% L53: of a tt¯ system  at hadron colliders;
-      * I'm not sure the specific ask here?
+   * %GREEN% L53: of a tt¯ system  at hadron colliders;
    * %GREEN% L59: add a comma before "and";
    * %GREEN% L60: the LHC.
    * %GREEN% L63:(muon or electron) [the entire paper talks about muons before electrons; please follow the same order here];
@@ -271,8 +270,8 @@ Summary:
    * %GREEN% L532: (low-energy); (high-energy);
 References:
    * %GREEN% Ref. [46]: typeset the Erratum as a doi reference.
-   * %PURPLE% Ref. [55]: are you sure you used rather old FEWZ 2.0, and not 3.0? In the latter case, please update the reference.
-      * Yeah, this is the same citation as that used in other papers that used the samples I did.
+   * %GREEN% Ref. [55]: are you sure you used rather old FEWZ 2.0, and not 3.0? In the latter case, please update the reference.
+      * Updated the reference.
 Appendix:
    * %GREEN% L799: A. Appendix: reweighting factors;
    * %GREEN% Eqs. (17,18): finish each equation with a comma;
@@ -293,11 +292,13 @@ Appendix:
    * %GREEN% l.455 the smoothing of the templates seems quite important. For the nominal templates you use Barlow Beeston light but for the alternative templates zero stat. Uncertainty right? 
       * that's correct, no stat. uncertainty on the shifted templates.
 It could be mentioned:
-   * %PURPLE% what smoothing algorithm was used, e.g. KDE or Splines often there is some steering parameter related to the effective length of the smoothing
+   * %GREEN% what smoothing algorithm was used, e.g. KDE or Splines often there is some steering parameter related to the effective length of the smoothing
+      * Added to the text: "Some shifted templates are smoothed before fitting by merging bins in \mr\ and \csubr\ and applying the average shifts."
    * %PURPLE% that stat. unc. of the templates after smoothing are neglected in the final fits.
+      * I think adding a comment to this effect would create more confusion than it would clear up because the shape systematics generally speaking ignore statistical errors on the shifted templates.
 Further question:
-   * %ORANGE% is it a 4D smoothing or smoothing of the mapped 1D histogram? If if is the latter: how to deal with inevitable jumps in the 4D distribution mapped to 1D, corresponding to increasing one observable value and and jumping from last to first value of another observable?
-      * I don't know how best to incorporate this information. The smoothing is very simple, and only applied to some of the systematic-shifted templates (those that are accounted for using separate MC samples rather than variations in event-by-event reweighting factors). The "smoothing" just replaces the fractional change in each bin with an average fractional change, where the average is over all bins of cstar with the same sign and all bins in ttbar mass. I found in my studies that this doesn't largely effect anything about our results other than the post-fit constraints on these systematics' nuisance parameters. 
+   * %GREEN% is it a 4D smoothing or smoothing of the mapped 1D histogram? If if is the latter: how to deal with inevitable jumps in the 4D distribution mapped to 1D, corresponding to increasing one observable value and and jumping from last to first value of another observable?
+      * The smoothing is very simple, and only applied to some of the systematic-shifted templates (those that are accounted for using separate MC samples rather than variations in event-by-event reweighting factors). The "smoothing" just replaces the fractional change in each bin with an average fractional change, where the average is over all bins of cstar with the same sign and all bins in ttbar mass. I found in my studies that this doesn't largely effect anything about our results other than the post-fit constraints on these systematics' nuisance parameters. Added to the text: "Some shifted templates are smoothed before fitting by merging bins in \mr\ and \csubr\ and applying the average shifts."
 
    * %GREEN% l.486 talking here about interpolating shapes within the +-1 sigma interval but what about outside that region, how do you extrapolate?
       * the interpolation in combine is quadratic for shifts between +/- 1 sigma, and linear beyond that. I added an explanation of this.
@@ -312,8 +313,8 @@ l508-519 GOF-tests. From the CMS Statistics Committee we have some overview of s
    * %GREEN% Maybe a chi2 GOF test would have been also possible based on the -2ln L using the saturated model, as implemented in the combine tool and described on the above twiki.
       * Indeed, this is exactly what I did! Thank you!
 
-   * %PURPLE% There is not much said about the outcome of the template fits on the nuisance pars, are there any large pulls observed or not?
-      * this was the subject of a LOT of my work and several presentations in Top Properties and also Higgs Combine. The long story short is that the few pulls that are large have real, explicable causes. The AN has the pull plots in it, and explanation of some of them in an Appendix as well.
+   * %GREEN% There is not much said about the outcome of the template fits on the nuisance pars, are there any large pulls observed or not?
+      * this was the subject of a LOT of my work and several presentations in Top Properties and also Higgs Combine. The long story short is that the few pulls that are large have real, explicable causes. The AN has the pull plots in it, and explanation of some of them in an Appendix as well. I added to the text the sentence "The dominating systematic effect is observed to be the PDF/\alpS\ variation, which corrects the \xF\ distribution to better agree with that observed in data" which I think is a succinct description of what we observed, generally.
    * %GREEN% Figure 7 what does the MC uncertainty in the plot mean, is this something related to Post-fit uncertainties?
       * It's the full statistical+post-fit systematic uncertainty from combine. I added a line to the caption explaining this.
 
@@ -350,8 +351,8 @@ l508-519 GOF-tests. From the CMS Statistics Committee we have some overview of s
       * I reworded several of the sentences near here; I think the whole idea is clearer now.
    * %GREEN% L136-137: I assume that this means that you have one dependent value and two that you float in the fit? Please clarify what you mean.
       * That's right; I added explanation of this to the end of the second-to-last paragraph in the systematics section
-   * %PURPLE% L168-169: This sounds like nonsense! Eliminate it!
-      * This is the recommended, boilerplate, CMS text right from the publication guidelines TWiki.
+   * %GREEN% L168-169: This sounds like nonsense! Eliminate it!
+      * Updated to most recent version of the recommended CMS text from the publication guidelines TWiki.
    * %GREEN% L301: What do you mean by this endpiece? I would drop it.
       * I explain this better now
    * %GREEN% L309: This looks incorrect, as L is < 1?
@@ -363,16 +364,16 @@ l508-519 GOF-tests. From the CMS Statistics Committee we have some overview of s
       * There's not much difference between what we have here and the suggestion.
    * %GREEN% L463-467: There too many words here to decipher! Please clarify and simplify all these terms, including "B".  
    * %PURPLE% Section 7: The above descriptions are among  the worst I have seen at  CMS. It is truly unfortunate that your LE could not help you improve these.
-      * What an incredibly rude thing to say!
+      * Thanks for all the constructive comments you made to this paper. As this special comment is not constructive at all, we took the liberty to simply ignore it.
    * %GREEN% L474: what is this scaling?
       * changed this to "affecting the normalization of"
-   * %PURPLE% Table 1: Note that "shape" is not a scientific term. What you mean is "distribution," which is fine. And perhaps can also change the "S" to "D"
-      * I've seen "shape" used in many CMS papers, and no other reviewers have raised issue with it
+   * %GREEN% Table 1: Note that "shape" is not a scientific term. What you mean is "distribution," which is fine. And perhaps can also change the "S" to "D"
+      * I've seen "shape" used in many CMS papers, so we prefer to leave it in, but I explain this better in  the caption of the table now (including the word "distribution".)
    * %GREEN% Table 1: Please change all the "type" to "Type"; remove the hyphens after the "b" and "t";
    * %GREEN% Table 1: You should define all \sigma terms, or simplify the table. Do you mean the dependence of the uncertainty? That is, "Uncertainty in"? 
       * I changed this to "uncertainty in" and I'm not sure what else I can do to make the column more clear. I intended for it to summarize the dependencies that were discussed in the section above the table.
-   * %PURPLE% L493-498 (???): These three lines are annoying! Please remove the theatrics and simplify the language. 
-      * I don't know what this comment is referring to; it was floating in the PDF document.
+   * %PURPLE% L493-498: These three lines are annoying! Please remove the theatrics and simplify the language. 
+      * We implemented your proposed changes and think that the text is now more clear.
    * %GREEN% L508-519: This paragraph is another dilly! The long sentences with their subtleties are hard to decipher
       * This will be improved when I change how I'm reporting the goodness of fit information
    * %GREEN% Fig. 6: change all "fit" to "fitted" and "true" to "input"; in legends, "toy median values"->"Median MC values" and "data fit"->"fitted data".
@@ -389,10 +390,11 @@ l508-519 GOF-tests. From the CMS Statistics Committee we have some overview of s
 
 Title:
    * %GREEN% L1, delete “Template” and change “measurement” to “Measurement”;
-   * %PURPLE% L3, replace “the semileptonic channel” with “lepton+jets t\tbar events”.
+   * %GREEN% L3, replace “the semileptonic channel” with “lepton+jets t\tbar events”.
       * Changed this to simply "in proton-proton collisions" at the suggestion of another reviewer.
 Abstract:
-   * %PURPLE% L1, replace linearized with “linearized”; and insert “the” after “”and”.
+   * %GREEN% L1, replace linearized with “linearized”; and insert “the” after “”and”.
+      * Added "the." ARC suggests not to add quotes around "linearized." 
    * %GREEN% L2, replace “are” with “have been”, and “in” with “using”.
    * %GREEN% L3, replace “collision data” with “collisions”; replace “with” by “in”; and delete “in 2016”. [I should remark, as I have done in the past, there is no interest in the date you obtained the data, except for issues of priority or specification of proper corrections. I therefore do not see any reason for advertising such information in this manuscript, and especially in the abstract.] 
    * %GREEN% L4, insert “of” before “13”; and insert an “a” after “to”.
@@ -404,7 +406,9 @@ Abstract:
    * %PURPLE% L11, replace “measured” with “obtained”.
       * This sentence is gone now
    * %PURPLE% L12, replace “directly comparable” with “compared”; replace “derived from” with “measured at the”. 
+      * The sentence is gone now.
    * %PURPLE% L13, delete “measurements”.
+      * The sentence is gone now.
 Introduction:
    * %GREEN% L2, insert “(mt)” before “that.
    * %GREEN% L5, insert a hyphen after each “color”.
@@ -413,13 +417,13 @@ Introduction:
    * %GREEN% L9, replace “as described by” with “of”; and delete “the”.
       * I'm keeping "as described by," though
    * %PURPLE% L10, deleted “initiated”.
-      * I don't see how this sentence is clear without it
+      * We prefer to keep 'initiated' in this sentence
    * %GREEN% L11, replace “. Example” with “, and examples of”; and delete “the” and “initiated”.
    * %GREEN% L12, insert “The” after the period. 
    * %GREEN% Figure 1 caption, replace “(a) Feynman diagrams for the leading-order (LO) quark-antiquark (qq) and gluon-gluon (gg) initiated subprocesses. (b) Example diagrams for the next-to-leading-order (NLO) quark-gluon (qg) initiated subprocess.” with “(a) Feynman diagrams for LO q\qbar- and gg-initiated t\tbar subprocesses; and (b) example diagrams for the NLO qg-initiated subprocess”
    * %GREEN% L14, replace “In this paper, we” with “We”.
    * %PURPLE% L15, replace “of” with “in”; replace “top-quark-antiquark-gluon” with “top quark-top antiquark-gluon”; and replace the second “by” with “through”.
-      * I agree with the "through" but the rest of this passed the LE and I think it's clearer as is
+      * I agree with the "through." ARC says that "top quark-top antiquark-gluon" looks rather strange and could easily be misinterpreted, and that "of" and "in" are both correct; we prefer "of".
    * %GREEN% L16, replace “These” with “Such”.
    * %GREEN% L17, replace “by” with through; replace “effects” with “impacts”; insert a comma before “where”; and insert a hyphen after “final.
    * %GREEN% L18, replace “with respect to” with “relative to the direction of”; and delete “direction”.
@@ -466,7 +470,7 @@ Introduction:
    * %GREEN% L66, delete “experiments”.
    * %GREEN% L67, delete “the”.
    * %PURPLE% L69, replace “This” with “Our”.
-      * I use "this" above, and I don't like how "our paper" sounds....
+      * We prefer to keep "This"
    * %GREEN% L70, insert “briefly” after “3”.
    * %GREEN% L71, replace “physics” with “final-state”; replace “describes” with “discusses”; replace “and” with “data and the”; and delete “data sam”.
    * %GREEN% L72, replace “ples” with “events”.
@@ -476,7 +480,7 @@ Introduction:
    * %GREEN% L76, replace “short” with “brief”.
 Summary:
    * %PURPLE% L528, insert “model of” after “level.
-      * I don't think this makes sense to me.
+      * We prefer to keep it as it is.
    * %GREEN% L530, delete “data” and insert an “s” after “collision”; replace “within” by “in”; and delete “in 2016”.
    * %GREEN% L531, replace “plus” with “+”.
    * %GREEN% L532, delete “their top quark can”.
@@ -497,22 +501,22 @@ Summary:
       * Other papers on asymmetries have called this variable dilution, so I think we'll keep it. The drop is indeed statistical; it wasn't observed in larger MC samples, but regardless there are hardly any events selected in any channel with |xF|>0.7. 
    * %GREEN% line 170 The ruin-2 vertex selection also include the pTMiss at the vertex as an object. This should be added 
    * %GREEN% line 180 add a reference to the method used for the mentioned off-set correction
-   * %PURPLE% line 190-191 Why do we term this 'key based cleaning'?
-      * Because it looks for the PF candidate "key" of the muon in the list of jet PF candidate "keys." 
+   * %GREEN% line 190-191 Why do we term this 'key based cleaning'?
+      * Because it looks for the PF candidate "key" of the muon in the list of jet PF candidate "keys." Regardless, this sentence is edited and "cleaning" is no longer used.
    * %PURPLE% line 213: So the electron is not required to be isolated here?
-      * no, the electrons in the resolved regions are required to be isolated; I explain this in lines 257-262 in paper draft v11. The discussion of trigger efficiencies here has been moved to the event selection section, so it might be more clear that this sentence is only about the trigger requirements and not the isolation.
+      * no, the electrons in the resolved regions are required to be isolated; I explain this in lines 257-262 in paper draft v11. The discussion of trigger efficiencies here has been moved to the systematics section, so it might be more clear that this sentence is only about the trigger requirements and not the isolation.
    * %GREEN% line 217: "as they are halved or doubled: you mean for the systematic uncertainties later? otherwise it is not clear to me what the sentence means...
       * Agreed, I describe the systematic variations more clearly later, so I removed "as they are halved or doubled" here.
    * %GREEN% line 226: do we really use the MLM here? This is normally used on for LO programs while for NLO we use FxFx merging
       * This was my mistake. These samples are generated at LO, with MadGraph5 and indeed the MLM prescription. I changed the MadGraph reference.
-   * %PURPLE% line 278 For the type-2 we require 4 AK4 jets (as for type-3, see line 281), I assume one from the leptonicaly  decaying top and one from the hadronically decaying one. So it means that all jets from the top decays must be resolved? If not, why do we have the condition of 4 AK4 jets for type-2?
-      * Type-2 events contain at least one large AK8 jet, with no top-tags, but the reconstruction only uses the resolved jets in the events, identical to that for type-3 events. I found that this bridged the gap between merged and resolved events more effectively than requiring a W-tagged jet, or anything else like that.
+   * %GREEN% line 278 For the type-2 we require 4 AK4 jets (as for type-3, see line 281), I assume one from the leptonicaly  decaying top and one from the hadronically decaying one. So it means that all jets from the top decays must be resolved? If not, why do we have the condition of 4 AK4 jets for type-2?
+      * Type-2 events contain at least one large AK8 jet, with no top-tags, but the reconstruction only uses the resolved jets in the events, identical to that for type-3 events. I found that this bridged the gap between merged and resolved events more effectively than requiring a W-tagged jet, or anything else like that. I added some text to make this more clear.
    * %GREEN% line 299: After this line one should add what the advantage is of using Type-2 at all in this paper. It concerns 10% of the events and we do not use the AK8 feature. I take that this class less background/better efficiency for the kinematic fitting than the type-3? 
       * Yeah, they don't give us a ton of power, I just include them to bridge the gap between the other two scenarios. I improved my overall explanation of the topologies and their purposes in this paragraph.
    * %GREEN% line 379-380: "that are less resolved": do you mean broader? But the W+jet should not have a "top quark mass" at all..?
       * "less resolved" does mean broader. The "top quark mass" referred to is the mass of the reconstructed leptonic top quark, which for W+jets events indeed is not localized around the top mass because it's not a real top, it's some hadronic stuff that gets collected together and forced to look as much like a top as possible by the kinematic fitting function. Regardless, I changed this phrase to "that are further away from"
-   * %PURPLE% line 383: So is region D the nominal signal selection region. Do we use this methodology to predict the background in region D? 
-      * Yes, on both counts, except with the single distinction that the same estimate is made in the W+jets control regions, so in that case the "D" region is the nominal W+jets control selection region.
+   * %GREEN% line 383: So is region D the nominal signal selection region. Do we use this methodology to predict the background in region D? 
+      * Yes, on both counts, except with the single distinction that the same estimate is made in the W+jets control regions, so in that case the "D" region is the nominal W+jets control selection region. Regardless, this paragraph has been heavily edited and is now much more clear.
    * %PURPLE% line 414: "multiple independent methods" This very vague. Can we add a bit more information here on the type of cross check triggers that we used?
       * I took this language directly from another published CMS paper; it would add a lot of text to give the details of where these estimates come from, so I'd like to avoid that, but the measurements are those that are POG-provided in every case except for the boosted electron+jets measurement, which was taken from another CMS work with identical selection.
    * %GREEN% line 424 Uncertainties "are retained"... you mean calculated or determined? Otherwise we can just drop 'are retained and' here.
@@ -525,9 +529,9 @@ Summary:
    * %PURPLE% line 492: Does it make any difference even if you would have assumed AFB = 0? I guess not.
       * no, the value from MC is really small anyway. I meant only that we don't model any variations in AFB for the mu and d investigations, the AFB used there is native to the MC sample used.
    * %PURPLE% line 520-522: It is fine if A_FB agrees with these results and calculations but it is far and foremost also very much compatible with zero. So we actually don't really measure anything yet. I found the formulation in this paragraph misleading.
-      * The comparison here is mostly ruling out the large values originally measured at the Tevatron, which is not "measuring nothing." I'm not sure what exactly is misleading about our language here.
-   * %PURPLE% Figure 3: in some of the figures here the data is clearly lower than the prediction and well outside the MC uncertainty. Is this not a worry?
-      * This is a known issue. The data-based QCD estimate tends to slightly overestimate the amount of background in the signal region in many cases, especially for type-3 electrons, but it's corrected before fitting.
+      * The comparison here is mostly ruling out the large values originally measured at the Tevatron, which is not "measuring nothing," and the SM does not predict AFB=0. We're discussing with the ARC about whether to make changes here. 
+   * %GREEN% Figure 3: in some of the figures here the data is clearly lower than the prediction and well outside the MC uncertainty. Is this not a worry?
+      * This is a known issue. The data-based QCD estimate tends to slightly overestimate the amount of background in the signal region in many cases, especially for type-3 electrons, but it's corrected before fitting. I added a quick comments about this in the text, also.
 
 %ENDTWISTY%
 
@@ -562,8 +566,8 @@ Summary:
 ---++++ Style comments 
 %TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
 
-   * %PURPLE% L.160 "... with origination..." sounds a bit weird but if it passed the LE then it is fine
-      * Yeah, this is boilerplate text from the publication guide TWiki.
+   * %GREEN% L.160 "... with origination..." sounds a bit weird but if it passed the LE then it is fine
+      * "with origination" is no longer in the recommended text (now reads "with originating from...."); we've updated our version to reflect this.
    * %GREEN% L.377 being picky -> suggest replacing the colon by a "i.e." (if we have well understood) "quark mass: a logical OR..." -> "quark mass i.e. a logical OR ..."
       * I agree, thanks
    * %GREEN% L.129: maybe add (type-I), (type-II), ... before or replace by of the first, second and thirds types ?
@@ -586,8 +590,8 @@ Summary:
       * We've actually changed our measurement of d to estimations of the 68% and 95% confidence limits on |d| using a likelihood profile. Because of the small expected value, and the sign ambiguity, these fits to toys were not reliable or regular.
    * %GREEN% Table 2 Why the d fit and mu fit p-values are so differents for type 2 e+jets between Q>0 and Q<0 ?
       * This was indeed an issue; it was related to my accounting of signal vs. background processes in combine for the d and mu fits in particular. I've switched to using the "saturated" test statistic for goodness of fit, and the p-values calculated over all signal regions are 0.206, 0.233, and 0.274 for the fits for Afb, d, and mu, respectively. The next version of the paper draft will include this information, and the AN will be updated with the plots showing how the test-statistic values for fits to data are well-distributed within those observed for pseudo-experiments.
-   * %BLUE% Fig 2 or elsewhere: maybe you could illustrate the effect of mu and d since the equations are quite complicated (while for AFB it looks relatively straightforward) ?
-      * Morris may make a figure showing this
+   * %PURPLE% Fig 2 or elsewhere: maybe you could illustrate the effect of mu and d since the equations are quite complicated (while for AFB it looks relatively straightforward) ?
+      * We do not think that adding a new figure showing these effects contributes enough to the reader's understanding to justify including it; it's not a very illustrative plot.
    * %GREEN% Fig 7: maybe adding dashed lines to separate regions of each (or some observables) would help understanding the binning and the sensitive variables
       * I added lines indicating the bins in xF and M! Cool idea!
    * %GREEN% l.137: why the extraction of each of the parameters is done separately instead of a combined extraction with e.g. a profile likelihood ratio ?
@@ -631,7 +635,7 @@ L66-67, L136, L173, L207, L212-213, L247, L258, L273, L306, L308 and L313. These
    * %PURPLE% (f) L247: "and type-3 e+jets and mu+jets." --> "and type-3 e+ and mu+jets."
       * This reads far too awkwardly for my ear. I would consider "e/mu+jets" but I honestly want the distinction to be explicit here.
    * %PURPLE% (g) L258: (to follow the good example on L159, etc.) "according to the scalar sum of the pT" --> "according to the scalar pT sum"
-      * I don't know, the sum is scalar as opposed to vector, and I refer to vector sums in the same paragraph. This text is boilerplate, also, I'm going to keep it as is.
+      * I don't know, the sum is scalar as opposed to vector, and I refer to vector sums in the same paragraph. This text is boilerplate, also, so we prefer to keep it as is.
    * %GREEN% (h) L273: (as the "SD" has been introduced on L194) "jet mass after soft-drop application," --> "jet mass after SD application,"
    * %GREEN% (i) L306 and L313: (two places on each line) "type-1, type-2, and type-3 ..." --> "type-1, -2, and -3 ..."
    * %GREEN% (j) L308: "type-1 and type-2 events are further required to have ..." --> "type-1 and -2 events are further required to have ..."
@@ -641,8 +645,7 @@ L98-99 and L218-219, L143 and L160-161, L158 and L169. The "PDF", "eta" and "PV"
    * %GREEN% (c) L158: (as the "PV" has been used in Table 1) "at the primary interaction vertex as determined by ..." --> "at the primary vertex (PV) of interaction as determined by ..."
    (d) L218-219, L160-161 and L169: (then can be shortened correspondingly)
       * %GREEN% (i) L218-219: (also, as the "alphaS" has been introduced on L107, it does not need to be explained again at the end of L218) "on the choice of the parton distribution function (PDF) set NNPDF3.0 [45] with strong coupling alphaS = 0.118 ..." --> "on the choice of the PDF set NNPDF3.0 [45] with alphaS = 0.118 ..."
-      * %PURPLE% (ii) L160-161: "Muons are identified in the pseudorapidity range |eta| < 2.4," --> "Muons are identified in the range |eta| < 2.4,"
-         * pseudorapidity doesn't have to be defined according to the CMS style guide.
+      * %GREEN% (ii) L160-161: "Muons are identified in the pseudorapidity range |eta| < 2.4," --> "Muons are identified in the range |eta| < 2.4,"
       * %GREEN% (iii) L169: "to be the primary pp interaction vertex." --> "to be the PV of pp interaction."
 
    * %GREEN% L119, it is looked odd that two words of "large..." are placed almost next each other. It may be improved by changing the 1st one from, e.g. "effects of the anomalous moments are largest at large pair mass." --> "effects of the anomalous moments are most significant at large pair mass." or "effects of the anomalous moments are most noticeable at large pair mass."
@@ -653,7 +656,7 @@ L98-99 and L218-219, L143 and L160-161, L158 and L169. The "PDF", "eta" and "PV"
 L221-223 and L229-231, to be consistent in this paper (e.g. L49, L95, L153-154, L396, Fig.7's caption, L737 and L743, etc.) and with all other CMS papers, (a) a hyphen should be added between "t channel" or between "s channel"; (b) the word of "channel" should be added after the "tW" and "W+jets and Z/gamma+jets", i.e.
       * %PURPLE% L221-223: (three places) "both in the t channel [46] with POWHEG v2 and MADSPIN [47] and in tW with POWHEG v1 [48]. Background ... quark processes in the s channel are simulated using the MC@NLO MC ..." --> "both in the t-channel [46] with POWHEG v2 and MADSPIN [47] and in tW channel with POWHEG v1 [48]. Background ... quark processes in the s-channel are simulated using the MC@NLO MC ..."
       * %PURPLE% L229-231: (four places) "in the s and t channels [53], at NLO plus next-to-next-to-leading logarithms (NNLL) for single top quark production in tW [54], at ... (NNLO) for W+jets and Z/gamma+jets [55]," --> "in the s- and t-channels [53], at NLO plus next-to-next-to-leading logarithms (NNLL) for single top quark production in tW channel [54], at ... (NNLO) for W+jets and Z/gamma+jets channels [55],"
-         * This is explicitly against the [https://twiki.cern.ch/twiki/bin/view/CMS/Internal/PubGuidelines#Hyphens][CMS style guide].
+         * These terms should not be hyphenated according to the [https://twiki.cern.ch/twiki/bin/view/CMS/Internal/PubGuidelines#Hyphens][CMS style guide].
 
    * %GREEN% L226, it seems more clear if some words are swapped and a word of "by" is added, i.e. "matched using the MLM prescription [51] to PYTHIA8 parton showers with tune CUETP8M1." --> "matched to PYTHIA8 parton showers with tune CUETP8M1 by using the MLM prescription [51]."
 L228, L238, L240 and L243. I'm not sure whether the article word "The" should be added at the beginning of each sentence on these lines, i.e.
@@ -667,12 +670,12 @@ L228, L238, L240 and L243. I'm not sure whether the article word "The" should be
       * I added the definition as exactly specified in the CMS style guide, but no definitions of eta/phi and no mention that radians are used is required.
    * %GREEN% L276, to be consistent in this paper (e.g. L273 and L194, etc.), a hyphen or a space may should be added between "softdrop", i.e. "softdrop mass in the range" --> "soft-drop mass in the range" or "soft drop mass in the range"
    * %PURPLE% L286-288, the expressions of "a b quark jet" and "a b tagging efficiency" are looked quite odd, similar as "a b c d xxxx". It may be improved by following the good examples on L215-216, L243, L272, L276 and L278, etc., i.e. (at three places) "a b quark jet and a 9% probability of misidentifying a light quark jet as a b quark jet (mistag rate). Type-3 events require ... ... working point of the algorithm with a b tagging efficiency of 63% ..." --> "a bottom quark jet and a 9% probability of misidentifying a light quark jet as a bottom quark jet (mistag rate). Type-3 events require ... ... working point of the algorithm with a b-tagging efficiency of 63% ..." or "a b-quark jet and a 9% probability of misidentifying a light quark jet as a b-quark jet (mistag rate). Type-3 events require ... ... working point of the algorithm with a b-tagging efficiency of 63% ..."
-      * I don't think this is recommended for the names of quarks...
+      * We prefer to keep it as it is.
 
 Figs.3-5 and 7
    * %GREEN% (i) at the upper-left corner outside each plot, to be consistent in the text of this paper, two spaces before and after the symbol "+" should be removed, e.g. (in the left column of Fig.7, also to be consistent with Figs.3-5, a hyphen should be added after the "Type") "Type x mu  +  jets (SR)" -->"Type-x mu+jets (SR)" where the "x" is 1 or 2 or 3.
    * %PURPLE% (ii) The captions of Figs.4 and 5 are almost identical as Fig.3 except differing by one type-index on the 2nd line; thus, I'm not sure whether captions of Figs.4 and 5 can be entirely replaced by "Figure 4: The same Data/MC comparison as Fig.3, but for events passing full type-2 selection criteria." and "Figure 5: The same Data/MC comparison as Fig.3, but for events passing full type-3 selection criteria."
-      * This is not recommended by the CMS guidelines.
+      * We prefer to not to refer to the captions of other figures and keep every figure as self-consistent as possible.
 Figs.6-7, in the legends and axis labels, the 1st letter of each line should be capital, and the non-leading words should be in the lower case, i.e.
    * %GREEN% (i) Fig.6's caption: (the 1st and last lines) "toy median values ... ... data fit" --> "Toy median values ... ... Data fit"
    * %GREEN% (ii) Fig.6's vertical axis labels: "Best Fit ..." --> "Best fit ..."
@@ -682,24 +685,21 @@ L319, L323, L372-373, L393, L396, L406-408, L432 and L496. These lines may be sh
    * %GREEN% (a) L319: "transverse momentum of the measured and simulated events," --> "pT of the measured and simulated events,"
    * %GREEN% (b) L323: "in Eqs.(4), (5), and (6) for the numerators and" --> "in Eqs.(4)-(6) for the numerators and"
    * %GREEN% (c) L372-373: (also, it'll be looked and sound better if a comma is added after the 1st clause) "For the type-1 and type-2 regions the amount of W+jets background ..." --> "For the type-1 and -2 regions, the amount of W+jets background ..."
-   * %PURPLE% (d) L393: "events in the “B” sidebands to the “A” sidebands," --> "events in the “B” to the “A” sidebands,"
-      * This is less clear, I think.
+   * %GREEN% (d) L393: "events in the “B” sidebands to the “A” sidebands," --> "events in the “B” to the “A” sidebands,"
+      * This whole paragraph has been heavily edited for clarity.
    * %GREEN% (e) L396: "in the type-1, type-2, and type-3 signal region ..." --> "in the type-1, -2, and -3 signal region ..."
    * %GREEN% (f) L406-408: (as the "JES" and "JER" have been used only one time on L408 in whole paper, they may not have to be introduced on L406-407, and then be spelled out on L408) "of a jet energy scale (JES) dependent on pileup as well as jet pT, ..., and a smearing of the jet energy resolution (JER) depen-dent on jet |eta|. The JES and JER factors are ..." --> "of a jet energy scale dependent on pileup as well as jet pT, ..., and a smearing of the jet energy resolution depen-dent on jet |eta|. The jet energy scale and resolution factors are ..."
-   * %PURPLE% (g) L432: (similar as the item (19a(i)) above, to be consistent in the text of this paper, two spaces before and after the symbol "+" should be removed; also, the 1st letter of this line should be capital in order to be consistent in this Section) "top quark pT reweighting: Recent NNLO QCD  +  electroweak calculations ..." --> "Top quark pT reweighting: Recent NNLO QCD+electroweak calculations ..."
-      * The space maintains some clarity here, I think, and "top" shouldn't be capitalized, like in the other item labels in this section that refer to specific quark names
+   * %GREEN% (g) L432: (similar as the item (19a(i)) above, to be consistent in the text of this paper, two spaces before and after the symbol "+" should be removed; also, the 1st letter of this line should be capital in order to be consistent in this Section) "top quark pT reweighting: Recent NNLO QCD  +  electroweak calculations ..." --> "Top quark pT reweighting: Recent NNLO QCD+electroweak calculations ..."
    * %GREEN% (h) L496: (to be consistent with the tense in this Section, the verb "was" may should be changed) "in the toys whose postfit median was that" -->"in the toys whose postfit median is that"
 L412, L418-419, L440 and L471-472.
    * %GREEN% Those uncertainty related quantities (e.g. 4.6%, 0.94, 0.96, 100 per-event weight, 1% and 10%, etc.) may should cite some reference articles, so that readers would not wonder why these numbers are chosen, why not any other arbitrary numbers.
 
-   * %PURPLE% L426, similar as the item (20g) above, the 1st letter of this line should be capital in order to be consistent in this Section, i.e. "top tagging efficiency:" --> "Top tagging efficiency:"
-      * I believe this is not recommended; I changed it to the way that it is some time back.
+   * %GREEN% L426, similar as the item (20g) above, the 1st letter of this line should be capital in order to be consistent in this Section, i.e. "top tagging efficiency:" --> "Top tagging efficiency:"
    * %GREEN% L430, from the pronunciation point of view, the article word "a" should be changed from "by a MC matching procedure," --> "by an MC matching procedure,"
    * %GREEN% L465, I'm not sure whether the "B" in the nominator should be explained, but an extra space in the denominator after the "b" should be removed or be replaced by a hyphen, i.e. "xb = pT(B)/pT(b   jet) for" --> "xb = pT(B)/pT(b jet) (where B is ...) for" "xb = pT(B)/pT(b-jet) (where B is ...) for"
       * added the hyphen and an explanation that "B" refers to the B meson.
 Table 1
-   * %PURPLE% (a) In the header column, the 9th row above the bottom of Table, similar as the item (20) above, the 1st letter of this row should be capital to be consistent in this Table, i.e. "top pT reweighting" --> "Top pT reweighting"
-      * again i don't think this is recommended; I was asked to make it this way.
+   * %GREEN% (a) In the header column, the 9th row above the bottom of Table, similar as the item (20) above, the 1st letter of this row should be capital to be consistent in this Table, i.e. "top pT reweighting" --> "Top pT reweighting"
    * %GREEN% (b) The location of Table 1 may should be moved backward to be below L495 since the "sigma" used in the 2nd column of this Table has not been explained until L495.
 
    * %PURPLE% L515, the "p-value" may should be given a Reference article, i.e. "in terms of a “p-value”:" --> "in terms of a “p-value”[xx]:"
@@ -780,12 +780,12 @@ and improve all Type A issues.
 %TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
 
    * %PURPLE% Given that this is mainly a search for BSM effects, it seems difficult to justify not including 2017+2018 data to a referee. The A_fb appears to be completely statistics limited, and for the other parameters the statistical errors are similar to the systematics. So the additional data should give improved sensitivity to deviations from the SM.
-      * I agree! This work would absolutely be better with the whole Run 2 dataset included. There are two reasons we have not done so at this time. First, the method itself is novel and remains unpublished. Second, I am the only person who has worked on this analysis; it's my thesis project and I need to graduate. If our paper is rejected by a referee for this reason I'll be absolutely devastated, for sure, but I'll understand, and most importantly I'll still graduate.
+      * I agree! This work would absolutely be better with the whole Run 2 dataset included. There are two reasons we have not done so at this time. First, the method itself is novel and remains unpublished. Second, I am the only person who has worked on this analysis; it's my thesis project and I need to graduate. 
    * %GREEN% Title: It would be more effective if it could be shortened and more to the point. For example: "Forward-backward asymmetry in top quark events in pp collisions at sqrt(s)=13 TeV"
    * %GREEN% abstract, last sentence: "The forward-backward ...comparable...measurements." It is not clear what you are referring to. Presumably the comparison is to the d and mu values. Why not just say that? It could be replaced by: "Results on d and mu are comparable to those obtained at the Tevatron." In general, comparison to Tevatron results is not straightforward. It would be better to remove the sentence from the abstract. It would fit better in the conclusions.
       * In my opinion, none of the comparisons are straightforward. I've been wanting to remove this for some time.
    * %PURPLE% L16: It would be good to clarify earlier what is the final state used for the study.
-      * Hmm, it's in the abstract that we're using lepton+jets events
+      * It's in the abstract that we're using lepton+jets events
    * %GREEN% LL20-21: it would be good to add a sketch
    * %GREEN% L22: There is also a 13 TeV paper submitted (http://inspirehep.net/record/1742786?ln=en), that should presumably be cited here. Unfortunately it seems nearly impossible to compare to those previous CMS results, since they use a different notation (+ different theory formalism?), and quote 95% CL limits instead of a central value with 1-sigma errors. It would have been extremely helpful to present the results in a way that could be directly compared. If that's not possible, at least some statement explaining how the sensitivity of this result compares to previous limits on the chromo-E/M moments seems mandatory.
       * Added some text to the end of the results section comparing the measurements
@@ -823,19 +823,19 @@ and improve all Type A issues.
    * %PURPLE% Also, distribution in lower right panel: please describe the variable and define it in the text and in the caption.
       * this variable is defined on line 104, and I've been asked explicitly by the ARC and LE to not repeat its definition in the caption.
    * %PURPLE% Eq.4 and Eq.5: What is the relation between the two? Are they both really needed? Eq.4 is at NLO and Eq.5 includes the anomalous parameters. However, from Eq.5 one does not get Eq.4 after setting d=mu=0. It is not clear.
-      * They describe different cross section extensions for the AFB and d/mu measurements, and I make that more clear later on explaining that the equations are used for independent analyses.
+      * They describe different cross section extensions for the AFB and d/mu measurements, and we make that more clear later on explaining that the equations are used for independent analyses.
    * %GREEN% L116: not straightforward that "large beta" means "large pair mass". Also, what is "pair mass"? Please clarify.
       * Beta and mttbar are directly related, but I agree it was hard before to see that "pair mass" means mttbar. I've made that more clear.
    * %GREEN% general: Eq4/5 is qq and Eq6 is gg. It is missing the contribution of qg. Why?
       * Equation 6 is tree-level; the extensions we add are approximately NLO but make no distinction between gg and qg in construction. This is explained shortly after the presentation of the equations.
    * %GREEN% L120: "dipole moments". Are you referring to d and mu? it would be good to clarify earlier these are dipole moments.
       * I changed "anomalous dipole moments" to just "d and mu," but they are defined as dipole moments the very first time they're used, on line 53.
-   * %PURPLE% L122: "the first of the three". What is that? Not clear. Better to replace with something like: Three ttbar decay topologies are considered. The first uses two "fat" jets, in which the decay products of the top or tbar are merged in single jets.
-      * I don't know if I agree with this. We state on line 64 that there will be three distinct topologies considered, and the point I'm making in this sentence is justifying inclusion of the first of those.
+   * %GREEN% L122: "the first of the three". What is that? Not clear. Better to replace with something like: Three ttbar decay topologies are considered. The first uses two "fat" jets, in which the decay products of the top or tbar are merged in single jets.
+      * I don't know if I agree with this. We state on line 64 that there will be three distinct topologies considered, and the point I'm making in this sentence is justifying inclusion of the first of those. This language has been improved slightly, though.
    * %GREEN% L123: "second topology". Later it is referred to type-2. Please specify it here as well. The same applies to the all 3 topologies.
       * This whole paragraph is structured better now.
    * %PURPLE% L154: at this point one would expect to know which triggers have been used. However, they only appear at L208. It would be good to move that here.
-      * I was asked to move the trigger efficiencies to the end of the first paragraph in "Data and simulation" and I think they work best there. 
+      * I was asked to move the trigger efficiencies to the systematics section, but I believe the listing of the triggers used belongs in event selection as it is. 
    * %GREEN% L154 and Table 1: So the boosted e+jets trigger efficiency is much higher than the resolved e+jets, but the systematic error on the boosted trigger is ~7x larger than on the resolved? Given that the boosted e+jets trigger is by far the largest systematic effect in the table, it would be nice to add some comment on what is driving this. 
       * I added the sentence "The precision of the boosted {\Pe}+jets trigger efficiency measurement is limited by the number of events passing selection criteria."
    * %GREEN% L194: Not needed to use both "modified mass drop tagger" and "soft drop". Use only one name for the algorithm.
@@ -844,7 +844,7 @@ and improve all Type A issues.
    * %PURPLE% L199: bosonic -> W/Z boson
       * This text is also boilerplate
    * %PURPLE% L209: Trigger: single muon pT>50 GeV, single ele pT>115GeV. These are non-isolated leptons. The efficiency for ttbar events for these triggers depends on the boost of the tops. How is this accounted for?
-      * The efficiency scalefactors applied depend on the lepton kinematics... is that what this question is asking???
+      * The efficiency scalefactors applied depend on the lepton kinematics as describe in the systematics section... is that what this question is asking???
    * %GREEN% LL236-238: It is not clear whether only one leg or both legs are considered separately. Please clarify.
       * This was missing an Oxford comma; I think that helps.
    * %GREEN% L239: "decaying with very high momentum" is confusing. What is high is the momentum of the initial top such that the decay products are boosted. Please rephrase.
@@ -869,8 +869,8 @@ and improve all Type A issues.
       * It's a subscript "r" for "reconstructed;" I define this much more clearly now.
    * %GREEN% L312: what is a Drell-Yan variable? Please clarify (this comment also applies to other similar instances).
    * %GREEN% L317: the sign of the lepton -> the sign of the lepton charge
-   * %BLUE% Figs. 3-5: It would be helpful to also show an example of how the ttbar shapes look for a non-SM scenario, for some choice of d/mu parameters close to your sensitivity.
-      * Working on this
+   * %PURPLE% Figs. 3-5: It would be helpful to also show an example of how the ttbar shapes look for a non-SM scenario, for some choice of d/mu parameters close to your sensitivity.
+      * We do not think that adding a new figure showing these effects contributes enough to the reader's understanding to justify including it; it's not a very illustrative plot.
    * %GREEN% Fig.3/4/5, caption: what is "full" in this context? please clarify or remove.
       * removed
    * %GREEN% Fig.3/4/5: the last bin includes the overflows? please clarify in the caption.
@@ -919,7 +919,7 @@ From Dick Loveless:
    * %GREEN% line 35:  Delete "have"
    * %GREEN% line 36:  Add a comma after "A_C" and change "that" to "which" and add a comma after "states".
    * %GREEN% line 38:  Add "existing" before ""A_FB" and change "done to date have been" to "are".
-   * %PURPLE% line 39:  End the sentence with "approach" and start a new sentence with "A simplified model . . ".
+   * %GREEN% line 39:  End the sentence with "approach" and start a new sentence with "A simplified model . . ".
       * I restructured this to have a new sentence starting with "This work represents..." which came from another reviewer and which I think is best.
    * %GREEN% line 40:  Change "adopted, allowing" to "adopted that allows".
    * %PURPLE% line 41:  Change "subprocesses" to "processes".
@@ -964,12 +964,12 @@ From Dick Loveless:
    * %GREEN% lines 240,241:  Write "Type-2" events have a large, high-momentum, high-mass jet that indicates either a partially- or fully-merged hadronic top quark decay, but which lack a single large jet likely to have originated from a top quark decay.".
       * awesome suggestion, thank you!! (I put this description up higher where I now define the topologies, but I still used it)
    * %GREEN% lines 246,247:  How about writing " . . categories: e+jets and mu+jets, each of type-1, type-2, or type-3.".
-   * %PURPLE% line 254:  Change "cut" to "constraint".
+   * %GREEN% line 254:  Change "cut" to "constraint".
       * another reveiwer suggested "cut" -> selection, which I think is more apt  than "constraint"
-   * %PURPLE% line 255:  Change "cuts" to "constraints",
+   * %GREEN% line 255:  Change "cuts" to "constraints",
    * %GREEN% line 256:  Delete "In order".
    * %GREEN% lines 257,258:  Change "a lepton candidate's isolation" to "the isolation of a lepton    candidate".
-   * %PURPLE% line 261:  Change "cut" to "constraint".
+   * %GREEN% line 261:  Change "cut" to "constraint".
    * %GREEN% line 275:  Add "a" before "greater".
    * %GREEN% line 296:  Delete "represented by".
    * %GREEN% line 306:  Add commas around ", respectively,".
@@ -1381,4 +1381,4 @@ Detailed comments:
 %ENDTWISTY%
 
 %RESPONSIBLE% Main.MargaretEminizer %BR%
--- Main.MargaretEminizer - 2019-11-04
+-- Main.MargaretEminizer - 2019-11-07
