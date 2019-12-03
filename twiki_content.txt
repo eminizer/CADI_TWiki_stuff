@@ -58,10 +58,216 @@ This analysis is a template measurement of the top quark forward backward asymme
    * CWR ended: 8 Oct 2019
    * post-CWR changes complete: 28 Oct 2019 [[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/55.html][link to HN thread explaining what's changed]]
    * Revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v12.pdf][TOP-15-018 (V12)]] uploaded: 4 Nov 2019 
+   * Revised paper drafts [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v13.pdf][TOP-15-018 (V13)]] through [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v19.pdf][TOP-15-018 (V19)]] uploaded 8 Nov 2019 - 27 Nov 2019 for a few changes addressing charge asymmetry in lepton identification, and incorporating language edits after discussions with the statistics committee. Relevant Hypernews threads: [[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/64.html][1]], [[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/66.html][2]].
+   * paper draft v19 declared ready for final reading: 28 Nov 2019
 
 ---+++ Imminent Plans
 
-   * Move paper draft through CWR
+   * Move paper draft through final reading
+
+---++ Comments on draft for final reading (all on paper draft v19)
+
+**color code key for our answers** 
+   * %GREEN% agreed/accepted and implemented for next draft
+   * %BLUE% minor effort still required
+   * %ORANGE% more discussion needed, potentially major effort
+   * %RED% not considered or addressed yet
+   * %PURPLE% no change made/no change necessary (more explanation follows)
+more detailed responses in bullets under comments if necessary
+
+---+++ Andrea Castro 3 Dec 2019 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/72.html][link to hypernews]])
+
+---++++ Type A comments
+%TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
+
+   * %RED% Abstract, last sentence: please use passive voice
+
+   * %RED% L18: add "frame" after "center-of-mass"
+
+   * %RED% L27-28: "reflect the respective cross sections... hemispheres relative" ==> "represent the cross sections ... hemispheres, respectively, relative"
+
+   * %RED% L36: "by ATLAS [refs] and CMS [refs]" ==> "by the ATLAS [refs] and CMS [refs] Collaborations"
+
+   * %RED% L54: here and everywhere else: is there a way to center the "hat" symbol on the "mu" symbol?
+
+   * %RED% L83: "use" ==> "use the quantities"
+
+   * %RED% L107: "possible Beyond the Standard Model processes [refs]" ==> "possible processes beyond the standard model [refs]"
+
+   * %RED% L108: avoid the breaking of the "pp->tt" chain
+
+   * %RED% L112: "at large" ==> "at large values of"
+
+   * %RED% L114: "the K and epsilon=epsilon(beta) functions" ==> "the factor K and the epsilon=epsilon(beta) functions"; because K is not a function
+
+   * %RED% L116: "and from" ==> "and from the anomalous moments"
+
+   * %RED% L221: "at mt=" ==> "assuming mt="
+
+   * %RED% L234: "These MC events' distributions" ==> "The distributions for MC events"
+
+   * %RED% L270: "respective" ==> "respectively"
+
+   * %RED% L322: replace hyphen with dash in "Figs. 4-6"
+
+   * %RED% L433: "one sigma" ==> "by one sigma"
+
+   * %RED% L491: "in each channel's multijet background estimate transfer factor" ==> "in the transfer factors for each multijet background estimate", to avoid such a long chain of attributive adjectives
+
+   * %RED% L524, 526: "pseudo-datasets" ==> "pseudo-data sets"
+
+   * %RED% Table 1: add bank spaces to "mu_Randmu_F"
+
+   * %RED% Caption of figs. 9, 10: "tables" ==> "Tables"
+
+   * %RED% L560: "are" ==> "yield"
+
+   * %RED% L841: "684--689. 2003" ==> "684--689, 2003" (i.e. replace period with comma)
+
+   * %RED% L845: "115--120. 2011" ==> "115--120, 2011"
+
+   * %RED% Ref. 79: remove issue number, and quote only the first page
+
+   * %RED% Ref. 80: remove issue number
+
+%ENDTWISTY%
+
+---++++ Type B comments
+%TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
+
+   * %RED% L46: prefer to avoid the jargon use of "kinematics", so: "event kinematics" ==> "kinematical properties of the event"
+
+   * %RED% L62: the integrated luminosity is quoted also at L212. Do it only once (my preference would be to leave it at L212)
+
+   * %RED% L87-90: I suppose that the fact that you are allowed to merge gg and qg distributions is because they are similar, not because their asymmetry is 2 oreders of magnitude lower than for qq
+
+   * %RED% L172-173: this is a repetition of what written at L171
+
+   * %RED% L178: better replace "mistagging" (jargon) with "misidentification"
+
+   * %RED% L199: AK is not (strictly) a cone algorithm, so it's not appropriate to refer here to the "jet radius"
+
+   * %RED% L204: "bosonic" ==> "W boson", because I suppose you are referring to jets from W decays and not from Z decays
+
+   * %RED% L206: the jet mass resolution is improved both for the W system and the top, so it's better to remove "around reconstructed bosons"
+
+   * %RED% L220: POWHEG is used for other channels, so I suggest to move ref. [42] right after "generator"
+
+   * %RED% L274: "These tagged top quark (t-tagged) jets" ==> "These identified top quark (t-tagged) jets", to avoid the repetition, and the use of jargon (the first time, the second is our local definition)
+
+   * %RED% L285: "tagged" ==> "identified"
+
+   * %RED% L287: "tagged as a b quark (b-tagged)" ==> "identified as a b quark (b-tagged)", see above
+
+   * %RED% L297: the sentence "and the possible AK4 ..." seems to be hang without the ending explanation. maybe a verb is missing?
+
+   * %RED% L320: "summed according to lepton Q", but "Q" is defined later at L333.
+
+   * %RED% Caption of fig. 4, 5, 6, last sentence: "observed data/MC in" ==> "observed data to MC expectation in"
+
+   * %RED% L337, eq. 7 and other places: to avoid misinterpretation as a power exponent, I would suggest to replace "f^n_{bk}" with "f_{bk,n}", and "R^n_{bk}" with "R_{bk,n}"
+
+   * %RED% Caption of table 1: "R^t/C/R_QCD" ==> "The quantity R^t/C/R_QCD", so as not to start a sentence with a symbol; the last line could read "in each topology, channel, and region" with no need to introduce the symbols "t", "C" and "R"
+
+   * %RED% Table 1: - "n_PV" is undefined, and can be defined near L168; the symbols "A" and "E" are undefined
+
+   * %RED% Fig. 7: there is room for increasing the font size of the legend entries
+
+   * %RED% Caption of fig. 7: "nuisance parameters floating" is jargon, suggest to replace it with "nuisance parameters let free to vary"
+
+   * %RED% Caption of fig. 8: guidelines recommend not to use color to refer to different histos/curves, so in this case you might use different line styles
+
+   * %RED% Figs. 9, 10: I believe the acronym "SR" used in the titles has not been defined
+
+   * %RED% Caption of figs. 9, 10: "Fitted data/MC comparisons" ==> Fitted data vs MC expectation comparisons"; again don't use color to distinguish lines
+
+   * %RED% Ref. 69: has now been published as EPJC 79 (2019) 886
+
+%ENDTWISTY%
+
+---+++ Thomas Ferbel 3 Dec 2019 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/73.html][link to hypernews]])
+
+---++++ Specific comments
+%TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
+
+Title:
+   * %RED% L1, delete the second “s” in “Measurements”.
+   * %RED% L2, insert “production” before “asymmetry”.
+   * %RED% L3, change “proton-proton” to “pp”. [There is absolutely no need to use the longer version!].
+
+Abstract:
+   * %RED% L3, replace “proton-proton” with “pp”.
+   * %RED% L4, change “by” to “in”,  “and” to “that”, and “corresponding” to “correspond.”
+   * %RED% L6, replace “boost” with “boosts”.
+   * %RED% L7, replace “of” with “to”; and delete “distributions to those”.
+   * %RED% L9, delete the two “the”.
+   * %RED% L10, replace “We find” with “The values found for the parameters are”.
+   * %RED% L11, replace the first “and” by a comma; and change “we” to “a”. [Note that “we” is not used in CMS abstracts or summaries.]
+   * %RED% L12, insert “on” before “the”; and delete “dˆt to”.
+
+Introduction:
+   * %RED% L8, insert “CERN” before “LHC”.
+   * %RED% L10, insert a hyphen before “order”.
+   * %RED% L15, Remove this hyphen. The "top quark" is  defined as a permanent compound word at CMS. [If you don't like this, you can use: "top quark, top antiquark, and gluon".]
+   * %RED% L20, replace “For those” with “When”; and delete “that”.    
+   * %RED% L21, insert “from” after “or”.
+   * %RED% L29, delete “small”; replace “for” with “of”; and replace “, on” with “that are of”. [Yes, I know that both have been used at CMS, but “on” is wrong and “of” is right!]
+   * %RED% L33, delete “the”.
+   * %RED% L50, delete “to events generated using”; insert “to the data” before the comma; and replace “values of the A(1)FB that” with “A(1)FB values”.
+   * %RED% L51, delete “are”; delete “values”; and change “with” to “using”. 
+   * %RED% L56, replace the comma with “of the kind:”. 
+   * %RED% L57, replace “field,” with “field;”; change third comma to “;”; replace “with” by “where”; delete gluon fields; and replace “and the” with “are the gluon fields and the”.
+   * %RED% L58, insert “are the” after “generators”; replace “, and” with “; the”; and insert a hyphen after “field”.
+   * %RED% L59, insert “being” before “Ga\m\n”; insert “the fabc being” after “and”; and delete end “fabc”. L60, replace “describes” with “discusses”; insert “CERN” before “LHC”.
+   * %RED% L61, replace “makes use of” with “applies a”; replace “descriptions of” with “prescription for”; and insert an “a” after “as”. 
+   * %RED% L62, delete “a sample of”; change “by” to “at”; insert “that” after “experiment”; and change “corresponding” to “correspond”.
+   * %RED% L63, change “uses” to  “is based on”.
+   * %RED% L66, delete “been”; insert “been” before “extracted”; delete “measurements of”; and replace  “. This” with “, “but this”. 
+   * %RED% L67, insert “in t\tbar events”, before the “period”.
+   * %RED% L68, change “This” to “Our”.
+   * %RED% L70, change “data” to “events”.
+   * %RED% L71, delete “used in the analysis”.
+   * %RED% L72, delete “used in the analysis”.
+   * %RED% L74, replace “describes” with “reviews”.
+ 
+   * %RED% L107 and L318-325: See my comments.
+      * I do not yet have the .pdf file including these comments; it was stripped by hypernews.
+   * %RED% Figure 4: See my comments.
+      * I do not yet have the .pdf file including these comments; it was stripped by hypernews.
+   * %RED% Table 1: The statement “shape of the distribution” is redundant. Drop  “shape of”; and CMS does not start sentences with acronyms. 
+
+Summary:
+   * %RED% L554, insert “(dˆt)” before “and”; and insert “(\m^ t) dipole” before “moments”.
+   * %RED% L557, replace “using” with “through”. 
+   * %RED% L558, replace “Measurements using” with “The parameters extracted from”.
+   * %RED% L559, change “observed” to “the” and “using” to “based on”; and replace “based on” with “of”.
+
+%ENDTWISTY%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---++ Comments from CWR (all on paper draft v11)
 
@@ -1381,4 +1587,4 @@ Detailed comments:
 %ENDTWISTY%
 
 %RESPONSIBLE% Main.MargaretEminizer %BR%
--- Main.MargaretEminizer - 2019-11-07
+-- Main.MargaretEminizer - 2019-12-03
