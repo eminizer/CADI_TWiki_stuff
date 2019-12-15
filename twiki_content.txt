@@ -60,6 +60,7 @@ This analysis is a template measurement of the top quark forward backward asymme
    * Revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v12.pdf][TOP-15-018 (V12)]] uploaded: 4 Nov 2019 
    * Revised paper drafts [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v13.pdf][TOP-15-018 (V13)]] through [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v19.pdf][TOP-15-018 (V19)]] uploaded 8 Nov 2019 - 27 Nov 2019 for a few changes addressing charge asymmetry in lepton identification, and incorporating language edits after discussions with the statistics committee. Relevant Hypernews threads: [[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/64.html][1]], [[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/66.html][2]].
    * paper draft v19 declared ready for final reading: 28 Nov 2019
+   * Revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v20.pdf][TOP-15-018 (V20)]] uploaded: 14 Dec 2019 
 
 ---+++ Imminent Plans
 
@@ -74,6 +75,146 @@ This analysis is a template measurement of the top quark forward backward asymme
    * %RED% not considered or addressed yet
    * %PURPLE% no change made/no change necessary (more explanation follows)
 more detailed responses in bullets under comments if necessary
+
+---+++ Sijin Qian 14 Dec 2019 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/77.html][link to hypernews]])
+
+---++++ Selected comments (some repeated from CWR)
+%TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
+
+   * %GREEN% (7) L66-67, ..., L308 (now L311 in v19) and L313. These lines may be shortened from (a) ...  (i) ... (j) L308 (now L311 in v19, as well as three other places): "type-1 and type-2 events are further required to have ..." --> "type-1 and -2 events are further required to have ..." In addition, to be consistent with many other places in this paper, the similar changes may be made at other three places, they are L280, L286-287, and L415-416.
+
+   * %GREEN% L309, where it needs to be changed from "for which a MC-based ..." --> "for which an MC-based ..."
+
+   * %GREEN% L318, to follow the good examples on L322, etc., it can be shortened from "Figures 4, 5, and 6 show comparisons of ..." --> "Figures 4-6 show comparisons of ..."
+
+   * %GREEN% L635-636, in [1], to be consistent in this Section, the month info should be removed
+
+   * %GREEN% L777-782, Refs.[52] and [53] are identical, one of them should be removed.
+
+   * %GREEN% L798, in [58], to be consistent in this Section, all references should have only one page index instead of two; Another one which also needs to be changed by the similar way is [79].
+
+   * %GREEN% L802, in [60], to be consistent in this Section, a space should be added before the volume index
+
+   * %GREEN% L851, in [78], to be consistent in this Section, the Erratum should be changed from "[Erratum: Eur. Phys. J.C73,2501(2013)]." --> "[Erratum: Eur. Phys. J.  C  73 (2013) 2501]."
+
+   * %GREEN% L853-854, in [79], to be consistent in this Section, (a) the journal name should be shortened; (b) an extra index after the year number should be removed, i.e. (together with the item (8) above for the page index) "Nuclear Instruments and Methods in Physics Research 221 (1984), no. 2, 437 -442," --> "Nucl. Instrum. Meth. 221 (1984) 437," Another one which also needs to be changed by the similar way as (b) is [80].
+
+   * %GREEN% "A Appendix 1: reweighting factors" --> "A Appendix 1: Reweighting factors"
+
+%ENDTWISTY%
+
+---+++ Chris Neu 14 Dec 2019 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/76.html][link to hypernews]])
+
+---++++ Type A comments
+%TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
+
+   * %GREEN% Abstract: Suggest "...CMS detector in a data sample corresponding to..."
+
+   * %GREEN% Abstract: Suggest "...using a fit of the kinematic distributions of the decay products to..."  -- this is to avoid adding the missing apostrohe
+
+   * %GREEN% line 33: strike "the" after "dominates"
+
+   * %GREEN% line 84: Suggest adding these words at the end of the sentence: "...frame, and c* was defined in Section 1."
+
+   * %GREEN% line 107: Why do you capitalize Beyond the Standard Model here but not in the Abstract nor at line 42?
+      * This is a mistake; it's no longer capitalized here.
+
+   * %GREEN% line 191: "remove" --> "identify"
+
+   * %GREEN% line 251: "is not optimal" -- better to state the reasoning here unambiguously.
+      * I just removed "because the reconstruction of an electron object in this region is not optimal" in this sentence; I don't think that explanation is necessary.
+
+   * %GREEN% line 264-5: This is a sentence fragment. It looks like two sentences that were inadvertently combined.
+      * Good catch, thank you. I split this into two sentences, which now read: "Requirements are also imposed on the \ptmiss\ in each event to suppress background from multijet events containing a muon or electron. Events in the boosted topologies are required to have $\ptmiss > 50$ or $>100$ \GeV, respectively, and resolved events of both lepton flavors are required to have $\ptmiss > 40\GeV$."
+
+   * %GREEN% line 270: Suggest changing to "...to have pT>30 and pT>200 GeV, respectively, and..."
+
+   * %GREEN% line 289: 9% misidentification prob for light flavor jets -- gluon jets too?
+      * Good catch; changed this to "...misidentifying a gluon or light quark jet as...."
+
+   * %GREEN% line 297: strike "AK4" after "possible" since it is redundant with the AK4 later
+      * These few sentences are better organized overall now thanks to another reviewer's comments (including fixing the redundancy you point out).
+
+   * %GREEN% line 323: "..normalization that is larger than optimal for describing data..." --> just say that the method tends to overestimate the observed multijet data
+      * These sentences now read: "As seen in Figs.~\ref{fig:control_plots_t1}--\ref{fig:control_plots_t3}, the data-based method used to determine the multijet background contributions tends to overestimate the observed data; also, the disagreements visible in the \xr\ distributions are due to the choice of the PDFs.  Both of these systematic effects are corrected by the fit to data." I think that's more clear overall?
+
+   * %GREEN% line 521: "inputted" --> "input"
+
+%ENDTWISTY%
+
+---++++ Type B comments
+%TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
+
+   * %GREEN% A_FB: Nowhere in the paper did I find a state of the art value for A_FB from the SM. I want to use that to compare to the nice result of this paper. You say in various places that the value is ~5%, or that the agreement between your measured value and with the NLO and NNLO QCD values is good. But why not provide one reference number so the reader can compare for themselves?
+      * We cite after the "approximately 5%" comment references 4-7, which make slightly different predictions depending on how the calculations are done, but I agree with this comment. I changed the sentence on lines 29-30 to read: "The NLO effects generate positive values for \AFB\ in \qqbar-initiated subprocesses~\cite{4-7}; the most recent SM prediction for the total asymmetry is $\AFB=0.095\pm0.007$~\cite{7}." which allows direct comparisons to be made.
+
+   * %GREEN% ttbar production: At line 13 you do a great job describing the main contributing processes to ttbar production at the LHC. However at line 339 you make the point of including also qq, qbarqbar and qiqj mediated processes, which are tiny. Why not mention these tiny ones here too?
+      * The numbers I quote here lump everything that's not explicitly "qqbar" or "gluon-gluon" into the "qg" category, because that's the greatest level of detail about the event provenance that I have determined in the MC samples I've used, so it's not possible for me to separate out those subprocesses any further than "neither qqbar nor gluon-gluon". I agree with your comment, though, so I think maybe the best way to handle it is the change I've made: to omit "and 25% qg" from the sentence at line 13. This way the reader can tell at line 13 that 75% of the ttbar production comes from qqbar+gluon-gluon, and down at line 339 it will then become clear where the rest of the ttbar events come from in the NLO calculations. If you have any different suggestions for how to present this information with the constraint about MC provenance in mind, though, I'd love to hear them, and I apologize that this is my best idea for the time being.
+
+   * %GREEN% Determination of theta*: Determination of incident quark direction in qqbar events comes form the direction of p_L as you say. I am curious still about the dilution factor. In Fig 3 you plot it in a vertical range [0.0,inf). But can D be less than zero? Meaning can you have more incorrect pairings than correct pairings? Also you say that at large |x_f| the dilution factor D becomes large. But the curve in Fig 3 turns over for |x_f| > 0.7. What impact does the |x_f|>0.7 regime -- and the potentially large incidence of incorrect definition of c* definition -- have on the analysis?
+      * To your first question, D can absolutely be less than zero, we just don't observe that. To your second, there are extremely few events with |x_F|>0.6, and the pictured reversal of the trend is a consequence of MC statistics and not physics. The 8 TeV version of this plot had better statistics in that region, and did not exhibit that behavior. Multiple people have pointed this out, though, so I regenerated the plot of the dilution factor with a single bin for 0.6 < |x_F| < 1.0, and that data point is only slightly lower than those in the previous bins, showing that the general trend holds. I think this is still honest regardless, though, since the reader can see from the plot in the top right of figure 3 that very few events end up having |x_F|>0.6, so that region doesn't make much contribution to anything.
+
+   * %PURPLE% Yields: Data yields for 3 types split by e/mu are inline at line 129. Predicted signal and background yields are listed inline at lines 377, 379, etc. Why not put all these numbers in a very satisfying table?
+      * Yes, I would have liked this as well, and I'm still open to it. The reason it's not here now (and why I'm not going to put it in before the FR on monday morning) is that those event yield numbers were added after CWR, and my ARC decided to not make any changes as impactful as adding new tables or figures that late in the game. Again I would be more than happy to add such a table, but I do not personally feel qualified to produce a version of it that would be acceptable to everyone and so I'd like to talk about changes this substantive at the final reading so the decisions are more open.
+
+   * %GREEN% Fit functions f(y): I did not go through an independent derivation to verify the accuracy of these expressions, nor for the other supporting expressions in the paper (for instance, in Appendix A). I trust that the authors and ARC checked these for accuracy. Confirm?
+      * From our end, yes, absolutely, they've been checked over.
+
+   * %PURPLE% Transfer factors: At line 399-401, if these values of the transfer factors are crucial for the body of the paper, why not put them in a table? They are not easy to digest inline in the text like this.
+      * Once again I'm more than happy to do that, but I don't feel comfortable adding a new table and formatting it without significant input from others this late in the game.
+
+   * %PURPLE% Systematic Uncertainties: Besides knowing what uncertainties were considered, the reader wants to know what is the dominant effect and by how much, or if there are several uncertainties of similar importance. Table 1 is excellent for the first aspect of this but actually misleading on the second aspect. Particularly the "Size" column, which I hoped meant "Here is the relative improvement when this single source of uncertainty is neglected, indicating its relative importance." But that is not what this column means. Inline in the paper at line 510 you say that PDF/alpha_s is the dominant source, which is good to mention. But by how much? Is it close to the others? Which others? Are they experimental or theoretical? What if a PhD student 3 years from now when statistics are less of an issue wanted to pick up this analysis and work on reducing a source of systematic uncertainty. What should they work on? AFAICT that information is not here. I think it is worthwhile to include some more detail on this. Can be done in 2 more sentences.
+      * First, you are correct that the "size" column indeed does not represent the post-fit impacts of each systematic, but rather the general scales of their pre-fit uncertainties. I explain this in the caption of the table, as you've pointed out, so I don't know if I would consider it "misleading," and I think the information it does add is useful, but I understand and agree with the point you're making. However, the systematic impacts were a source of a LOT of my work last year, and there's a ton of information to be had about them across the three independent measurements. They are also impacted in some cases by a smoothing procedure, and so direct comparisons beyond pointing out the dominating effects (tuning the amount of QCD contribution, the shape effect from the PDFs) are nontrivial. I therefore do not personally feel comfortable trying to digest that information into a couple sentences with less than 48 hours to go before the FR, but I am certainly open to discussion about it at that time. I'm sorry.
+
+   * %PURPLE% Quality of fit: At line 543 you give the p-values for the three fits, all around 0.25 or so. This is a nice detail to include. But then you say these values indicate the models describe the data "acceptably well". This is a subjective statement. What is acceptable? Instead maybe just be quantitative, interpreting the p-values as indicating consistency btwn the data and the extracted model params at a given level. Consider framing it in an example interpretation in terms of %ages. The reader can then judge if this is acceptable or not.
+      * I'm sorry to keep doing this, but I again don't want to make such a substantive change to the text at this point, especially because this particular sentence already represents edits from other reviewers. I don't disagree with your suggestion, but maybe we can again talk about this at the final reading, so that I can make a change that everyone is happy with.
+
+%ENDTWISTY%
+
+---+++ Brian Winer 13 Dec 2019 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/75.html][link to hypernews]])
+
+---++++ Type A comments
+%TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
+
+   * %GREEN% Figure 1a) The third Feynman diagram might look slightly better is the arrow was moved away from the crossing points of the top quark lines. At first, I thought it was a dot, which didn’t make any sense to me.
+      * Agreed, Morris edited the Feynman diagram in question for me and the new version won't have this problem, it now has the two arrows further up on each branch rather than overlapping in the center.
+
+   * %GREEN% Line 171-173: It seems like there is either some redundancy here or there is a subtle difference that I am not getting. The end of the sentence that finishes at the beginning of line 172 seems to say the same thing as the next sentence (172-173).
+      * I deleted the end of the sentence at L171 and just left the two about MET that follow it. (I was asked to use this particular language for defining MET so I think it's best to resolve the ambiguity this way.)
+
+   * %GREEN% Line 217-219: Is this sentence trying to give the trigger efficiency for events that pass offline cuts? If so, perhaps it could be worded slightly differently. What about, “The average trigger efficiencies for events passing offline selection are approximately….”
+      * Yes, that's what I'm trying to say. I love your suggestion, and have copied it in wholesale. Thank you!
+
+   * %PURPLE% Line 532: Should this be natural log (i.e. “ln” )?
+      * It could be (as in, yes, it is a natural log), but this is language I took directly from another CMS paper that used one-sided profile likelihoods at the guidance of the statistics committee, so I'm hesitant to change it. I also use "log" again in an axis label in Figure 8. I don't mind it being either way, but for the time being I think I'd prefer to keep it and maybe talk about it at the FR. It's not a major change to make.
+
+%ENDTWISTY%
+
+---++++ Type B comments
+%TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
+
+   * %PURPLE% Lines 3-41: I am trying to understand how this represents a different approach. The sentence says that you separate the qqbar process from the others. In the fit, I believe you use the theory expectation for the fraction of qqbar initiated events and then use a binning that given a region with enriched qqbar (?). Is that what you mean by this statement?
+      * This sentence is explaining that our measurement is not model-independent, in that we adopt a model that separates out the gg and qqbar contributions to the cross section. I am not sure what you mean by "I believe you use the theory expectation for the fraction of qqbar initiated events and then use a binning that given a region with enriched qqbar (?)." but we fit a cross section model to the entire observed phase space, where the differences in the distributions of the template observables for qqbar and gg events (Fig. 3) gives the fit its sensitivity to the amount of qqbar-initiated events. That fraction is allowed to float within a small uncertainty, as well, as described in L485-487. I am more than happy to talk about this more, sorry for my initial confusion.
+
+   * %GREEN% Figure 3, lower right plot: Above about 0.7, there are likely very few events. Nonetheless, the error bars are many sigma away from the plateau. Is this expected?
+      * This is not expected, but it also has no real physics content because, as you say, it's just a consequence of very few MC events at high |x_F|. The 8 TeV version of this plot had better statistics out at larger |x_F| and did not show this; instead the points at very high |x_F| just stayed up near 1.0. That said, enough people have asked about this that I've changed the binning in the histogram so that there's just one bin from 0.6 < |x_F| < 1.0, which I don't think is disingenuous since it's apparent from the plot in the top right of figure 3 that there are extremely few events there anyway, and in this case the plot itself looks better and the trend doesn't appear to reverse.
+
+   * %GREEN% Line 253-262: I found the description of the isolation requirements confusing. It seems like you are defining a “2D selection” and a Pt sum of PF candidates in a cone. I think from the description, the “2D selection” is applied to the boosted events and BOTH the “2D selection” and Pt sum are required for the resolved events. If I have this correct, you may want to consider simply defining the “2D selection” in the sentence starting on line 253 and not attributing it to the boosted case as it is written now.
+      * Absolutely! Thank you for this suggestion. I have changed this portion from "Lepton isolation in boosted events is determined with a ``2D selection'' applied as..." to "Lepton isolation is determined in part with a ``2D selection'' applied as...." which I think does away with the confusing attribution to the boosted events.
+
+   * %PURPLE% Lines 270-283: Have you considered putting all the requirements in a table? It might be a better way to present this long list of selection cuts.
+      * That would be a good idea (I have cutflow tables in our analysis note), but I'm not confident enough in the design of such a table to add it right before the final reading, and I've been asked not to make substantial edits like adding extra tables or figures.
+
+   * %PURPLE% Figures 4-6: The caption states that these “show their nominal predictions”. Does the Data/MC agreement get any better after the nuisance parameters have moved around to find the best fit? For example, the type 3 e+jets (Figure 6) appears to have both a normalization difference (top plot) and a shape (middle plot).
+      * Yes it does, though the small number of plots I have in the paper doesn't make this explicitly obvious. For that reason, I mention the dominating effects in lines 322-325, which read: "As seen in Figs. 4-6, estimating multijet background from data tends to produce a nominal normalization that is larger than optimal for describing the observed data, and the slope in the xr distribution is sensitive to the choice of the PDF set as can be seen in the figures. Both of these systematic effects are corrected by the full fit to data."
+
+   * %PURPLE% Line 387: Should this be a delta log-likelihood? It just gives “-2 ln L”. If not, I am confused. It might be worth providing the reader with some sense of the fraction of events passing/failing such a cut.
+      * This is not a delta log-likelihood, it's a requirement on the best-fit value of the kinematic fit function, like a chi^2, as defined on line 312. This was meant to be explained by the sentence in lines 387-390, which refers to it as the kinematic fit function value. I actually removed from this sentence at the suggestion of another reviewer a definition explaining this right before I use the -2lnL variable, so I'm wary of adding that back in. I also don't want to add an efficiency of this selection because the efficiencies are different in each channel, I don't give efficiencies for any of the other selections, and this selection is just used to define a control region anyway...maybe at the FR I can talk to some more experienced people about making a change.
+
+   * %GREEN% Figures 9 and 10: I found the colors on these plots a bit difficult, especially the vertical bars that are supposed to be separating the bins. Figure 10 was slightly better because I believe there is a bigger difference in the line thickness. If it is possible to consider a color change as well, it might make these more readable
+      * Yes, someone else pointed this out as well, thank you! I've changed those lines to now have different styles as well as colors and thicknesses, and I think they look quite a bit more unique now. The rest of the colors in this plot I've changed several times and I'm not sure what would make an improvement, but if you or anyone else has any specific suggestions it would be very easy for me to change and replace these plots.
+
+%ENDTWISTY%
 
 ---+++ Andrea Castro 3 Dec 2019 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/72.html][link to hypernews]])
 
@@ -95,8 +236,8 @@ more detailed responses in bullets under comments if necessary
 
    * %GREEN% L107: "possible Beyond the Standard Model processes [refs]" ==> "possible processes beyond the standard model [refs]"
 
-   * %BLUE% L108: avoid the breaking of the "pp->tt" chain
-      * Maggie, check this after recompliling
+   * %GREEN% L108: avoid the breaking of the "pp->tt" chain
+      * Added a line break here to fix this.
 
    * %GREEN% L112: "at large" ==> "at large values of"
 
@@ -118,8 +259,7 @@ more detailed responses in bullets under comments if necessary
 
    * %GREEN% L524, 526: "pseudo-datasets" ==> "pseudo-data sets"
 
-   * %BLUE% Table 1: add bank spaces to "mu_Randmu_F"
-      * Maggie, check this after recompliling
+   * %GREEN% Table 1: add bank spaces to "mu_Randmu_F"
 
    * %GREEN% Caption of figs. 9, 10: "tables" ==> "Tables"
 
@@ -147,7 +287,7 @@ more detailed responses in bullets under comments if necessary
       * It's kind of important that there is a (small) expected (and modelled) asymmetry from the qg process, but indeed the reason for combining them is that their distributions in the template observables are very similar. I chaged this sentence to read: "Because of this similarity, and because the SM asymmetry for \qg\ events is expected to be approximately two orders of magnitude smaller than for \qqbar\ events \cite{Kuhn:1998kw}, the \glu\ and \qg\ subprocesses are combined into a single distribution function in our analysis." which I think addresses both of those things appropriately?
 
    * %GREEN% L172-173: this is a repetition of what written at L171
-      * Chopped off the end of the sentence at L171 and just left the two about MET that follow it. (I was asked to use this particular language for defining MET so I think it's better to resolve the ambiugity this way.)
+      * I deleted the end of the sentence at L171 and just left the two about MET that follow it. (I was asked to use this particular language for defining MET so I think it's best to resolve the ambiguity this way.)
 
    * %GREEN% L178: better replace "mistagging" (jargon) with "misidentification"
 
@@ -182,13 +322,11 @@ more detailed responses in bullets under comments if necessary
    * %GREEN% Table 1: - "n_PV" is undefined, and can be defined near L168; the symbols "A" and "E" are undefined
       * I removed the "E" in the table since the factors actually don't depend on energy. For "A" and "n_PV" I think it might be most clear to define them the first time they're used in this section, both of which are in the paragraph about jet energy corrections, in line 414.
 
-   * %BLUE% Fig. 7: there is room for increasing the font size of the legend entries
-      * will do (handling edits to figures at once when all comments are in)
+   * %GREEN% Fig. 7: there is room for increasing the font size of the legend entries
 
    * %GREEN% Caption of fig. 7: "nuisance parameters floating" is jargon, suggest to replace it with "nuisance parameters let free to vary"
 
-   * %BLUE% Caption of fig. 8: guidelines recommend not to use color to refer to different histos/curves, so in this case you might use different line styles
-      * will do (handling edits to figures at once when all comments are in)
+   * %GREEN% Caption of fig. 8: guidelines recommend not to use color to refer to different histos/curves, so in this case you might use different line styles
 
    * %GREEN% Figs. 9, 10: I believe the acronym "SR" used in the titles has not been defined
       * Added this definition on line 538
@@ -208,8 +346,7 @@ more detailed responses in bullets under comments if necessary
 Title:
    * %GREEN% L1, delete the second “s” in “Measurements”.
    * %GREEN% L2, insert “production” before “asymmetry”.
-   * %BLUE% L3, change “proton-proton” to “pp”. [There is absolutely no need to use the longer version!].
-      * Maggie, double-check this after you recompile....
+   * %GREEN% L3, change “proton-proton” to “pp”. [There is absolutely no need to use the longer version!].
 
 Abstract:
    * %GREEN% L3, replace “proton-proton” with “pp”.
@@ -265,7 +402,7 @@ Summary:
 %TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
 
    * %GREEN% L107, delete "Beyond the Standard Model" 
-      * Changed this sentend to "This parameterization describes the process to NLO precision, using a linear approximation for the NLO forward-backward asymmetry that is also an LO description of possible processes beyond the standard model [refs.]" based on another reviewer's comments (I think mostly because this is the only place we use BSM).
+      * Changed this sentence to "This parameterization describes the process to NLO precision, using a linear approximation for the NLO forward-backward asymmetry that is also an LO description of possible processes beyond the standard model [refs.]" based on another reviewer's comments (I think mostly because this is the only place we use BSM).
    * %GREEN% L318-325: See my comments.
       * Implemented these exactly as listed in the PDF, thank you!
    * %GREEN% Figure 4: See my comments.
@@ -274,28 +411,6 @@ Summary:
       * This was here because I was using the "itemize" environment in LaTeX but I agree that the bolding alone makes this clear.
 
 %ENDTWISTY%
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ---++ Comments from CWR (all on paper draft v11)
 
@@ -1615,4 +1730,4 @@ Detailed comments:
 %ENDTWISTY%
 
 %RESPONSIBLE% Main.MargaretEminizer %BR%
--- Main.MargaretEminizer - 2019-12-06
+-- Main.MargaretEminizer - 2019-12-14
