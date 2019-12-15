@@ -61,6 +61,7 @@ This analysis is a template measurement of the top quark forward backward asymme
    * Revised paper drafts [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v13.pdf][TOP-15-018 (V13)]] through [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v19.pdf][TOP-15-018 (V19)]] uploaded 8 Nov 2019 - 27 Nov 2019 for a few changes addressing charge asymmetry in lepton identification, and incorporating language edits after discussions with the statistics committee. Relevant Hypernews threads: [[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/64.html][1]], [[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/66.html][2]].
    * paper draft v19 declared ready for final reading: 28 Nov 2019
    * Revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v20.pdf][TOP-15-018 (V20)]] uploaded: 14 Dec 2019 
+   * Revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v21.pdf][TOP-15-018 (V21)]] uploaded: 15 Dec 2019 
 
 ---+++ Imminent Plans
 
@@ -75,6 +76,83 @@ This analysis is a template measurement of the top quark forward backward asymme
    * %RED% not considered or addressed yet
    * %PURPLE% no change made/no change necessary (more explanation follows)
 more detailed responses in bullets under comments if necessary
+
+---+++ Sudeshna Banerjee 15 Dec 2019 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/79.html][link to hypernews]])
+
+---++++ All Comments
+%TWISTY{mode="div" showlink="Show " hidelink="Hide "  firststart="hide" showimgright="%ICONURLPATH{toggleopen-small}%"  hideimgright="%ICONURLPATH{toggleclose-small}%"}%
+
+on version 19
+
+   * %PURPLE% Does the word "linearized" need to be in the abstract ? 
+      * Yes, it's an important distinction with respect to the number we've measured.
+
+   * %PURPLE% "Parameters of interest......" - These details do not need to be written in the abstract.
+      * This sentence describes one of the unique aspects of our analysis: that it is model-dependent, and separates out the contributions from qqbar and gg. I'd prefer to leave it for now, but would have no problem removing it if requested at the FR.
+
+   * %GREEN% L22 - Define c*-odd and c*-even states here to avoid any confusion.
+
+   * %PURPLE% L33 - Shouldn't the recent D0 result be referenced (Measurement of top quark polarization in tt lepton+jets final states Published 01/09/17:  Phys. Rev. D 95, 011101(R) (2017), arXiv:1607.07627) 
+      * I don't understand how this measurement of the top quark polarization is relevant here.
+
+   * %PURPLE% L41 - "...an LO..." -> "...a LO..." 
+      * CMS guidelines suggest not reading out the full phrases corresponding to acronyms, and instead choosing article agreement based on the sound of the pronounced acronym, in this case "ell-oh" which begins with a vowel sound.
+
+   * %PURPLE% A reference should be given for equation (2).
+      * This didn't come from any references.
+
+   * %PURPLE% L129, 130 - identification of the top quark has not been described anywhere.
+      * The description of the applied top tagging is in lines 272-278 in paper draft v19.
+
+   * %PURPLE% L185 - Are these offset corrections described in reference 34 ?
+      * I am not sure, this comes from the CMS boilerplate text, and it doesn't suggest a reference.
+
+   * %PURPLE% L193 - L199 - The b-tagged jets have been already removed from the jet collection, right ?
+      * No, this paragraph describes the lepton-jet cleaning applied to all jets that have a lepton clustered into them, possibly including b jets.
+
+   * %PURPLE% L219 - Usually the efficiency is lower for electrons than muons. But, in the boosted channel it is higher ?
+      * This is due to the particular measurement of the boosted electron trigger efficiency, which was produced in a highly fiducial region.
+
+   * %GREEN% L229, L231 - Are these two MADGRAPH generators different ?
+      * No, they are the same, I've removed the duplicate reference.
+
+on version 20
+
+   * %PURPLE% L255 - How is pT(rel) calculated ? Is it the difference between the lepton and the jet pT ?
+      * It is the component of the lepton momentum transverse to the three-vector of the jet (or vice versa).
+
+   * %GREEN% L259 - "...through the sum" -> "...to the sum"
+
+   * %GREEN% L272 - Be consistent in writing either "Type" or "type" everywhere.
+      * I've gone through and made sure that we now always say "type" unless the word is at the beginning of a sentence or at the start of a plot's legend or a table entry, in which case we say "Type".
+
+   * %PURPLE% L272 - Are you saying that in Type-1 events the top quark is a AK8 jet ? In L277 it is mentioned that the pT of the AK8 jet is > 400 GeV. At such high pT values the top quark jet (all decay products merged together) is usually reconstructed as a fatjet with cone radius 1.5, or 1.2, and AK8 jet is considered to be the W coming from the top. So, isn't the AK8 jet going to be too narrow to contain all the decay products of the top ? Have you checked this ?
+      * Yes, we assume the hadronically decaying top quark in type-1 events appears as a single AK8 jet. It's true that analysts are now more often using even larger jets for this, but AK8 jets have been used very commonly to represent merged hadronic top quark decays. The 400 GeV requirement on the pt is directly from the top-tagging criteria.
+
+   * %PURPLE% L286 - Type-1 and Type-2 events have highly boosted top quarks. So, what is the efficiency of getting AK4 jets separately ? Is the fatjet divided into subjets and then b-tagging is checked for the subjets, specially for the Type-1 jets ?
+      * I'm afraid I don't understand what you mean by "what is the efficiency of getting AK4 jets separately." The AK8 jets do have their subjets identified, and we use those in the reconstruction, but the working point of the top-tagging algorithm we've used does no require any subjet b-tagging.
+
+   * %GREEN% L289 - What about the c-quark misidentification rate ?
+      * That's included in the quoted mistag rate; I changed the sentence to reflect that.
+
+   * %PURPLE% L315 - Do these numbers correspond to 35.9 fb-1 luminosity ?
+      * Yes they do, so do the expected MC contributions we quote later.
+
+   * %PURPLE% L318 - These variables should be defined, instead of saying "Drell-Yan variables".
+      * They are the reconstructed versions of the same variables defined in Section 2; the sentence explains this.
+
+   * %PURPLE% L324 - Instead of showing the discrepancy and then explaining, is it not better to show the corrected distributions ?
+      * These plots are all pre-fit. The post-fit data/MC template comparisons in Figs. 9 and 10 show them corrected; though it may not be easy to see because of the template binning.  
+
+   * %PURPLE% Why are the shapes of the c*r distributions so different in Fig. 6 as compared to those in Fig. 4, 5 ?
+      * The highly boosted hadronic top quark decays in type-1 events tend to be reconstructed more centrally; this is due to several acceptance effects.
+
+   * %PURPLE% L438 - "..the particular jet is fully, partially, or notmerged,..." -> "..the particular jet is fully, or partially reconstructed, or notmerged,..."
+      * The terms "fully-merged," "partially-merged," and "not merged" describe three different categories of efficiency corrections. They don't have anything to do with the reconstruction but instead are determined by a MC matching procedure.
+
+   * %GREEN% Figure 10 caption - "FComparisons" -> "Comparisons"
+
+%ENDTWISTY%
 
 ---+++ Sijin Qian 14 Dec 2019 ([[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/77.html][link to hypernews]])
 
@@ -100,6 +178,10 @@ more detailed responses in bullets under comments if necessary
    * %GREEN% L853-854, in [79], to be consistent in this Section, (a) the journal name should be shortened; (b) an extra index after the year number should be removed, i.e. (together with the item (8) above for the page index) "Nuclear Instruments and Methods in Physics Research 221 (1984), no. 2, 437 -442," --> "Nucl. Instrum. Meth. 221 (1984) 437," Another one which also needs to be changed by the similar way as (b) is [80].
 
    * %GREEN% "A Appendix 1: reweighting factors" --> "A Appendix 1: Reweighting factors"
+
+   * %GREEN% L818, in [66], to be consistent in this Section and this paper, the font of "ttbar" and "pp" in the article title should be changed from "ttbar(italic) Production in Lepton+Jets Events in pp(italic)" --> "ttbar(non-italic) Production in Lepton+Jets Events in pp(non-italic)"
+
+   * %GREEN% L255: since the "Delta eta**2" (the "Delta phi**2" is the same) may be looked ambiguous as either "Delta((eta)**2)" or "(Delta(eta))**2", two pairs of bracket should be added, similar as all other CMS papers (including our Higgs boson discovery paper HIG-12-028, at the bottom of Page 4) have done regardless how it is written in the CMS style guideline)
 
 %ENDTWISTY%
 
@@ -1730,4 +1812,4 @@ Detailed comments:
 %ENDTWISTY%
 
 %RESPONSIBLE% Main.MargaretEminizer %BR%
--- Main.MargaretEminizer - 2019-12-14
+-- Main.MargaretEminizer - 2019-12-15
