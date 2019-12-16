@@ -347,9 +347,9 @@ on version 20
 
    * %GREEN% L560: "are" ==> "yield"
 
-   * %GREEN% L841: "684--689. 2003" ==> "684--689, 2003" (i.e. replace period with comma)
+   * %GREEN% L841: "684--689. 2003" ==> "684--689, 2003" (i.e. replace period with comma)  %ORANGE% AC: no need to write the year twice
 
-   * %GREEN% L845: "115--120. 2011" ==> "115--120, 2011"
+   * %GREEN% L845: "115--120. 2011" ==> "115--120, 2011" %ORANGE% AC: no need to write the year twice 
 
    * %GREEN% Ref. 79: remove issue number, and quote only the first page
 
@@ -375,6 +375,7 @@ on version 20
 
    * %GREEN% L199: AK is not (strictly) a cone algorithm, so it's not appropriate to refer here to the "jet radius"
       * Changed this to "...reconstructed jets within {\DR} less than the distance parameter of the jet clutering algorithm."
+ %ORANGE% AC: "... within {\DR} equal to the distance parameter ..."
 
    * %GREEN% L204: "bosonic" ==> "W boson", because I suppose you are referring to jets from W decays and not from Z decays
 
@@ -409,11 +410,13 @@ on version 20
    * %GREEN% Caption of fig. 7: "nuisance parameters floating" is jargon, suggest to replace it with "nuisance parameters let free to vary"
 
    * %GREEN% Caption of fig. 8: guidelines recommend not to use color to refer to different histos/curves, so in this case you might use different line styles
+ %ORANGE% AC: do not mention the color in the caption either
 
    * %GREEN% Figs. 9, 10: I believe the acronym "SR" used in the titles has not been defined
       * Added this definition on line 538
 
    * %GREEN% Caption of figs. 9, 10: "Fitted data/MC comparisons" ==> Fitted data vs MC expectation comparisons"; again don't use color to distinguish lines
+%ORANGE% AC: do not mention the color in the caption either
 
    * %GREEN% Ref. 69: has now been published as EPJC 79 (2019) 886
       * Awesome; I'm glad I can cite the paper!
