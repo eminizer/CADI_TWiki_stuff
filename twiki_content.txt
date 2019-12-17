@@ -16,7 +16,7 @@ This analysis is a template measurement of the top quark forward backward asymme
 ---+++ Current Documentation
 
    * Analysis Note Draft: [[http://cms.cern.ch:80/iCMS/jsp/openfile.jsp?tp=draft&files=AN2017_123_v11.pdf][AN 2017-123 (V11)]]
-   * Paper Draft: [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v11.pdf][TOP-15-018 (V11)]]
+   * Paper Draft: [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v24.pdf][TOP-15-018 (V24)]]
 
 ---+++ Status History
 
