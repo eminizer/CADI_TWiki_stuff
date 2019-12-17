@@ -61,11 +61,61 @@ This analysis is a template measurement of the top quark forward backward asymme
    * Revised paper drafts [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v13.pdf][TOP-15-018 (V13)]] through [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v19.pdf][TOP-15-018 (V19)]] uploaded 8 Nov 2019 - 27 Nov 2019 for a few changes addressing charge asymmetry in lepton identification, and incorporating language edits after discussions with the statistics committee. Relevant Hypernews threads: [[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/64.html][1]], [[https://hypernews.cern.ch/HyperNews/CMS/get/TOP-15-018/66.html][2]].
    * paper draft v19 declared ready for final reading: 28 Nov 2019
    * Revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v20.pdf][TOP-15-018 (V20)]] uploaded: 14 Dec 2019 
-   * Revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v21.pdf][TOP-15-018 (V21)]] uploaded: 15 Dec 2019 
+   * Revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v21.pdf][TOP-15-018 (V21)]] uploaded: 15 Dec 2019
+   * Revised paper draft (after making changes discussed at final reading) [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v22.pdf][TOP-15-018 (V22)]] uploaded: 16 Dec 2019 
+   * Revised paper draft (after Thorsten's final edits) [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v23.pdf][TOP-15-018 (V23)]] uploaded: 17 Dec 2019 
 
 ---+++ Imminent Plans
 
-   * Move paper draft through final reading
+   * Get paper published in JHEP!
+
+---++ Comments from final reading Dec 16th 2019 (all on paper draft v21)
+
+From Andrea
+   * %GREEN% ref 75 & 74: remove the year field from the bibtex (problem duplicating year due to conf. pro.)
+   * %GREEN% L199: within \DeltaR equal to the distance parameter
+   * %GREEN% Fig. 8 & 9 caption: remove mention of color from caption
+   * %GREEN% line 522 and also caption and picture in Fig. 8 change “Log” to “Ln"
+
+From Chris
+   * %GREEN% L499-501: change comment on dominant systematics to something like "...across different regions and investigations PDF/alpha_S systematic is largely impactful; persistent in each of the independent investigations and largely impactful; hierarchy of most impactful systematics across different investigations and channels is difficult to produce...."
+      * Changed this sentence to "The hierarchies of the most impactful systematic uncertainties are different for each parameter of interest, but one persistent observation is that the PDF/\alpS\ variation tends to be a large effect, correcting the \xF\ distribution to better agree with that observed in data."
+   * %GREEN% L534: “...fitting models reasonably describe the observed data"
+
+From Sudeshna
+   * %GREEN% L291: in all cases, b tagging algorithms are applied before removal of any double-counted leptons within AK4 jets.
+   * %GREEN% L253-256: split the 2D selection sentence into two, so as to include an explanation that pT_rel is calculated as the component of the lepton momentum transverse to the AK4 jet axis.
+      * Changed this sentence to read "Lepton isolation is determined in part with a ``2D selection'' applied as a logical ``or'' of two independent selections. The first is a requirement on the component of the lepton momentum that is transverse to the axis of the nearest AK4 jet, called $\pt^{\text{rel}}$, and the second is the distance $\DR = \sqrt{\smash[b]{(\Delta\eta)^2 + (\Delta\phi)^2}}$ with respect to the nearest AK4 jet."
+   * %GREEN% L255: changes square brackets to parens in delta R definition
+   * %GREEN% L318: drop Drell-Yan
+
+on the abstract
+   * %GREEN% remove “linearized” and "A_FB^(1)" symbol from first sentence
+   * %GREEN% add after first sentence: "The linearized variable A_FB^(1) is used to approximate the asymmetry."
+   * %GREEN% delete “Parameters of interest…gluon-gluon initial states"
+   * %GREEN% Last sentence: “the values found for the parameters are….and a limit is placed on the magnitude"
+
+on the introduction
+   * %GREEN% L5: “it forms” -> “forming” 
+   * %GREEN% add paragraph break just before “In the standard model"
+   * %GREEN% L8: top quarks at the CERN LHC are produced predominantly in pairs via...
+   * %GREEN% L11: “next-to-leading order” -> next-to-leading-order
+   * %GREEN% L13: center-of-mass energy of 13TeV
+   * %GREEN% L18: add comma before “as shown"
+   * %GREEN% L25: define mu and d in this sentence as well (remove def. from L54)
+   * %GREEN% L58: add space after comma, before 3 dots
+
+on the summary
+   * %GREEN% L543: put A_FB^(1) in parens
+   * %GREEN% L550: replace “LO” with leading-order
+
+on tables and figures
+   * %GREEN% Fig. 2 caption: “diagrammed” -> “defined"
+   * %GREEN% Fig. 3 caption: remove “D” symbol, add “as a function of |xF|” to the end of the last sentence.
+   * %GREEN% Fig. 4-6: “Single top quark” -> “Single t quark” in legends, and increase axis ranges to put legends across whole plot underneath “CMS”; bin type-3 m_r plots more finely to hopefully get rid of “x10^3” outside the plot
+   * %GREEN% Fig. 7: move CMS inside plot on right hand side and adjust axis ranges to accommodate
+   * %GREEN% Fig. 8: move CMS inside plot on left hand side and move legend over, also remember to change “log” to “ln” and remove colors from caption, and change “y” in “y-axis” to be in math italics
+   * %GREEN% Fig. 9 & 10: change “other top quark” to “other t quark” in legends, and order legend entries, and remove colors in caption
 
 ---++ Comments on draft for final reading (all on paper draft v19)
 
@@ -1815,4 +1865,4 @@ Detailed comments:
 %ENDTWISTY%
 
 %RESPONSIBLE% Main.MargaretEminizer %BR%
--- Main.MargaretEminizer - 2019-12-15
+-- Main.MargaretEminizer - 2019-12-17
