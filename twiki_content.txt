@@ -64,6 +64,7 @@ This analysis is a template measurement of the top quark forward backward asymme
    * Revised paper draft [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v21.pdf][TOP-15-018 (V21)]] uploaded: 15 Dec 2019
    * Revised paper draft (after making changes discussed at final reading) [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v22.pdf][TOP-15-018 (V22)]] uploaded: 16 Dec 2019 
    * Revised paper draft (after Thorsten's final edits) [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v23.pdf][TOP-15-018 (V23)]] uploaded: 17 Dec 2019 
+   * Revised paper draft (after Andrea's final edits) [[cms.cern.ch/iCMS/analysisadmin/get?analysis=TOP-15-018-paper-v24.pdf][TOP-15-018 (V24)]] uploaded: 17 Dec 2019 
 
 ---+++ Imminent Plans
 
